@@ -7,3 +7,6 @@ deps
 
 # VSC IDE
 .vscode
+
+# Confidential documentation
+_docs/
