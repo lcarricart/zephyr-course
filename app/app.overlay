@@ -1,5 +1,5 @@
 /{
 	aliases {
-		app-led = &red_led; // For this led, its alias is led0
+		app-led = &green_led; // For this led, its alias is led0
 	};
 };
