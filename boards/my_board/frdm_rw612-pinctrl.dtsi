@@ -1,0 +1,21 @@
+#include <nxp/rw/RW612-pinctrl.h>
+
+&pinctrl {
+	pinmux_flexcomm3_usart: pinmux_flexcomm3_usart {
+		group0 {
+			pinmux = <IO_MUX_FC3_USART_DATA>;
+			slew-rate = "normal";
+		};
+	};
+
+	pinmux_hsgpio0: pinmux_hsgpio0 {
+		group0 {
+			pinmux = <IO_MUX_GPIO11
+				IO_MUX_GPIO12
+				IO_MUX_GPIO18
+				IO_MUX_GPIO21
+				>;
+			slew-rate = "normal";
+		};
+	};
+};
