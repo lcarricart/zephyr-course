@@ -1,15 +1,5 @@
-# Zephyr Training Environment
+# Building the LAB6 Task 1
+Add the following argument to the build command ``-DEXTRA_ZEPHYR_MODULES="C:/Users/luchi/Github-Repository/zephyr_workspace/zephyr-course/course-led-driver"``
 
-Welcome to the Zephyr RTOS training! This repository includes a ready-to-use
-development environment based on Zephyr 4.3.0, which you can set up in one of
-three ways:
+Therefore, the full build command would result ``west build -p always -b YOUR_BOARD app -- -DEXTRA_ZEPHYR_MODULES="C:/Users/luchi/Github-Repository/zephyr_workspace/zephyr-course/zephyr-course/course-led-driver"``
 
----
-
-## Manual Zephyr Setup
-
-Follow the following guide:
-- [Getting Started Guide](https://docs.zephyrproject.org/latest/develop/getting_started/index.html#).
-
-Make sure to select appropriate OS and to perform all steps till
-[Build the Blinky Sample](https://docs.zephyrproject.org/latest/develop/getting_started/index.html#build-the-blinky-sample).
