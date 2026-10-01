@@ -1,0 +1,2 @@
+# Configuration options for the course LED module will be added here.
+rsource "drivers/course-led/Kconfig"

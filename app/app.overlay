@@ -1,5 +1,9 @@
-/{
-	aliases {
-		app-led = &green_led; // For this led, its alias is led0
+#include <zephyr/dt-bindings/gpio/gpio.h>
+
+/ {
+	course_led: course-led {
+		compatible = "zephyr,course-led";
+		gpios = <&hsgpio0 12 GPIO_ACTIVE_LOW>;
+		status = "okay";
 	};
 };

@@ -1,0 +1,12 @@
+description: Course LED used as a pretend sensor
+
+# This says: every node with this compatible must provide a GPIO specification.
+compatible: "zephyr,course-led"
+
+include: base.yaml
+
+properties:
+  gpios:
+    type: phandle-array
+    required: true
+    description: GPIO controlling the LED

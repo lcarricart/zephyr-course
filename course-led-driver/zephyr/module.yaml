@@ -1,0 +1,7 @@
+name: course_led_driver
+
+build:
+  cmake: .
+  kconfig: Kconfig
+  settings:
+    dts_root: .
