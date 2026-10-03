@@ -1,11 +1,13 @@
 description: Course LED used as a pretend sensor
 
-# This says: every node with this compatible must provide a GPIO specification.
+# This says: every DTS node with this compatible must provide a GPIO specification.
+# Based on this binding, this file defines what the node must or may contain.
 compatible: "zephyr,course-led"
 
 include: base.yaml
 
 properties:
+  # Every instance of this driver must specify a GPIO
   gpios:
     type: phandle-array
     required: true

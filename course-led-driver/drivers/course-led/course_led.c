@@ -36,6 +36,8 @@ static int course_led_sample_fetch(const struct device *dev, enum sensor_channel
 static int course_led_channel_get(const struct device *dev, enum sensor_channel chan, struct sensor_value *val);
 
 /* Sensor API */
+/* The attributes are not created on the fly, they're fixed .sample_fetch and .channel_get, and defined this way because I'm implementing the
+ * sensor API. There are other possible attributes available in this API abstraction */
 static DEVICE_API(sensor, course_led_api) =
 {
 	.sample_fetch = course_led_sample_fetch,
@@ -43,6 +45,11 @@ static DEVICE_API(sensor, course_led_api) =
 };
 
 /* Device instances */
+/* Template for creating one device instance. This is very smart! A single function-like macro with an "inst" parameters passed to it, defines for you at compile time, the specified C code. In this case, it is creating two structs and calling another function-like macro
+ * The ## is a C pre-processor trick to create unique names per instance. The ## is a glueing thing, so it glue config_ with instance, resulting in variables such as course_led_data_0, course_led_data_1 and so on 
+ * The macro continues as long as the lines finish with backslashes 
+ * 
+ * These instances are not created in my .c files as I would expect. These are created in my app.overlay, and Zephyr creates as many instances as I defined there */
 #define COURSE_LED_DEFINE(inst) \
 	static course_led_data data_##inst = {0}; \
 	static const course_led_config config_##inst = \
@@ -51,9 +58,16 @@ static DEVICE_API(sensor, course_led_api) =
 	}; \
 	DEVICE_DT_INST_DEFINE(inst, course_led_init, NULL, &data_##inst, &config_##inst, POST_KERNEL, CONFIG_SENSOR_INIT_PRIORITY, &course_led_api);
 
+/* This macro looks for all DTS nodes with the compatible = "zephyr,course-led" and status = "okay"
+ * For all DTS nodes satisfying those two conditions, it runs COURSE_LED_DEFINE(inst), creating the actual instances with their structs and all needed parameters */
 DT_INST_FOREACH_STATUS_OKAY(COURSE_LED_DEFINE)
 
 /* Functions */
+/* In order to know what functions are relevant calls when using a driver, I need to check the Zephyr's official documentation for the involved subsystems, and ideally existing drivers and samples
+ * For example, the Zephyr GPIO API docs explains this: 
+ * - https://docs.zephyrproject.org/latest/hardware/peripherals/gpio.html
+ * - https://github.com/zephyrproject-rtos/zephyr/blob/main/samples/basic/blinky/src/main.c
+ */
 static int course_led_init(const struct device *dev)
 {
 	const course_led_config *cfg = dev->config;
@@ -62,6 +76,8 @@ static int course_led_init(const struct device *dev)
 
 	if (gpio_is_ready_dt(&cfg->led) == false)
 	{
+        /* -ENODEV means "No such GPIO device" 
+         * The Zephyr API uses negative numbers for returned error values */
 		return -ENODEV;
 	}
 
@@ -97,6 +113,8 @@ static int course_led_sample_fetch(const struct device *dev, enum sensor_channel
 
 	if ((chan != SENSOR_CHAN_ALL) && (chan != SENSOR_CHAN_PRIV_START))
 	{
+        /* -ENOTSUP means "Operation not supported"
+         * The Zephyr API uses negative numbers for returned error values */
 		return -ENOTSUP;
 	}
 
@@ -111,6 +129,8 @@ static int course_led_channel_get(const struct device *dev, enum sensor_channel 
 
 	if (chan != SENSOR_CHAN_PRIV_START)
 	{
+        /* -ENOTSUP means "Operation not supported"
+         * The Zephyr API uses negative numbers for returned error values */
 		return -ENOTSUP;
 	}
 
