@@ -10,7 +10,7 @@
 #include <zephyr/device.h>
 #include <zephyr/drivers/sensor.h>
 
-#include <course_led_module/drivers/course_led.h>
+#include "course_led.h"
 
 /* Data structures */
 typedef enum

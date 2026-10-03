@@ -13,7 +13,7 @@
 #include <stdbool.h>
 #include <errno.h>
 
-#include <course_led_module/drivers/course_led.h>
+#include "course_led.h"
 
 /* Data structures */
 typedef struct
