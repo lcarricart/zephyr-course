@@ -13,7 +13,7 @@
 #include <stdbool.h>
 #include <errno.h>
 
-#include "course_led.h"
+#include <course_led_module/drivers/course_led.h>
 
 /* Data structures */
 typedef struct
@@ -151,8 +151,8 @@ static int course_led_channel_get(const struct device *dev, enum sensor_channel 
 	return STATUS_SUCCESS;
 }
 
-void course_led_set_blink_period_ms(const struct device *dev, int period_ms)
+void course_led_set_blink_period_ms(const struct device *dev, int period)
 {
     course_led_data *state = dev->data;
-    state->blink_period_ms = period_ms;
+    state->blink_period_ms = period;
 }

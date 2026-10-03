@@ -1,4 +1,4 @@
-name: course_led_driver
+name: course_led_module
 
 build:
   cmake: .
