@@ -38,7 +38,7 @@ int main(void)
 
 	while (1)
 	{
-		/* Fetch: the driver turns the LED on. */
+		/* Fetch: the driver toggles the LED. */
 		ret = sensor_sample_fetch(dev);
 		if (ret != STATUS_SUCCESS)
 		{
@@ -46,9 +46,7 @@ int main(void)
 			return 0;
 		}
 
-		k_sleep(K_SECONDS(1));
-
-		/* Get: the driver turns the LED off. */
+		/* Get the current LED state without changing it. */
 		ret = sensor_channel_get(dev, SENSOR_CHAN_PRIV_START, &value);
 		if (ret != STATUS_SUCCESS)
 		{
