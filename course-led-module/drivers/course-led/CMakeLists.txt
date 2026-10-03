@@ -1,2 +1,4 @@
-zephyr_library()
-zephyr_library_sources_ifdef(CONFIG_COURSE_LED course_led.c)
+if (CONFIG_COURSE_LED)
+    target_sources(app PRIVATE course_led.c)
+    target_include_directories(app PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
+endif()
