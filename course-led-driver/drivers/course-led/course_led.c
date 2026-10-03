@@ -13,6 +13,8 @@
 #include <stdbool.h>
 #include <errno.h>
 
+#include "course_led.h"
+
 /* Data structures */
 typedef struct
 {
@@ -22,6 +24,7 @@ typedef struct
 typedef struct
 {
 	bool is_on;
+    int blink_period_ms;
 } course_led_data;
 
 typedef enum
@@ -37,9 +40,11 @@ static int course_led_channel_get(const struct device *dev, enum sensor_channel 
 
 /* Sensor API */
 /* The attributes are not created on the fly, they're fixed .sample_fetch and .channel_get, and defined this way because I'm implementing the
- * sensor API. There are other possible attributes available in this API abstraction */
+ * sensor API. There are other possible attributes available in this API abstraction 
+ */
 static DEVICE_API(sensor, course_led_api) =
 {
+    /* Pass the pointers to each function */
 	.sample_fetch = course_led_sample_fetch,
 	.channel_get = course_led_channel_get,
 };
@@ -144,4 +149,10 @@ static int course_led_channel_get(const struct device *dev, enum sensor_channel 
 	val->val2 = 0;
 
 	return STATUS_SUCCESS;
+}
+
+void course_led_set_blink_period_ms(const struct device *dev, int period_ms)
+{
+    course_led_data *state = dev->data;
+    state->blink_period_ms = period_ms;
 }

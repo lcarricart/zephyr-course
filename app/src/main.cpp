@@ -10,6 +10,8 @@
 #include <zephyr/device.h>
 #include <zephyr/drivers/sensor.h>
 
+#include <course_led_module/drivers/course_led.h>
+
 /* Data structures */
 typedef enum
 {
@@ -30,6 +32,9 @@ int main(void)
 		printk("ERROR: Course LED device is not ready\n");
 		return 0;
 	}
+
+	/* Use the API extension but do not change anything in the physical LED blink, keeping the exercise as a mere driver development training, only changing a struct field value */
+	course_led_set_blink_period_ms(dev, 100);
 
 	while (1)
 	{
