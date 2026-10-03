@@ -1,3 +1,7 @@
+/* This file defines the instances I need for this driver. If I'm using the driver of an ultrasonic, but I wanna connect two of them
+ * then I would create two instances of this ultrasonic in this app.overlay file.
+ * Later, when I wanna use these instances in main.c, I would use the node labels I defined. */
+
 #include <zephyr/dt-bindings/gpio/gpio.h>
 
 / {
