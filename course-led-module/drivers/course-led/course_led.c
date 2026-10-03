@@ -1,8 +1,8 @@
 /*
  * Objective: use an onboard LED as a pretend sensor.
  *
- * sample_fetch turns the LED on.
- * channel_get turns the LED off and returns its recorded state.
+ * sample_fetch toggles the LED.
+ * channel_get returns its current recorded state without changing it.
  */
 
 #define DT_DRV_COMPAT zephyr_course_led
@@ -123,26 +123,18 @@ static int course_led_sample_fetch(const struct device *dev, enum sensor_channel
 		return -ENOTSUP;
 	}
 
-	return course_led_set(cfg, state, true);
+	return course_led_set(cfg, state, !state->is_on);
 }
 
 static int course_led_channel_get(const struct device *dev, enum sensor_channel chan, struct sensor_value *val)
 {
-	const course_led_config *cfg = dev->config;
 	course_led_data *state = dev->data;
-	int ret = STATUS_SUCCESS;
 
 	if (chan != SENSOR_CHAN_PRIV_START)
 	{
         /* -ENOTSUP means "Operation not supported"
          * The Zephyr API uses negative numbers for returned error values */
 		return -ENOTSUP;
-	}
-
-	ret = course_led_set(cfg, state, false);
-	if (ret != STATUS_SUCCESS)
-	{
-		return ret;
 	}
 
 	val->val1 = state->is_on;
