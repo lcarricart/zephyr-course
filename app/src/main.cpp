@@ -36,26 +36,6 @@ int main(void)
 	/* Use the API extension but do not change anything in the physical LED blink, keeping the exercise as a mere driver development training, only changing a struct field value */
 	course_led_set_blink_period_ms(dev, 100);
 
-	while (1)
-	{
-		/* Fetch: the driver toggles the LED. */
-		ret = sensor_sample_fetch(dev);
-		if (ret != STATUS_SUCCESS)
-		{
-			printk("ERROR: Sample fetch failed (%d)\n", ret);
-			return 0;
-		}
-
-		/* Get the current LED state without changing it. */
-		ret = sensor_channel_get(dev, SENSOR_CHAN_PRIV_START, &value);
-		if (ret != STATUS_SUCCESS)
-		{
-			printk("ERROR: Channel get failed (%d)\n", ret);
-			return 0;
-		}
-
-		printk("Recorded LED state: %d\n", value.val1);
-
-		k_sleep(K_SECONDS(1));
-	}
+	/* Shell deals with the application behaviour */
+	return 0;
 }
