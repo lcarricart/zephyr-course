@@ -49,6 +49,12 @@ static int cmd_set_period_handler(const struct shell* sh, int argc, char** argv)
         shell_error(sh, "Period must be greater than 0 ms");
         return -EINVAL;
     }
+
+    if (period_ms > 45000)
+    {
+        shell_error(sh, "Period must not exceed 45000 ms");
+        return -EINVAL;
+    }
     
     course_led_set_blink_period_ms(dev, period_ms);
 
