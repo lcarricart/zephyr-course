@@ -4,17 +4,23 @@
         "zephyr_version":"v4.2.0",
         "toolchain":"zephyr",
         "commit_date":"2025-07-18T18:17:09-05:00",
-        "run_date":"2026-10-04T12:43:23+00:00",
+        "run_date":"2026-10-04T13:54:15+00:00",
         "options":{
             "help":null,
             "zephyr_base":null,
-            "verbose":1,
             "quiet":0,
             "command":"twister",
             "testsuite_root":[
-                "tests/calculator"
+                "tests/ring_buf"
             ],
             "timeout_multiplier":3.0,
+            "enable_coverage":true,
+            "coverage":true,
+            "gcov_tool":"x86_64-zephyr-elf-gcov.exe",
+            "coverage_basedir":"app/modules/ring_buf",
+            "coverage_platform":[
+                "qemu_x86"
+            ],
             "platform":[
                 "qemu_x86"
             ]
@@ -22,11 +28,11 @@
     },
     "testsuites":[
         {
-            "name":"example.unit.calculator",
+            "name":"homework.unit.ring_buf",
             "arch":"x86",
             "platform":"qemu_x86/atom",
-            "path":"..\\..\\zephyr-course\\tests\\calculator",
-            "run_id":"52c09de20bb38170f1ee0c6e0d7d4a3a",
+            "path":"..\\..\\zephyr-course\\tests\\ring_buf",
+            "run_id":"a36d6974a04c63d3bf3c239fa07ae70f",
             "runnable":true,
             "retries":0,
             "toolchain":"zephyr",
@@ -35,210 +41,35 @@
             "build_time":"0.00",
             "testcases":[
                 {
-                    "identifier":"example.unit.calculator.calculator_sub.null_pointer",
+                    "identifier":"homework.unit.ring_buf.ring_buf_init.reinit_clears_state",
                     "status":"None"
                 },
                 {
-                    "identifier":"example.unit.calculator.calculator_mul.negative_numbers",
+                    "identifier":"homework.unit.ring_buf.ring_buf_push_pop.single_push_pop",
                     "status":"None"
                 },
                 {
-                    "identifier":"example.unit.calculator.calculator_last_result.overwrite_on_second_op",
+                    "identifier":"homework.unit.ring_buf.ring_buf_push_pop.fifo_order",
                     "status":"None"
                 },
                 {
-                    "identifier":"example.unit.calculator.calculator_add.positive_numbers",
+                    "identifier":"homework.unit.ring_buf.ring_buf_push_pop.push_full_returns_enospc",
                     "status":"None"
                 },
                 {
-                    "identifier":"example.unit.calculator.calculator_last_result.add_updates_cache",
+                    "identifier":"homework.unit.ring_buf.ring_buf_boundaries.peek_does_not_consume",
                     "status":"None"
                 },
                 {
-                    "identifier":"example.unit.calculator.calculator_sub.negative_result",
+                    "identifier":"homework.unit.ring_buf.ring_buf_boundaries.is_full_after_fill",
                     "status":"None"
                 },
                 {
-                    "identifier":"example.unit.calculator.calculator_add.negative_numbers",
+                    "identifier":"homework.unit.ring_buf.ring_buf_boundaries.pop_null_returns_einval",
                     "status":"None"
                 },
                 {
-                    "identifier":"example.unit.calculator.calculator_last_result.null_pointer",
-                    "status":"None"
-                },
-                {
-                    "identifier":"example.unit.calculator.calculator_sub.positive_result",
-                    "status":"None"
-                },
-                {
-                    "identifier":"example.unit.calculator.calculator_div.exact_division",
-                    "status":"None"
-                },
-                {
-                    "identifier":"example.unit.calculator.calculator_div.divide_by_zero",
-                    "status":"None"
-                },
-                {
-                    "identifier":"example.unit.calculator.calculator_last_result.no_result_before_first_op",
-                    "status":"None"
-                },
-                {
-                    "identifier":"example.unit.calculator.calculator_add.zero",
-                    "status":"None"
-                },
-                {
-                    "identifier":"example.unit.calculator.calculator_div.null_pointer",
-                    "status":"None"
-                },
-                {
-                    "identifier":"example.unit.calculator.calculator_mul.null_pointer",
-                    "status":"None"
-                },
-                {
-                    "identifier":"example.unit.calculator.calculator_last_result.reset_clears_cache",
-                    "status":"None"
-                },
-                {
-                    "identifier":"example.unit.calculator.calculator_add.null_pointer",
-                    "status":"None"
-                },
-                {
-                    "identifier":"example.unit.calculator.calculator_mul.positive_numbers",
-                    "status":"None"
-                },
-                {
-                    "identifier":"example.unit.calculator.calculator_mul.by_zero",
-                    "status":"None"
-                },
-                {
-                    "identifier":"example.unit.calculator.calculator_div.negative_dividend_truncation",
-                    "status":"None"
-                },
-                {
-                    "identifier":"example.unit.calculator.calculator_edge_cases.chained_operations",
-                    "status":"None"
-                },
-                {
-                    "identifier":"example.unit.calculator.calculator_div.integer_truncation",
-                    "status":"None"
-                },
-                {
-                    "identifier":"example.unit.calculator.calculator_add.mixed_signs",
-                    "status":"None"
-                },
-                {
-                    "identifier":"example.unit.calculator.calculator_last_result.failed_op_does_not_update",
-                    "status":"None"
-                }
-            ]
-        },
-        {
-            "name":"example.unit.calculator.ordered",
-            "arch":"x86",
-            "platform":"qemu_x86/atom",
-            "path":"..\\..\\zephyr-course\\tests\\calculator",
-            "run_id":"d0ab45e098e43fa61556852253638ce5",
-            "runnable":true,
-            "retries":0,
-            "toolchain":"zephyr",
-            "status":"None",
-            "reason":"Unknown Instance status",
-            "build_time":"0.00",
-            "testcases":[
-                {
-                    "identifier":"example.unit.calculator.ordered.calculator_sub.null_pointer",
-                    "status":"None"
-                },
-                {
-                    "identifier":"example.unit.calculator.ordered.calculator_mul.negative_numbers",
-                    "status":"None"
-                },
-                {
-                    "identifier":"example.unit.calculator.ordered.calculator_last_result.overwrite_on_second_op",
-                    "status":"None"
-                },
-                {
-                    "identifier":"example.unit.calculator.ordered.calculator_add.positive_numbers",
-                    "status":"None"
-                },
-                {
-                    "identifier":"example.unit.calculator.ordered.calculator_last_result.add_updates_cache",
-                    "status":"None"
-                },
-                {
-                    "identifier":"example.unit.calculator.ordered.calculator_sub.negative_result",
-                    "status":"None"
-                },
-                {
-                    "identifier":"example.unit.calculator.ordered.calculator_add.negative_numbers",
-                    "status":"None"
-                },
-                {
-                    "identifier":"example.unit.calculator.ordered.calculator_last_result.null_pointer",
-                    "status":"None"
-                },
-                {
-                    "identifier":"example.unit.calculator.ordered.calculator_sub.positive_result",
-                    "status":"None"
-                },
-                {
-                    "identifier":"example.unit.calculator.ordered.calculator_div.exact_division",
-                    "status":"None"
-                },
-                {
-                    "identifier":"example.unit.calculator.ordered.calculator_div.divide_by_zero",
-                    "status":"None"
-                },
-                {
-                    "identifier":"example.unit.calculator.ordered.calculator_last_result.no_result_before_first_op",
-                    "status":"None"
-                },
-                {
-                    "identifier":"example.unit.calculator.ordered.calculator_add.zero",
-                    "status":"None"
-                },
-                {
-                    "identifier":"example.unit.calculator.ordered.calculator_div.null_pointer",
-                    "status":"None"
-                },
-                {
-                    "identifier":"example.unit.calculator.ordered.calculator_mul.null_pointer",
-                    "status":"None"
-                },
-                {
-                    "identifier":"example.unit.calculator.ordered.calculator_last_result.reset_clears_cache",
-                    "status":"None"
-                },
-                {
-                    "identifier":"example.unit.calculator.ordered.calculator_add.null_pointer",
-                    "status":"None"
-                },
-                {
-                    "identifier":"example.unit.calculator.ordered.calculator_mul.positive_numbers",
-                    "status":"None"
-                },
-                {
-                    "identifier":"example.unit.calculator.ordered.calculator_mul.by_zero",
-                    "status":"None"
-                },
-                {
-                    "identifier":"example.unit.calculator.ordered.calculator_div.negative_dividend_truncation",
-                    "status":"None"
-                },
-                {
-                    "identifier":"example.unit.calculator.ordered.calculator_edge_cases.chained_operations",
-                    "status":"None"
-                },
-                {
-                    "identifier":"example.unit.calculator.ordered.calculator_div.integer_truncation",
-                    "status":"None"
-                },
-                {
-                    "identifier":"example.unit.calculator.ordered.calculator_add.mixed_signs",
-                    "status":"None"
-                },
-                {
-                    "identifier":"example.unit.calculator.ordered.calculator_last_result.failed_op_does_not_update",
+                    "identifier":"homework.unit.ring_buf.ring_buf_init.fresh_state",
                     "status":"None"
                 }
             ]

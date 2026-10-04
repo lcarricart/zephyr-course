@@ -1,0 +1,68 @@
+ELF Header:
+  Magic:   7f 45 4c 46 01 01 01 00 00 00 00 00 00 00 00 00 
+  Class:                             ELF32
+  Data:                              2's complement, little endian
+  Version:                           1 (current)
+  OS/ABI:                            UNIX - System V
+  ABI Version:                       0
+  Type:                              EXEC (Executable file)
+  Machine:                           Intel 80386
+  Version:                           0x1
+  Entry point address:               0x100000
+  Start of program headers:          52 (bytes into file)
+  Start of section headers:          819372 (bytes into file)
+  Flags:                             0x0
+  Size of this header:               52 (bytes)
+  Size of program headers:           32 (bytes)
+  Number of program headers:         3
+  Size of section headers:           40 (bytes)
+  Number of section headers:         28
+  Section header string table index: 27
+
+Section Headers:
+  [Nr] Name              Type            Addr     Off    Size   ES Flg Lk Inf Al
+  [ 0]                   NULL            00000000 000000 000000 00      0   0  0
+  [ 1] text              PROGBITS        00100000 0000a0 02b000 00  AX  0   0 16
+  [ 2] initlevel         PROGBITS        0012b000 02b0a0 000040 00   A  0   0  4
+  [ 3] device_area       PROGBITS        0012b040 02b0e0 000080 00   A  0   0  4
+  [ 4] uart_driver_[...] PROGBITS        0012b0c0 02b160 000014 00   A  0   0  4
+  [ 5] ztest             PROGBITS        0012b0d4 02b174 0000fc 00  WA  0   0  4
+  [ 6] init_array        INIT_ARRAY      0012b1d0 02b270 000114 04  WA  0   0  4
+  [ 7] log_const_area    PROGBITS        0012b2e4 02b384 000020 00   A  0   0  4
+  [ 8] tbss              NOBITS          0012b304 02b3a4 000004 00 WAT  0   0  4
+  [ 9] rodata            PROGBITS        0012b320 02b3c0 007df0 00   A  0   0 32
+  [10] _GCOV_BSS_SE[...] NOBITS          00133120 0331b0 00dee0 00  WA  0   0 32
+  [11] datas             PROGBITS        00141000 034000 008cd8 00  WA  0   0 32
+  [12] device_states     PROGBITS        00149cd8 03ccd8 000008 00  WA  0   0  1
+  [13] k_heap_area       PROGBITS        00149ce0 03cce0 000020 00  WA  0   0  4
+  [14] pagetables        PROGBITS        00149d00 03cd00 005320 00   A  0   0  1
+  [15] bss               NOBITS          0014f020 042020 009610 00  WA  0   0 32
+  [16] noinit            NOBITS          00159000 042020 014038 00  WA  0   0 4096
+  [17] .comment          PROGBITS        00000000 042020 000020 01  MS  0   0  1
+  [18] .debug_aranges    PROGBITS        00000000 042040 002c60 00      0   0  8
+  [19] .debug_info       PROGBITS        00000000 044ca0 026006 00      0   0  1
+  [20] .debug_abbrev     PROGBITS        00000000 06aca6 009645 00      0   0  1
+  [21] .debug_line       PROGBITS        00000000 0742eb 01f6d0 00      0   0  1
+  [22] .debug_frame      PROGBITS        00000000 0939bc 009f9c 00      0   0  4
+  [23] .debug_str        PROGBITS        00000000 09d958 008eeb 01  MS  0   0  1
+  [24] .debug_ranges     PROGBITS        00000000 0a6848 0027f0 00      0   0  8
+  [25] .symtab           SYMTAB          00000000 0a9038 00eb20 10     26 2868  4
+  [26] .strtab           STRTAB          00000000 0b7b58 01042e 00      0   0  1
+  [27] .shstrtab         STRTAB          00000000 0c7f86 000124 00      0   0  1
+Key to Flags:
+  W (write), A (alloc), X (execute), M (merge), S (strings), I (info),
+  L (link order), O (extra OS processing required), G (group), T (TLS),
+  C (compressed), x (unknown), o (OS specific), E (exclude),
+  D (mbind), p (processor specific)
+
+Program Headers:
+  Type           Offset   VirtAddr   PhysAddr   FileSiz MemSiz  Flg Align
+  LOAD           0x0000a0 0x00100000 0x00100000 0x33110 0x41000 RWE 0x20
+  LOAD           0x034000 0x00141000 0x00141000 0x0e020 0x2c038 RW  0x1000
+  TLS            0x02b3a4 0x0012b304 0x0012b304 0x00000 0x00004 R   0x4
+
+ Section to Segment mapping:
+  Segment Sections...
+   00     text initlevel device_area uart_driver_api_area ztest init_array log_const_area rodata _GCOV_BSS_SECTION_NAME 
+   01     datas device_states k_heap_area pagetables bss noinit 
+   02     tbss 

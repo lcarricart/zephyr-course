@@ -75,6 +75,8 @@ Install QEMU and the SDK's x86 toolchain once (adjust the SDK path if needed):
 winget install --id SoftwareFreedomConservancy.QEMU --exact
 $env:Path = 'C:\Program Files\7-Zip;' + $env:Path
 & "$env:USERPROFILE\zephyr-sdk-0.17.2\setup.cmd" /t x86_64-zephyr-elf
+$env:ZEPHYR_SDK_INSTALL_DIR = "$env:USERPROFILE\zephyr-sdk-0.17.2"
+[Environment]::SetEnvironmentVariable('ZEPHYR_SDK_INSTALL_DIR', $env:ZEPHYR_SDK_INSTALL_DIR, 'User')
 ```
 
 The SDK setup script requires `cmake`, `wget` and `7z` on PATH. An ARM-only SDK

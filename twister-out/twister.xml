@@ -1,9 +1,8 @@
 <testsuites>
-	<testsuite name="qemu_x86/atom" timestamp="2026-10-04T14:43:51.369682" time="72.1" tests="2" failures="0" errors="0" skipped="0">
+	<testsuite name="qemu_x86/atom" timestamp="2026-10-04T15:54:17.063771" time="114.34" tests="1" failures="0" errors="0" skipped="0">
 		<properties>
 			<property name="version" value="v4.2.0" />
 		</properties>
-		<testcase classname="qemu_x86/atom:example.unit.calculator" name="example.unit.calculator" time="14.50" />
-		<testcase classname="qemu_x86/atom:example.unit.calculator.ordered" name="example.unit.calculator.ordered" time="57.60" />
+		<testcase classname="qemu_x86/atom:homework.unit.ring_buf" name="homework.unit.ring_buf" time="114.34" />
 	</testsuite>
 </testsuites>
