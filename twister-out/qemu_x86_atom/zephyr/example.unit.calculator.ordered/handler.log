@@ -1,0 +1,146 @@
+c[?7l[2J[0mSeaBIOS (version rel-1.17.0-0-gb52ca86e094d-prebuilt.qemu.org)
+Booting from ROM..
+*** Booting Zephyr OS build v4.2.0 ***
+Running TESTSUITE calculator_add
+===================================================================
+START - test_mixed_signs
+ PASS - test_mixed_signs in 0.001 seconds
+===================================================================
+START - test_negative_numbers
+ PASS - test_negative_numbers in 0.001 seconds
+===================================================================
+START - test_null_pointer
+E: result pointer is NULL
+ PASS - test_null_pointer in 0.001 seconds
+===================================================================
+START - test_positive_numbers
+ PASS - test_positive_numbers in 0.001 seconds
+===================================================================
+START - test_zero
+ PASS - test_zero in 0.001 seconds
+===================================================================
+TESTSUITE calculator_add succeeded
+Running TESTSUITE calculator_div
+===================================================================
+START - test_divide_by_zero
+W: division by zero
+ PASS - test_divide_by_zero in 0.001 seconds
+===================================================================
+START - test_exact_division
+ PASS - test_exact_division in 0.001 seconds
+===================================================================
+START - test_integer_truncation
+ PASS - test_integer_truncation in 0.001 seconds
+===================================================================
+START - test_negative_dividend_truncation
+ PASS - test_negative_dividend_truncation in 0.001 seconds
+===================================================================
+START - test_null_pointer
+E: result pointer is NULL
+ PASS - test_null_pointer in 0.001 seconds
+===================================================================
+TESTSUITE calculator_div succeeded
+Running TESTSUITE calculator_edge_cases
+===================================================================
+START - test_chained_operations
+ PASS - test_chained_operations in 0.001 seconds
+===================================================================
+TESTSUITE calculator_edge_cases succeeded
+Running TESTSUITE calculator_last_result
+===================================================================
+START - test_add_updates_cache
+ PASS - test_add_updates_cache in 0.001 seconds
+===================================================================
+START - test_failed_op_does_not_update
+W: division by zero
+ PASS - test_failed_op_does_not_update in 0.001 seconds
+===================================================================
+START - test_no_result_before_first_op
+W: no result cached yet
+ PASS - test_no_result_before_first_op in 0.001 seconds
+===================================================================
+START - test_null_pointer
+E: result pointer is NULL
+ PASS - test_null_pointer in 0.001 seconds
+===================================================================
+START - test_overwrite_on_second_op
+ PASS - test_overwrite_on_second_op in 0.001 seconds
+===================================================================
+START - test_reset_clears_cache
+W: no result cached yet
+ PASS - test_reset_clears_cache in 0.001 seconds
+===================================================================
+TESTSUITE calculator_last_result succeeded
+Running TESTSUITE calculator_mul
+===================================================================
+START - test_by_zero
+ PASS - test_by_zero in 0.001 seconds
+===================================================================
+START - test_negative_numbers
+ PASS - test_negative_numbers in 0.001 seconds
+===================================================================
+START - test_null_pointer
+E: result pointer is NULL
+ PASS - test_null_pointer in 0.001 seconds
+===================================================================
+START - test_positive_numbers
+ PASS - test_positive_numbers in 0.001 seconds
+===================================================================
+TESTSUITE calculator_mul succeeded
+Running TESTSUITE calculator_sub
+===================================================================
+START - test_negative_result
+ PASS - test_negative_result in 0.001 seconds
+===================================================================
+START - test_null_pointer
+E: result pointer is NULL
+ PASS - test_null_pointer in 0.001 seconds
+===================================================================
+START - test_positive_result
+ PASS - test_positive_result in 0.001 seconds
+===================================================================
+TESTSUITE calculator_sub succeeded
+
+------ TESTSUITE SUMMARY START ------
+
+SUITE PASS - 100.00% [calculator_add]: pass = 5, fail = 0, skip = 0, total = 5 duration = 0.005 seconds
+ - PASS - [calculator_add.test_mixed_signs] duration = 0.001 seconds
+ - PASS - [calculator_add.test_negative_numbers] duration = 0.001 seconds
+ - PASS - [calculator_add.test_null_pointer] duration = 0.001 seconds
+ - PASS - [calculator_add.test_positive_numbers] duration = 0.001 seconds
+ - PASS - [calculator_add.test_zero] duration = 0.001 seconds
+
+SUITE PASS - 100.00% [calculator_div]: pass = 5, fail = 0, skip = 0, total = 5 duration = 0.005 seconds
+ - PASS - [calculator_div.test_divide_by_zero] duration = 0.001 seconds
+ - PASS - [calculator_div.test_exact_division] duration = 0.001 seconds
+ - PASS - [calculator_div.test_integer_truncation] duration = 0.001 seconds
+ - PASS - [calculator_div.test_negative_dividend_truncation] duration = 0.001 seconds
+ - PASS - [calculator_div.test_null_pointer] duration = 0.001 seconds
+
+SUITE PASS - 100.00% [calculator_edge_cases]: pass = 1, fail = 0, skip = 0, total = 1 duration = 0.001 seconds
+ - PASS - [calculator_edge_cases.test_chained_operations] duration = 0.001 seconds
+
+SUITE PASS - 100.00% [calculator_last_result]: pass = 6, fail = 0, skip = 0, total = 6 duration = 0.006 seconds
+ - PASS - [calculator_last_result.test_add_updates_cache] duration = 0.001 seconds
+ - PASS - [calculator_last_result.test_failed_op_does_not_update] duration = 0.001 seconds
+ - PASS - [calculator_last_result.test_no_result_before_first_op] duration = 0.001 seconds
+ - PASS - [calculator_last_result.test_null_pointer] duration = 0.001 seconds
+ - PASS - [calculator_last_result.test_overwrite_on_second_op] duration = 0.001 seconds
+ - PASS - [calculator_last_result.test_reset_clears_cache] duration = 0.001 seconds
+
+SUITE PASS - 100.00% [calculator_mul]: pass = 4, fail = 0, skip = 0, total = 4 duration = 0.004 seconds
+ - PASS - [calculator_mul.test_by_zero] duration = 0.001 seconds
+ - PASS - [calculator_mul.test_negative_numbers] duration = 0.001 seconds
+ - PASS - [calculator_mul.test_null_pointer] duration = 0.001 seconds
+ - PASS - [calculator_mul.test_positive_numbers] duration = 0.001 seconds
+
+SUITE PASS - 100.00% [calculator_sub]: pass = 3, fail = 0, skip = 0, total = 3 duration = 0.003 seconds
+ - PASS - [calculator_sub.test_negative_result] duration = 0.001 seconds
+ - PASS - [calculator_sub.test_null_pointer] duration = 0.001 seconds
+ - PASS - [calculator_sub.test_positive_result] duration = 0.001 seconds
+
+------ TESTSUITE SUMMARY END ------
+
+===================================================================
+RunID: d0ab45e098e43fa61556852253638ce5
+PROJECT EXECUTION SUCCESSFUL

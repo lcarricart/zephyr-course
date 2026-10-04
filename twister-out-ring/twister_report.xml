@@ -1,0 +1,343 @@
+<testsuites>
+	<testsuite name="qemu_x86/atom" timestamp="2026-10-04T14:16:53.365396" time="60.0" tests="8" failures="4" errors="0" skipped="0">
+		<properties>
+			<property name="version" value="v4.2.0" />
+		</properties>
+		<testcase classname="homework.unit.ring_buf" name="homework.unit.ring_buf.ring_buf_boundaries.is_full_after_fill" time="0.00">
+			<failure type="failure" message="timeout">c[?7l[2J[0mSeaBIOS (version rel-1.17.0-0-gb52ca86e094d-prebuilt.qemu.org)
+Booting from ROM..
+*** Booting Zephyr OS build v4.2.0 ***
+Running TESTSUITE ring_buf_init
+===================================================================
+START - test_reinit_clears_state
+ PASS - test_reinit_clears_state in 0.001 seconds
+===================================================================
+START - test_fresh_state
+ PASS - test_fresh_state in 0.001 seconds
+===================================================================
+START - test_fresh_state
+ PASS - test_fresh_state in 0.001 seconds
+===================================================================
+START - test_reinit_clears_state
+ PASS - test_reinit_clears_state in 0.001 seconds
+===================================================================
+START - test_reinit_clears_state
+ PASS - test_reinit_clears_state in 0.001 seconds
+===================================================================
+START - test_fresh_state
+ PASS - test_fresh_state in 0.001 seconds
+===================================================================
+TESTSUITE ring_buf_init succeeded
+Running TESTSUITE ring_buf_init
+===================================================================
+START - test_fresh_state
+ PASS - test_fresh_state in 0.001 seconds
+===================================================================
+START - test_reinit_clears_state
+ PASS - test_reinit_clears_state in 0.001 seconds
+===================================================================
+START - test_fresh_state
+ PASS - test_fresh_state in 0.001 seconds
+===================================================================
+START - test_reinit_clears_state
+ PASS - test_reinit_clears_state in 0.001 seconds
+===================================================================
+START - test_fresh_state
+ PASS - test_fresh_state in 0.001 seconds
+===================================================================
+START - test_reinit_clears_state
+ PASS - test_reinit_clears_state in 0.001 seconds
+===================================================================
+TESTSUITE ring_buf_init succeeded
+Running TESTSUITE ring_buf_init
+===================================================================
+START - test_reinit_clears_state
+ PASS - test_reinit_clears_state in 0.001 seconds
+===================================================================
+START - test_fresh_state
+ PASS - test_fresh_state in 0.001 seconds
+===================================================================
+START - test_reinit_clears_state
+ PASS - test_reinit_clears_state in 0.001 seconds
+===================================================================
+START - test_fresh_state
+ PASS - test_fresh_state in 0.001 seconds
+===================================================================
+START - test_reinit_clears_state
+ PASS - test_reinit_clears_state in 0.001 seconds
+===================================================================
+START - test_fresh_state
+ PASS - test_fresh_state in 0.001 seconds
+===================================================================
+TESTSUITE ring_buf_init succeeded
+Running TESTSUITE ring_buf_push_pop
+===================================================================
+START - test_fifo_order
+ PASS - test_fifo_order in 0.001 seconds
+===================================================================
+START - test_push_full_returns_enospc
+W: buffer full (capacity=4)
+ PASS - test_push_full_returns_enospc in 0.001 seconds
+===================================================================
+START - test_single_push_pop
+ PASS - test_single_push_pop in 0.001 seconds
+===================================================================
+START - test_push_full_returns_enospc
+W: buffer full (capacity=4)
+</failure>
+		</testcase>
+		<testcase classname="homework.unit.ring_buf" name="homework.unit.ring_buf.ring_buf_boundaries.pop_null_returns_einval" time="0.00">
+			<failure type="failure" message="timeout">c[?7l[2J[0mSeaBIOS (version rel-1.17.0-0-gb52ca86e094d-prebuilt.qemu.org)
+Booting from ROM..
+*** Booting Zephyr OS build v4.2.0 ***
+Running TESTSUITE ring_buf_init
+===================================================================
+START - test_reinit_clears_state
+ PASS - test_reinit_clears_state in 0.001 seconds
+===================================================================
+START - test_fresh_state
+ PASS - test_fresh_state in 0.001 seconds
+===================================================================
+START - test_fresh_state
+ PASS - test_fresh_state in 0.001 seconds
+===================================================================
+START - test_reinit_clears_state
+ PASS - test_reinit_clears_state in 0.001 seconds
+===================================================================
+START - test_reinit_clears_state
+ PASS - test_reinit_clears_state in 0.001 seconds
+===================================================================
+START - test_fresh_state
+ PASS - test_fresh_state in 0.001 seconds
+===================================================================
+TESTSUITE ring_buf_init succeeded
+Running TESTSUITE ring_buf_init
+===================================================================
+START - test_fresh_state
+ PASS - test_fresh_state in 0.001 seconds
+===================================================================
+START - test_reinit_clears_state
+ PASS - test_reinit_clears_state in 0.001 seconds
+===================================================================
+START - test_fresh_state
+ PASS - test_fresh_state in 0.001 seconds
+===================================================================
+START - test_reinit_clears_state
+ PASS - test_reinit_clears_state in 0.001 seconds
+===================================================================
+START - test_fresh_state
+ PASS - test_fresh_state in 0.001 seconds
+===================================================================
+START - test_reinit_clears_state
+ PASS - test_reinit_clears_state in 0.001 seconds
+===================================================================
+TESTSUITE ring_buf_init succeeded
+Running TESTSUITE ring_buf_init
+===================================================================
+START - test_reinit_clears_state
+ PASS - test_reinit_clears_state in 0.001 seconds
+===================================================================
+START - test_fresh_state
+ PASS - test_fresh_state in 0.001 seconds
+===================================================================
+START - test_reinit_clears_state
+ PASS - test_reinit_clears_state in 0.001 seconds
+===================================================================
+START - test_fresh_state
+ PASS - test_fresh_state in 0.001 seconds
+===================================================================
+START - test_reinit_clears_state
+ PASS - test_reinit_clears_state in 0.001 seconds
+===================================================================
+START - test_fresh_state
+ PASS - test_fresh_state in 0.001 seconds
+===================================================================
+TESTSUITE ring_buf_init succeeded
+Running TESTSUITE ring_buf_push_pop
+===================================================================
+START - test_fifo_order
+ PASS - test_fifo_order in 0.001 seconds
+===================================================================
+START - test_push_full_returns_enospc
+W: buffer full (capacity=4)
+ PASS - test_push_full_returns_enospc in 0.001 seconds
+===================================================================
+START - test_single_push_pop
+ PASS - test_single_push_pop in 0.001 seconds
+===================================================================
+START - test_push_full_returns_enospc
+W: buffer full (capacity=4)
+</failure>
+		</testcase>
+		<testcase classname="homework.unit.ring_buf" name="homework.unit.ring_buf.ring_buf_boundaries.peek_does_not_consume" time="0.00">
+			<failure type="failure" message="timeout">c[?7l[2J[0mSeaBIOS (version rel-1.17.0-0-gb52ca86e094d-prebuilt.qemu.org)
+Booting from ROM..
+*** Booting Zephyr OS build v4.2.0 ***
+Running TESTSUITE ring_buf_init
+===================================================================
+START - test_reinit_clears_state
+ PASS - test_reinit_clears_state in 0.001 seconds
+===================================================================
+START - test_fresh_state
+ PASS - test_fresh_state in 0.001 seconds
+===================================================================
+START - test_fresh_state
+ PASS - test_fresh_state in 0.001 seconds
+===================================================================
+START - test_reinit_clears_state
+ PASS - test_reinit_clears_state in 0.001 seconds
+===================================================================
+START - test_reinit_clears_state
+ PASS - test_reinit_clears_state in 0.001 seconds
+===================================================================
+START - test_fresh_state
+ PASS - test_fresh_state in 0.001 seconds
+===================================================================
+TESTSUITE ring_buf_init succeeded
+Running TESTSUITE ring_buf_init
+===================================================================
+START - test_fresh_state
+ PASS - test_fresh_state in 0.001 seconds
+===================================================================
+START - test_reinit_clears_state
+ PASS - test_reinit_clears_state in 0.001 seconds
+===================================================================
+START - test_fresh_state
+ PASS - test_fresh_state in 0.001 seconds
+===================================================================
+START - test_reinit_clears_state
+ PASS - test_reinit_clears_state in 0.001 seconds
+===================================================================
+START - test_fresh_state
+ PASS - test_fresh_state in 0.001 seconds
+===================================================================
+START - test_reinit_clears_state
+ PASS - test_reinit_clears_state in 0.001 seconds
+===================================================================
+TESTSUITE ring_buf_init succeeded
+Running TESTSUITE ring_buf_init
+===================================================================
+START - test_reinit_clears_state
+ PASS - test_reinit_clears_state in 0.001 seconds
+===================================================================
+START - test_fresh_state
+ PASS - test_fresh_state in 0.001 seconds
+===================================================================
+START - test_reinit_clears_state
+ PASS - test_reinit_clears_state in 0.001 seconds
+===================================================================
+START - test_fresh_state
+ PASS - test_fresh_state in 0.001 seconds
+===================================================================
+START - test_reinit_clears_state
+ PASS - test_reinit_clears_state in 0.001 seconds
+===================================================================
+START - test_fresh_state
+ PASS - test_fresh_state in 0.001 seconds
+===================================================================
+TESTSUITE ring_buf_init succeeded
+Running TESTSUITE ring_buf_push_pop
+===================================================================
+START - test_fifo_order
+ PASS - test_fifo_order in 0.001 seconds
+===================================================================
+START - test_push_full_returns_enospc
+W: buffer full (capacity=4)
+ PASS - test_push_full_returns_enospc in 0.001 seconds
+===================================================================
+START - test_single_push_pop
+ PASS - test_single_push_pop in 0.001 seconds
+===================================================================
+START - test_push_full_returns_enospc
+W: buffer full (capacity=4)
+</failure>
+		</testcase>
+		<testcase classname="homework.unit.ring_buf" name="homework.unit.ring_buf.ring_buf_push_pop.push_full_returns_enospc" time="0.00">
+			<failure type="failure" message="timeout">c[?7l[2J[0mSeaBIOS (version rel-1.17.0-0-gb52ca86e094d-prebuilt.qemu.org)
+Booting from ROM..
+*** Booting Zephyr OS build v4.2.0 ***
+Running TESTSUITE ring_buf_init
+===================================================================
+START - test_reinit_clears_state
+ PASS - test_reinit_clears_state in 0.001 seconds
+===================================================================
+START - test_fresh_state
+ PASS - test_fresh_state in 0.001 seconds
+===================================================================
+START - test_fresh_state
+ PASS - test_fresh_state in 0.001 seconds
+===================================================================
+START - test_reinit_clears_state
+ PASS - test_reinit_clears_state in 0.001 seconds
+===================================================================
+START - test_reinit_clears_state
+ PASS - test_reinit_clears_state in 0.001 seconds
+===================================================================
+START - test_fresh_state
+ PASS - test_fresh_state in 0.001 seconds
+===================================================================
+TESTSUITE ring_buf_init succeeded
+Running TESTSUITE ring_buf_init
+===================================================================
+START - test_fresh_state
+ PASS - test_fresh_state in 0.001 seconds
+===================================================================
+START - test_reinit_clears_state
+ PASS - test_reinit_clears_state in 0.001 seconds
+===================================================================
+START - test_fresh_state
+ PASS - test_fresh_state in 0.001 seconds
+===================================================================
+START - test_reinit_clears_state
+ PASS - test_reinit_clears_state in 0.001 seconds
+===================================================================
+START - test_fresh_state
+ PASS - test_fresh_state in 0.001 seconds
+===================================================================
+START - test_reinit_clears_state
+ PASS - test_reinit_clears_state in 0.001 seconds
+===================================================================
+TESTSUITE ring_buf_init succeeded
+Running TESTSUITE ring_buf_init
+===================================================================
+START - test_reinit_clears_state
+ PASS - test_reinit_clears_state in 0.001 seconds
+===================================================================
+START - test_fresh_state
+ PASS - test_fresh_state in 0.001 seconds
+===================================================================
+START - test_reinit_clears_state
+ PASS - test_reinit_clears_state in 0.001 seconds
+===================================================================
+START - test_fresh_state
+ PASS - test_fresh_state in 0.001 seconds
+===================================================================
+START - test_reinit_clears_state
+ PASS - test_reinit_clears_state in 0.001 seconds
+===================================================================
+START - test_fresh_state
+ PASS - test_fresh_state in 0.001 seconds
+===================================================================
+TESTSUITE ring_buf_init succeeded
+Running TESTSUITE ring_buf_push_pop
+===================================================================
+START - test_fifo_order
+ PASS - test_fifo_order in 0.001 seconds
+===================================================================
+START - test_push_full_returns_enospc
+W: buffer full (capacity=4)
+ PASS - test_push_full_returns_enospc in 0.001 seconds
+===================================================================
+START - test_single_push_pop
+ PASS - test_single_push_pop in 0.001 seconds
+===================================================================
+START - test_push_full_returns_enospc
+W: buffer full (capacity=4)
+</failure>
+		</testcase>
+		<testcase classname="homework.unit.ring_buf" name="homework.unit.ring_buf.ring_buf_push_pop.fifo_order" time="0.00" />
+		<testcase classname="homework.unit.ring_buf" name="homework.unit.ring_buf.ring_buf_push_pop.single_push_pop" time="0.00" />
+		<testcase classname="homework.unit.ring_buf" name="homework.unit.ring_buf.ring_buf_init.reinit_clears_state" time="0.00" />
+		<testcase classname="homework.unit.ring_buf" name="homework.unit.ring_buf.ring_buf_init.fresh_state" time="0.00" />
+	</testsuite>
+</testsuites>

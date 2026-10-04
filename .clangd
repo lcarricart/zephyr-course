@@ -1,0 +1,18 @@
+If:
+  PathMatch: (tests/ring_buf/.*|app/modules/ring_buf/.*)
+CompileFlags:
+  CompilationDatabase: tests/ring_buf/build
+  Add:
+    - -isystem
+    - C:/Users/luchi/zephyr-sdk-0.17.2/x86_64-zephyr-elf/x86_64-zephyr-elf/include
+    - -isystem
+    - C:/Users/luchi/zephyr-sdk-0.17.2/x86_64-zephyr-elf/lib/gcc/x86_64-zephyr-elf/12.2.0/include
+    - -isystem
+    - C:/Users/luchi/zephyr-sdk-0.17.2/x86_64-zephyr-elf/lib/gcc/x86_64-zephyr-elf/12.2.0/include-fixed
+  Remove:
+    - -fno-printf-return-value
+    - -fno-reorder-functions
+    - -mpreferred-stack-boundary=*
+---
+Completion:
+  ArgumentLists: Delimiters

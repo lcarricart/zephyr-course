@@ -1,0 +1,144 @@
+2026-10-04 14:16:35,846 - twister - INFO - Using Ninja..
+2026-10-04 14:16:36,097 - twister - INFO - Zephyr version: v4.2.0
+2026-10-04 14:16:36,132 - twister - DEBUG - Running cmake script C:\Users\luchi\Github-Repository\zephyr_workspace\deps\zephyr\cmake\verify-toolchain.cmake
+2026-10-04 14:16:36,134 - twister - DEBUG - Calling cmake: ['C:\\Program Files\\CMake\\bin\\cmake.EXE', '-DFORMAT=json', '-P', 'C:\\Users\\luchi\\Github-Repository\\zephyr_workspace\\deps\\zephyr\\cmake\\verify-toolchain.cmake']
+2026-10-04 14:16:37,117 - twister - DEBUG - Finished running C:\Users\luchi\Github-Repository\zephyr_workspace\deps\zephyr\cmake\verify-toolchain.cmake
+2026-10-04 14:16:37,118 - twister - INFO - Using 'zephyr' toolchain.
+2026-10-04 14:16:53,325 - twister - DEBUG - Reading testsuite configuration files under C:\Users\luchi\Github-Repository\zephyr_workspace\zephyr-course\tests\ring_buf...
+2026-10-04 14:16:53,325 - twister - DEBUG - Found possible testsuite in C:\Users\luchi\Github-Repository\zephyr_workspace\zephyr-course\tests\ring_buf
+2026-10-04 14:16:53,362 - twister - DEBUG - No duplicates found.
+2026-10-04 14:16:53,363 - twister - DEBUG - platform filter: ['qemu_x86']
+2026-10-04 14:16:53,363 - twister - DEBUG -   vendor filter: []
+2026-10-04 14:16:53,363 - twister - DEBUG -     arch_filter: None
+2026-10-04 14:16:53,363 - twister - DEBUG -      tag_filter: None
+2026-10-04 14:16:53,363 - twister - DEBUG -     exclude_tag: None
+2026-10-04 14:16:53,363 - twister - DEBUG - Checking platform filter: ['qemu_x86']
+2026-10-04 14:16:53,363 - twister - INFO - Building initial testsuite list...
+2026-10-04 14:16:53,365 - twister - INFO - Writing JSON report twister-out-ring\testplan.json
+2026-10-04 14:16:53,483 - twister - INFO - Adding tasks to the queue...
+2026-10-04 14:16:53,484 - twister - DEBUG - adding qemu_x86/atom\zephyr\homework.unit.ring_buf
+2026-10-04 14:16:53,743 - twister - INFO - Added initial list of jobs to queue
+2026-10-04 14:16:54,488 - twister - DEBUG - Running cmake on C:\Users\luchi\Github-Repository\zephyr_workspace\zephyr-course\tests\ring_buf for qemu_x86/atom
+2026-10-04 14:16:54,492 - twister - DEBUG - Calling cmake: ['C:\\Program Files\\CMake\\bin\\cmake.EXE', '-BC:\\Users\\luchi\\Github-Repository\\zephyr_workspace\\zephyr-course\\twister-out-ring\\qemu_x86_atom\\zephyr\\homework.unit.ring_buf', '-DTC_RUNID=24b637207d2769ae36727167bac8a869', '-DTC_NAME=homework.unit.ring_buf', '-DCONFIG_COMPILER_WARNINGS_AS_ERRORS=y', '-DEXTRA_GEN_EDT_ARGS=--edtlib-Werror', '-GNinja', '-DPython3_EXECUTABLE=C:/Users/luchi/AppData/Local/Programs/Python/Python312/python.exe', '-DZEPHYR_TOOLCHAIN_VARIANT=zephyr', '-SC:\\Users\\luchi\\Github-Repository\\zephyr_workspace\\zephyr-course\\tests\\ring_buf', '-DQEMU_PIPE=C:\\Users\\luchi\\Github-Repository\\zephyr_workspace\\zephyr-course\\twister-out-ring\\qemu_x86_atom\\zephyr\\homework.unit.ring_buf\\qemu-fifo', '-DBOARD=qemu_x86/atom']
+2026-10-04 14:16:55,613 - twister - DEBUG - Launched 20 jobs
+2026-10-04 14:17:46,557 - twister - DEBUG - Finished running cmake C:\Users\luchi\Github-Repository\zephyr_workspace\zephyr-course\tests\ring_buf for qemu_x86/atom in 52.06 seconds
+2026-10-04 14:17:46,562 - twister - DEBUG - build test: qemu_x86/atom\zephyr\homework.unit.ring_buf
+2026-10-04 14:17:46,562 - twister - DEBUG - Building C:\Users\luchi\Github-Repository\zephyr_workspace\zephyr-course\tests\ring_buf for qemu_x86/atom
+2026-10-04 14:17:46,573 - twister - DEBUG - Running C:\Program Files\CMake\bin\cmake.EXE --build C:\Users\luchi\Github-Repository\zephyr_workspace\zephyr-course\twister-out-ring\qemu_x86_atom\zephyr\homework.unit.ring_buf
+2026-10-04 14:18:39,410 - twister - DEBUG - Finished building C:\Users\luchi\Github-Repository\zephyr_workspace\zephyr-course\tests\ring_buf for qemu_x86/atom in 52.84 seconds
+2026-10-04 14:18:39,411 - twister - DEBUG - Determine test cases for test instance: qemu_x86/atom\zephyr\homework.unit.ring_buf
+2026-10-04 14:18:39,411 - twister - DEBUG - Determine test cases for test suite: homework.unit.ring_buf
+2026-10-04 14:18:39,445 - twister - DEBUG - Test instance qemu_x86/atom\zephyr\homework.unit.ring_buf already has 8 testcase(s) known: [<TestCase homework.unit.ring_buf.ring_buf_boundaries.peek_does_not_consume with None>, <TestCase homework.unit.ring_buf.ring_buf_push_pop.fifo_order with None>, <TestCase homework.unit.ring_buf.ring_buf_push_pop.push_full_returns_enospc with None>, <TestCase homework.unit.ring_buf.ring_buf_init.fresh_state with None>, <TestCase homework.unit.ring_buf.ring_buf_boundaries.pop_null_returns_einval with None>, <TestCase homework.unit.ring_buf.ring_buf_boundaries.is_full_after_fill with None>, <TestCase homework.unit.ring_buf.ring_buf_init.reinit_clears_state with None>, <TestCase homework.unit.ring_buf.ring_buf_push_pop.single_push_pop with None>]
+2026-10-04 14:18:39,445 - twister - DEBUG - Detected 8 Ztest case(s): [homework.unit.ring_buf.ring_buf_boundaries.is_full_after_fill, homework.unit.ring_buf.ring_buf_boundaries.pop_null_returns_einval, homework.unit.ring_buf.ring_buf_boundaries.peek_does_not_consume, homework.unit.ring_buf.ring_buf_push_pop.push_full_returns_enospc, homework.unit.ring_buf.ring_buf_push_pop.fifo_order, homework.unit.ring_buf.ring_buf_push_pop.single_push_pop, homework.unit.ring_buf.ring_buf_init.reinit_clears_state, homework.unit.ring_buf.ring_buf_init.fresh_state] in C:\Users\luchi\Github-Repository\zephyr_workspace\zephyr-course\twister-out-ring\qemu_x86_atom\zephyr\homework.unit.ring_buf\zephyr\zephyr.elf
+2026-10-04 14:18:39,449 - twister - DEBUG - run test: qemu_x86/atom\zephyr\homework.unit.ring_buf
+2026-10-04 14:18:39,449 - twister - DEBUG - Reset instance status from 'passed' to None before run.
+2026-10-04 14:18:39,449 - twister - DEBUG - Running qemu_x86/atom\zephyr\homework.unit.ring_buf (qemu)
+2026-10-04 14:18:39,454 - twister - DEBUG - Spawning QEMUHandler Thread for qemu_x86/atom\zephyr\homework.unit.ring_buf
+2026-10-04 14:18:48,817 - twister - DEBUG - QEMU (40196): c[?7l[2J[0mSeaBIOS (version rel-1.17.0-0-gb52ca86e094d-prebuilt.qemu.org)
+2026-10-04 14:18:49,083 - twister - DEBUG - QEMU (40196): Booting from ROM..
+2026-10-04 14:18:49,670 - twister - DEBUG - QEMU (40196): *** Booting Zephyr OS build v4.2.0 ***
+2026-10-04 14:18:49,732 - twister - DEBUG - QEMU (40196): Running TESTSUITE ring_buf_init
+2026-10-04 14:18:50,042 - twister - DEBUG - QEMU (40196): ===================================================================
+2026-10-04 14:18:50,042 - twister - DEBUG - QEMU (40196): START - test_reinit_clears_state
+2026-10-04 14:18:50,195 - twister - DEBUG - QEMU (40196):  PASS - test_reinit_clears_state in 0.001 seconds
+2026-10-04 14:18:51,232 - twister - DEBUG - QEMU (40196): ===================================================================
+2026-10-04 14:18:51,617 - twister - DEBUG - QEMU (40196): START - test_fresh_state
+2026-10-04 14:18:52,256 - twister - DEBUG - QEMU (40196):  PASS - test_fresh_state in 0.001 seconds
+2026-10-04 14:18:53,237 - twister - DEBUG - QEMU (40196): ===================================================================
+2026-10-04 14:18:53,627 - twister - DEBUG - QEMU (40196): START - test_fresh_state
+2026-10-04 14:18:54,249 - twister - DEBUG - QEMU (40196):  PASS - test_fresh_state in 0.001 seconds
+2026-10-04 14:18:55,310 - twister - DEBUG - QEMU (40196): ===================================================================
+2026-10-04 14:18:55,789 - twister - DEBUG - QEMU (40196): START - test_reinit_clears_state
+2026-10-04 14:18:56,554 - twister - DEBUG - QEMU (40196):  PASS - test_reinit_clears_state in 0.001 seconds
+2026-10-04 14:18:57,459 - twister - DEBUG - QEMU (40196): ===================================================================
+2026-10-04 14:18:57,888 - twister - DEBUG - QEMU (40196): START - test_reinit_clears_state
+2026-10-04 14:18:58,507 - twister - DEBUG - QEMU (40196):  PASS - test_reinit_clears_state in 0.001 seconds
+2026-10-04 14:18:59,316 - twister - DEBUG - QEMU (40196): ===================================================================
+2026-10-04 14:18:59,688 - twister - DEBUG - QEMU (40196): START - test_fresh_state
+2026-10-04 14:19:00,234 - twister - DEBUG - QEMU (40196):  PASS - test_fresh_state in 0.001 seconds
+2026-10-04 14:19:01,239 - twister - DEBUG - QEMU (40196): ===================================================================
+2026-10-04 14:19:01,735 - twister - DEBUG - QEMU (40196): TESTSUITE ring_buf_init succeeded
+2026-10-04 14:19:02,033 - twister - DEBUG - QEMU (40196): Running TESTSUITE ring_buf_init
+2026-10-04 14:19:02,661 - twister - DEBUG - QEMU (40196): ===================================================================
+2026-10-04 14:19:02,958 - twister - DEBUG - QEMU (40196): START - test_fresh_state
+2026-10-04 14:19:03,442 - twister - DEBUG - QEMU (40196):  PASS - test_fresh_state in 0.001 seconds
+2026-10-04 14:19:04,300 - twister - DEBUG - QEMU (40196): ===================================================================
+2026-10-04 14:19:04,801 - twister - DEBUG - QEMU (40196): START - test_reinit_clears_state
+2026-10-04 14:19:05,521 - twister - DEBUG - QEMU (40196):  PASS - test_reinit_clears_state in 0.001 seconds
+2026-10-04 14:19:06,568 - twister - DEBUG - QEMU (40196): ===================================================================
+2026-10-04 14:19:06,958 - twister - DEBUG - QEMU (40196): START - test_fresh_state
+2026-10-04 14:19:07,611 - twister - DEBUG - QEMU (40196):  PASS - test_fresh_state in 0.001 seconds
+2026-10-04 14:19:08,504 - twister - DEBUG - QEMU (40196): ===================================================================
+2026-10-04 14:19:09,018 - twister - DEBUG - QEMU (40196): START - test_reinit_clears_state
+2026-10-04 14:19:09,736 - twister - DEBUG - QEMU (40196):  PASS - test_reinit_clears_state in 0.001 seconds
+2026-10-04 14:19:10,597 - twister - DEBUG - QEMU (40196): ===================================================================
+2026-10-04 14:19:10,877 - twister - DEBUG - QEMU (40196): START - test_fresh_state
+2026-10-04 14:19:11,470 - twister - DEBUG - QEMU (40196):  PASS - test_fresh_state in 0.001 seconds
+2026-10-04 14:19:12,419 - twister - DEBUG - QEMU (40196): ===================================================================
+2026-10-04 14:19:12,868 - twister - DEBUG - QEMU (40196): START - test_reinit_clears_state
+2026-10-04 14:19:13,635 - twister - DEBUG - QEMU (40196):  PASS - test_reinit_clears_state in 0.001 seconds
+2026-10-04 14:19:14,674 - twister - DEBUG - QEMU (40196): ===================================================================
+2026-10-04 14:19:15,004 - twister - DEBUG - QEMU (40196): TESTSUITE ring_buf_init succeeded
+2026-10-04 14:19:15,467 - twister - DEBUG - QEMU (40196): Running TESTSUITE ring_buf_init
+2026-10-04 14:19:16,513 - twister - DEBUG - QEMU (40196): ===================================================================
+2026-10-04 14:19:16,994 - twister - DEBUG - QEMU (40196): START - test_reinit_clears_state
+2026-10-04 14:19:17,681 - twister - DEBUG - QEMU (40196):  PASS - test_reinit_clears_state in 0.001 seconds
+2026-10-04 14:19:18,681 - twister - DEBUG - QEMU (40196): ===================================================================
+2026-10-04 14:19:19,073 - twister - DEBUG - QEMU (40196): START - test_fresh_state
+2026-10-04 14:19:19,729 - twister - DEBUG - QEMU (40196):  PASS - test_fresh_state in 0.001 seconds
+2026-10-04 14:19:20,474 - twister - DEBUG - QEMU (40196): ===================================================================
+2026-10-04 14:19:20,914 - twister - DEBUG - QEMU (40196): START - test_reinit_clears_state
+2026-10-04 14:19:21,565 - twister - DEBUG - QEMU (40196):  PASS - test_reinit_clears_state in 0.001 seconds
+2026-10-04 14:19:22,627 - twister - DEBUG - QEMU (40196): ===================================================================
+2026-10-04 14:19:22,983 - twister - DEBUG - QEMU (40196): START - test_fresh_state
+2026-10-04 14:19:23,636 - twister - DEBUG - QEMU (40196):  PASS - test_fresh_state in 0.001 seconds
+2026-10-04 14:19:24,689 - twister - DEBUG - QEMU (40196): ===================================================================
+2026-10-04 14:19:25,201 - twister - DEBUG - QEMU (40196): START - test_reinit_clears_state
+2026-10-04 14:19:25,986 - twister - DEBUG - QEMU (40196):  PASS - test_reinit_clears_state in 0.001 seconds
+2026-10-04 14:19:27,045 - twister - DEBUG - QEMU (40196): ===================================================================
+2026-10-04 14:19:27,416 - twister - DEBUG - QEMU (40196): START - test_fresh_state
+2026-10-04 14:19:28,073 - twister - DEBUG - QEMU (40196):  PASS - test_fresh_state in 0.001 seconds
+2026-10-04 14:19:29,155 - twister - DEBUG - QEMU (40196): ===================================================================
+2026-10-04 14:19:29,590 - twister - DEBUG - QEMU (40196): TESTSUITE ring_buf_init succeeded
+2026-10-04 14:19:30,054 - twister - DEBUG - QEMU (40196): Running TESTSUITE ring_buf_push_pop
+2026-10-04 14:19:31,101 - twister - DEBUG - QEMU (40196): ===================================================================
+2026-10-04 14:19:31,379 - twister - DEBUG - QEMU (40196): START - test_fifo_order
+2026-10-04 14:19:31,909 - twister - DEBUG - QEMU (40196):  PASS - test_fifo_order in 0.001 seconds
+2026-10-04 14:19:32,955 - twister - DEBUG - QEMU (40196): ===================================================================
+2026-10-04 14:19:33,531 - twister - DEBUG - QEMU (40196): START - test_push_full_returns_enospc
+2026-10-04 14:19:33,969 - twister - DEBUG - QEMU (40196): W: buffer full (capacity=4)
+2026-10-04 14:19:34,811 - twister - DEBUG - QEMU (40196):  PASS - test_push_full_returns_enospc in 0.001 seconds
+2026-10-04 14:19:35,871 - twister - DEBUG - QEMU (40196): ===================================================================
+2026-10-04 14:19:36,323 - twister - DEBUG - QEMU (40196): START - test_single_push_pop
+2026-10-04 14:19:37,032 - twister - DEBUG - QEMU (40196):  PASS - test_single_push_pop in 0.001 seconds
+2026-10-04 14:19:38,092 - twister - DEBUG - QEMU (40196): ===================================================================
+2026-10-04 14:19:38,686 - twister - DEBUG - QEMU (40196): START - test_push_full_returns_enospc
+2026-10-04 14:19:39,126 - twister - DEBUG - QEMU (40196): W: buffer full (capacity=4)
+2026-10-04 14:19:39,457 - twister - DEBUG - QEMU (40196) complete with failed (timeout) after 60.00207448005676 seconds
+2026-10-04 14:19:39,458 - twister - DEBUG - Timed out while monitoring QEMU output
+2026-10-04 14:19:39,960 - twister - DEBUG - return code from QEMU (40196): 1
+2026-10-04 14:19:39,961 - twister - DEBUG - Expected suite names:['ring_buf_init', 'ring_buf_push_pop', 'ring_buf_boundaries']
+2026-10-04 14:19:39,961 - twister - DEBUG - Detected suite names:['ring_buf_init', 'ring_buf_push_pop']
+2026-10-04 14:19:39,961 - twister - DEBUG - run status: qemu_x86/atom\zephyr\homework.unit.ring_buf failed
+2026-10-04 14:19:39,966 - twister - INFO - 1/1 qemu_x86/atom             homework.unit.ring_buf                             [31mFAILED[39m timeout (qemu 60.002s <zephyr>)
+2026-10-04 14:19:39,967 - twister - ERROR - see: [33mC:\Users\luchi\Github-Repository\zephyr_workspace\zephyr-course\twister-out-ring\qemu_x86_atom\zephyr\homework.unit.ring_buf\handler.log[39m
+2026-10-04 14:19:40,054 - twister - INFO - 1 test scenarios (1 configurations) selected, 0 configurations filtered (0 by static filter, 0 at runtime).
+2026-10-04 14:19:40,054 - twister - INFO - [31m0 of 1[39m executed test configurations passed (0.00%), 0 built (not run), [31m1[39m failed, 0 errored, with no warnings in 184.21 seconds.
+2026-10-04 14:19:40,054 - twister - INFO - 4 of 8 executed test cases passed (50.00%), 3 blocked, 1 failed on 1 out of total 1115 platforms (0.09%).
+2026-10-04 14:19:40,054 - twister - INFO - [32m1[39m test configurations executed on platforms, [36m0[39m test configurations were only built.
+2026-10-04 14:19:40,054 - twister - INFO - Saving reports...
+2026-10-04 14:19:40,054 - twister - INFO - Writing JSON report C:\Users\luchi\Github-Repository\zephyr_workspace\zephyr-course\twister-out-ring\twister.json
+2026-10-04 14:19:40,065 - twister - INFO - Writing xunit report C:\Users\luchi\Github-Repository\zephyr_workspace\zephyr-course\twister-out-ring\twister.xml...
+2026-10-04 14:19:40,078 - twister - INFO - Writing xunit report C:\Users\luchi\Github-Repository\zephyr_workspace\zephyr-course\twister-out-ring\twister_report.xml...
+2026-10-04 14:19:40,081 - twister - INFO - -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+2026-10-04 14:19:40,081 - twister - INFO - The following issues were found (showing the top 10 items):
+2026-10-04 14:19:40,081 - twister - INFO - 1) homework.unit.ring_buf on qemu_x86/atom failed (timeout)
+2026-10-04 14:19:40,082 - twister - INFO - 
+2026-10-04 14:19:40,082 - twister - INFO - To rerun the tests, call twister using the following commandline:
+2026-10-04 14:19:40,082 - twister - INFO - west twister -p <PLATFORM> -s <TEST ID>, for example:
+2026-10-04 14:19:40,082 - twister - INFO - 
+2026-10-04 14:19:40,082 - twister - INFO - west twister -p qemu_x86/atom -s homework.unit.ring_buf
+2026-10-04 14:19:40,082 - twister - INFO - or with west:
+2026-10-04 14:19:40,082 - twister - INFO - west build -p -b qemu_x86/atom tests\ring_buf -T homework.unit.ring_buf
+2026-10-04 14:19:40,082 - twister - INFO - -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+2026-10-04 14:19:40,082 - twister - INFO - Run completed

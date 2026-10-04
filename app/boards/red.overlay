@@ -1,5 +1,0 @@
-/{
-	aliases {
-		warning-led = &red_led;
-	};
-};

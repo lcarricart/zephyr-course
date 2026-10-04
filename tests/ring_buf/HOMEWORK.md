@@ -50,37 +50,34 @@ size_t rb_count(void);
 Each stub currently calls `ztest_test_skip()`. Replace that line with the
 actual test body.
 
-## Running the Tests
+## Running the Tests on Windows
 
-> **Platform note**
-> - **Linux / WSL** — use `native_sim`.
-> - **Windows (without WSL)** — `native_sim` is not supported on Windows, use `qemu_x86` instead.
+Use PowerShell from the `zephyr-course` directory, or `cd tests/ring_buf` and use
+`-T .`. Twister builds and runs the test application; no separate main-app build
+or flashing is needed. Use `qemu_x86`, since `native_sim` requires Linux.
 
-Run from the workspace root, or `cd tests/ring_buf` and use `-T .`:
+Install QEMU and the SDK's `x86_64-zephyr-elf` toolchain using the
+[Windows setup instructions](../calculator/README.md#windows-setup).
+These dependencies are already installed on this workspace's machine.
 
-**Linux / WSL**
-```bash
+```powershell
+# Make QEMU available to this terminal
+$env:QEMU_BIN_PATH = 'C:\Program Files\qemu'
+
 # Build and run
-west twister -T tests/ring_buf -p native_sim
-
-# Verbose per-test output
-west twister -T tests/ring_buf -p native_sim -v
-
-# Build only (fastest way to find compile errors)
-west twister -T tests/ring_buf -p native_sim -b
-```
-
-**Windows**
-```bash
-# Build and run
-west twister -T tests/ring_buf -p qemu_x86
-
-# Verbose per-test output
 west twister -T tests/ring_buf -p qemu_x86 -v
 
-# Build only (fastest way to find compile errors)
+# Faster subsequent runs: reuse the build for incremental compilation
+west twister -T tests/ring_buf -p qemu_x86 -v -n
+
+# Build only (does not execute tests)
 west twister -T tests/ring_buf -p qemu_x86 -b
 ```
+
+Without `-n`, Twister starts fresh and renames the previous `twister-out` directory.
+Check the executed/passed counts: `built (not run)` is not a test pass. If nothing
+runs, check `QEMU_BIN_PATH` and that you did not pass `-b`. A missing
+`x86_64-zephyr-elf-gcc` error means the SDK needs the x86 toolchain.
 
 ---
 
@@ -102,14 +99,8 @@ For each test:
 
 **Acceptance:** all 8 tests pass.
 
-**Linux / WSL**
-```bash
-west twister -T tests/ring_buf -p native_sim
-```
-
-**Windows**
-```bash
-west twister -T tests/ring_buf -p qemu_x86
+```powershell
+west twister -T tests/ring_buf -p qemu_x86 -v -n
 ```
 
 ### Tag `l8-task1`
@@ -120,26 +111,16 @@ After every test passes, tag the commit `l8-task1`.
 
 ## Task 2 — Coverage Analysis  `git tag l8-task2`
 
-**Linux / WSL**
-```bash
-west twister -T tests/ring_buf -p native_sim \
-    --coverage --coverage-tool gcovr \
-    --coverage-basedir app/modules/ring_buf
+Run from `zephyr-course` in PowerShell, with QEMU configured as above:
+
+```powershell
+python -m pip install gcovr
+west twister -T tests/ring_buf -p qemu_x86 --coverage --coverage-tool gcovr --coverage-basedir app/modules/ring_buf --gcov-tool "$env:USERPROFILE/zephyr-sdk-0.17.2/x86_64-zephyr-elf/bin/x86_64-zephyr-elf-gcov.exe"
 ```
 
-**Windows**
-```bash
-west twister -T tests/ring_buf -p qemu_x86 \
-    --coverage --coverage-tool gcovr \
-    --coverage-basedir app/modules/ring_buf \
-    --gcov-tool <ZEPHYR_SDK_PATH>/x86_64-zephyr-elf/bin/x86_64-zephyr-elf-gcov
-```
-
-> Replace `<ZEPHYR_SDK_PATH>` with the full path to your SDK root (e.g. `C:/zephyr-sdk-0.17.4`).
-> Alternatively, set the `ZEPHYR_SDK_INSTALL_DIR` environment variable to your SDK root and omit
-> `--gcov-tool` — Twister will locate the tool automatically.
-> See [Zephyr SDK setup](https://docs.zephyrproject.org/latest/develop/toolchains/zephyr_sdk.html)
-> for details about `ZEPHYR_SDK_INSTALL_DIR`.
+Adjust the SDK path if yours differs. Install `gcovr` in the Python environment
+used by Twister. Coverage percentages below are the course's reference values;
+compiler and tool versions can affect them.
 
 1. Run the command above to generate the coverage report.
 2. Open `twister-out/coverage/index.html` in a browser and click into `ring_buf.c`.
