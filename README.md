@@ -13,4 +13,6 @@ From the `zephyr-course` directory, build the application with `west build -p al
 - `l6-task2`: Extend the driver API. From this tag onward, append `-- -DEXTRA_ZEPHYR_MODULES="/absolute/path/to/zephyr-course/course-led-module"` to the build instead.
 - `l7-task1`: Operate the application solely through the Zephyr shell.
 - `l7-task2`: Expand the shell to support the extended driver API.
+- `l8-task1`: Create ring buffer unit tests with Ztest and run `west twister -T tests/ring_buf -p qemu_x86` (specific to Windows; for Linux replace QEMU with native_sim)
+- `l8-task2`: Analyze test coverage. On Windows, run `.\tests\ring_buf\coverage.ps1` and open `twister-out/coverage/index.html` to see the results.
 
