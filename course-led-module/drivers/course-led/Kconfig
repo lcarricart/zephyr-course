@@ -1,8 +1,0 @@
-config COURSE_LED
-	bool "Course LED sensor driver"
-	default y
-	depends on SENSOR
-	depends on DT_HAS_ZEPHYR_COURSE_LED_ENABLED
-	select GPIO
-	help
-	  Enable the course LED driver using the sensor interface.

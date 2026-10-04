@@ -1,0 +1,46 @@
+cmake:
+  application:
+    configuration-dir: 'C:/Users/luchi/Github-Repository/zephyr_workspace/zephyr-course/tests/ring_buf'
+    source-dir: 'C:/Users/luchi/Github-Repository/zephyr_workspace/zephyr-course/tests/ring_buf'
+  board:
+    name: 'qemu_x86'
+    path:
+     - 'C:/Users/luchi/Github-Repository/zephyr_workspace/deps/zephyr/boards/qemu/x86'
+    qualifiers: 'atom'
+    revision: ''
+  devicetree:
+    bindings-dirs:
+     - 'C:/Users/luchi/Github-Repository/zephyr_workspace/deps/zephyr/dts/bindings'
+    files:
+     - 'C:/Users/luchi/Github-Repository/zephyr_workspace/deps/zephyr/boards/qemu/x86/qemu_x86.dts'
+    include-dirs:
+     - 'C:/Users/luchi/Github-Repository/zephyr_workspace/deps/modules/hal/nxp/dts'
+     - 'C:/Users/luchi/Github-Repository/zephyr_workspace/deps/modules/hal/stm32/dts'
+     - 'C:/Users/luchi/Github-Repository/zephyr_workspace/deps/zephyr/include'
+     - 'C:/Users/luchi/Github-Repository/zephyr_workspace/deps/zephyr/include/zephyr'
+     - 'C:/Users/luchi/Github-Repository/zephyr_workspace/deps/zephyr/dts/common'
+     - 'C:/Users/luchi/Github-Repository/zephyr_workspace/deps/zephyr/dts/vendor'
+     - 'C:/Users/luchi/Github-Repository/zephyr_workspace/deps/zephyr/dts/rx'
+     - 'C:/Users/luchi/Github-Repository/zephyr_workspace/deps/zephyr/dts/x86'
+     - 'C:/Users/luchi/Github-Repository/zephyr_workspace/deps/zephyr/dts/xtensa'
+     - 'C:/Users/luchi/Github-Repository/zephyr_workspace/deps/zephyr/dts/sparc'
+     - 'C:/Users/luchi/Github-Repository/zephyr_workspace/deps/zephyr/dts/riscv'
+     - 'C:/Users/luchi/Github-Repository/zephyr_workspace/deps/zephyr/dts/posix'
+     - 'C:/Users/luchi/Github-Repository/zephyr_workspace/deps/zephyr/dts/arm64'
+     - 'C:/Users/luchi/Github-Repository/zephyr_workspace/deps/zephyr/dts/arm'
+     - 'C:/Users/luchi/Github-Repository/zephyr_workspace/deps/zephyr/dts/arc'
+     - 'C:/Users/luchi/Github-Repository/zephyr_workspace/deps/zephyr/dts'
+  kconfig:
+    files:
+     - 'C:/Users/luchi/Github-Repository/zephyr_workspace/deps/zephyr/boards/qemu/x86/qemu_x86_defconfig'
+     - 'C:/Users/luchi/Github-Repository/zephyr_workspace/zephyr-course/tests/ring_buf/prj.conf'
+     - 'C:/Users/luchi/Github-Repository/zephyr_workspace/zephyr-course/twister-out-ring/qemu_x86_atom/zephyr/homework.unit.ring_buf/zephyr/misc/generated/extra_kconfig_options.conf'
+    user-files:
+     - 'C:/Users/luchi/Github-Repository/zephyr_workspace/zephyr-course/tests/ring_buf/prj.conf'
+  toolchain:
+    name: 'zephyr'
+    path: 'C:/Users/luchi/zephyr-sdk-0.17.2'
+  zephyr:
+    version: '4.2.0'
+    zephyr-base: 'C:/Users/luchi/Github-Repository/zephyr_workspace/deps/zephyr'
+version: '0.1.0'

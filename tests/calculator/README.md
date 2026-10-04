@@ -1,7 +1,7 @@
 # Unit Tests — `calculator`
 
 Unit tests for the `calculator` arithmetic module, demonstrating Ztest
-assertion families on `native_sim` and `nrf54l15dk/nrf54l15/cpuapp`.
+assertion families on Windows with `qemu_x86`, with an optional hardware scenario.
 
 ## What is tested
 
@@ -57,52 +57,89 @@ tests/calculator/
 
 ## Platforms
 
-- `native_sim` — full Zephyr OS compiled to a native Linux executable.
+- `qemu_x86` — runs the Zephyr test firmware in QEMU on Windows, without WSL.
   `CONFIG_ZTEST_SHUFFLE=y` (default scenario) randomizes suite and test
   order to catch hidden ordering dependencies.
 - `nrf54l15dk/nrf54l15/cpuapp` — same binary on real hardware (build only
   without `--device-testing`).
 
+## Windows setup
+
+Use PowerShell with your Zephyr environment and `west` available. Run the commands
+from `zephyr-course`, not the parent workspace directory. Twister builds the test
+applications itself; you do not need to build or flash the main application first.
+
+Install QEMU and the SDK's x86 toolchain once (adjust the SDK path if needed):
+
+```powershell
+winget install --id SoftwareFreedomConservancy.QEMU --exact
+$env:Path = 'C:\Program Files\7-Zip;' + $env:Path
+& "$env:USERPROFILE\zephyr-sdk-0.17.2\setup.cmd" /t x86_64-zephyr-elf
+```
+
+The SDK setup script requires `cmake`, `wget` and `7z` on PATH. An ARM-only SDK
+cannot build `qemu_x86`. The toolchain and QEMU are already installed on this workspace's machine.
+
+Set QEMU's location in the current terminal and save it for future sessions:
+
+```powershell
+$env:QEMU_BIN_PATH = 'C:\Program Files\qemu'
+[Environment]::SetEnvironmentVariable('QEMU_BIN_PATH', $env:QEMU_BIN_PATH, 'User')
+```
+
+Use `qemu_x86` in Windows; `native_sim` requires Linux and is filtered out here.
+
 ## Running the tests
 
-```bash
-# All scenarios (shuffled + ordered) on native_sim
-west twister -T tests/calculator -p native_sim
+```powershell
+# Build and run both scenarios (shuffled + ordered)
+west twister -T tests/calculator -p qemu_x86 -v --timeout-multiplier 3
 
-# Verbose per-test output
-west twister -T tests/calculator -p native_sim -v
+# Subsequent runs: reuse the build for incremental compilation
+west twister -T tests/calculator -p qemu_x86 -v -n --timeout-multiplier 3
 
 # Deterministic order — useful for live demos or failure bisection
-west twister -T tests/calculator \
-    -s example.unit.calculator.ordered
+west twister -T tests/calculator -p qemu_x86 -s example.unit.calculator.ordered --timeout-multiplier 3
 
-# Build only (fastest compile check, no execution)
-west twister -T tests/calculator -p native_sim -b
+# Build only (no tests executed)
+west twister -T tests/calculator -p qemu_x86 -b
 
-# Hardware (requires connected nRF54L15DK)
-west twister -T tests/calculator \
-    -p nrf54l15dk/nrf54l15/cpuapp \
-    --device-testing --device-serial /dev/ttyACM0
+# Optional hardware run: requires nRF54L15DK; replace COM3 with its serial port
+west twister -T tests/calculator -p nrf54l15dk/nrf54l15/cpuapp --device-testing --device-serial COM3
+```
 
-# Coverage report
-west twister -T tests/calculator -p native_sim \
-    --coverage --coverage-tool gcovr \
-    --coverage-basedir app/modules/calculator
+Without `-n`, Twister starts a fresh build and renames the previous `twister-out`
+directory. `--timeout-multiplier 3` preserves the course test configuration and
+only gives Windows QEMU more wall-clock time to finish.
+
+For coverage, install `gcovr` in the Python environment used by Twister, then run:
+
+```powershell
+python -m pip install gcovr
+west twister -T tests/calculator -p qemu_x86 --coverage --coverage-tool gcovr --coverage-basedir app/modules/calculator --gcov-tool "$env:USERPROFILE/zephyr-sdk-0.17.2/x86_64-zephyr-elf/bin/x86_64-zephyr-elf-gcov.exe"
 ```
 
 ## Expected output
 
 ### Twister summary
 
-Output of `west twister -T tests/calculator -p native_sim`:
+Output of `west twister -T tests/calculator -p qemu_x86`:
 ```
-INFO    - 2 of 2 executed test configurations passed (100.00%), 0 built (not run), 0 failed, 0 errored, with no warnings in 15.13 seconds.
-INFO    - 46 of 46 executed test cases passed (100.00%) on 1 out of total 1115 platforms (0.09%).
+INFO    - 2 of 2 executed test configurations passed (100.00%), 0 built (not run), 0 failed, 0 errored, with no warnings in 141.38 seconds.
+INFO    - 48 of 48 executed test cases passed (100.00%) on 1 out of total 1115 platforms (0.09%).
 ```
 
-### native_sim output
+The hardware scenario being filtered is expected. `built (not run)` means the
+tests did not execute: check `QEMU_BIN_PATH` and that you did not pass `-b`.
+A missing `x86_64-zephyr-elf-gcc` error means the x86 toolchain is not installed.
 
-Output of executing tests on `native_sim` by running the compiled executable directly `./twister-out/native_sim_native/host/example.unit.calculator.ordered/zephyr/zephyr.exe`:
+### Test output
+
+Read the QEMU test output in
+`twister-out/qemu_x86_atom/zephyr/example.unit.calculator.ordered/handler.log`.
+The course's original sample output below illustrates the format; timings and
+test counts can differ from the current suite. Use the Twister summary above
+to check the result of your run.
 
 ```
 *** Booting Zephyr OS build v4.2.0 ***

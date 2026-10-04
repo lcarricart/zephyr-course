@@ -1,3 +1,0 @@
-# Configuration options for the course LED module will be added here.
-# It's just a pointer, an entry point for the module. This shines in bigger modules, that may contain an SoC description and many drivers.
-rsource "drivers/course-led/Kconfig"

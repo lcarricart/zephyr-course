@@ -1,0 +1,80 @@
+c[?7l[2J[0mSeaBIOS (version rel-1.17.0-0-gb52ca86e094d-prebuilt.qemu.org)
+Booting from ROM..
+*** Booting Zephyr OS build v4.2.0 ***
+Running TESTSUITE ring_buf_init
+===================================================================
+START - test_reinit_clears_state
+ PASS - test_reinit_clears_state in 0.001 seconds
+===================================================================
+START - test_fresh_state
+ PASS - test_fresh_state in 0.001 seconds
+===================================================================
+START - test_fresh_state
+ PASS - test_fresh_state in 0.001 seconds
+===================================================================
+START - test_reinit_clears_state
+ PASS - test_reinit_clears_state in 0.001 seconds
+===================================================================
+START - test_reinit_clears_state
+ PASS - test_reinit_clears_state in 0.001 seconds
+===================================================================
+START - test_fresh_state
+ PASS - test_fresh_state in 0.001 seconds
+===================================================================
+TESTSUITE ring_buf_init succeeded
+Running TESTSUITE ring_buf_init
+===================================================================
+START - test_fresh_state
+ PASS - test_fresh_state in 0.001 seconds
+===================================================================
+START - test_reinit_clears_state
+ PASS - test_reinit_clears_state in 0.001 seconds
+===================================================================
+START - test_fresh_state
+ PASS - test_fresh_state in 0.001 seconds
+===================================================================
+START - test_reinit_clears_state
+ PASS - test_reinit_clears_state in 0.001 seconds
+===================================================================
+START - test_fresh_state
+ PASS - test_fresh_state in 0.001 seconds
+===================================================================
+START - test_reinit_clears_state
+ PASS - test_reinit_clears_state in 0.001 seconds
+===================================================================
+TESTSUITE ring_buf_init succeeded
+Running TESTSUITE ring_buf_init
+===================================================================
+START - test_reinit_clears_state
+ PASS - test_reinit_clears_state in 0.001 seconds
+===================================================================
+START - test_fresh_state
+ PASS - test_fresh_state in 0.001 seconds
+===================================================================
+START - test_reinit_clears_state
+ PASS - test_reinit_clears_state in 0.001 seconds
+===================================================================
+START - test_fresh_state
+ PASS - test_fresh_state in 0.001 seconds
+===================================================================
+START - test_reinit_clears_state
+ PASS - test_reinit_clears_state in 0.001 seconds
+===================================================================
+START - test_fresh_state
+ PASS - test_fresh_state in 0.001 seconds
+===================================================================
+TESTSUITE ring_buf_init succeeded
+Running TESTSUITE ring_buf_push_pop
+===================================================================
+START - test_fifo_order
+ PASS - test_fifo_order in 0.001 seconds
+===================================================================
+START - test_push_full_returns_enospc
+W: buffer full (capacity=4)
+ PASS - test_push_full_returns_enospc in 0.001 seconds
+===================================================================
+START - test_single_push_pop
+ PASS - test_single_push_pop in 0.001 seconds
+===================================================================
+START - test_push_full_returns_enospc
+W: buffer full (capacity=4)
