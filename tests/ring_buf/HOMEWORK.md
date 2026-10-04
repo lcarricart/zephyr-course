@@ -64,6 +64,10 @@ These dependencies are already installed on this workspace's machine.
 # Make QEMU available to this terminal
 $env:QEMU_BIN_PATH = 'C:\Program Files\qemu'
 
+# Let Twister discover the SDK compiler and coverage tools permanently
+$env:ZEPHYR_SDK_INSTALL_DIR = "$env:USERPROFILE\zephyr-sdk-0.17.2"
+[Environment]::SetEnvironmentVariable('ZEPHYR_SDK_INSTALL_DIR', $env:ZEPHYR_SDK_INSTALL_DIR, 'User')
+
 # Build and run
 west twister -T tests/ring_buf -p qemu_x86 -v
 
@@ -115,12 +119,22 @@ Run from `zephyr-course` in PowerShell, with QEMU configured as above:
 
 ```powershell
 python -m pip install gcovr
-west twister -T tests/ring_buf -p qemu_x86 --coverage --coverage-tool gcovr --coverage-basedir app/modules/ring_buf --gcov-tool "$env:USERPROFILE/zephyr-sdk-0.17.2/x86_64-zephyr-elf/bin/x86_64-zephyr-elf-gcov.exe"
+.\tests\ring_buf\coverage.ps1
 ```
 
-Adjust the SDK path if yours differs. Install `gcovr` in the Python environment
-used by Twister. Coverage percentages below are the course's reference values;
-compiler and tool versions can affect them.
+The script follows [Zephyr's documented QEMU coverage workflow](https://docs.zephyrproject.org/4.2.0/develop/test/coverage.html):
+build with coverage, capture QEMU output, extract data using Zephyr's
+`gen_gcov_files.py`, then generate HTML using `gcovr`. It reads the SDK location
+from `ZEPHYR_SDK_INSTALL_DIR` or the saved Windows user setting. Run it without
+Twister options. This avoids Zephyr 4.2's Windows Twister capture timeout and
+preserves the course's test configuration, including shuffle repetitions.
+It also uses Twister's standard logging/assertion branch exclusions so coverage
+totals are comparable to the course reference below.
+When the script says the coverage is captured, press **Ctrl+A**, release, then
+**X** to exit QEMU and generate the report (Zephyr's documented QEMU exit).
+
+Install `gcovr` in the Python environment used by Twister. Coverage percentages below
+are the course's reference values; compiler and tool versions can affect them.
 
 1. Run the command above to generate the coverage report.
 2. Open `twister-out/coverage/index.html` in a browser and click into `ring_buf.c`.

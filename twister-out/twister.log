@@ -1,1049 +1,352 @@
-2026-10-04 14:43:21,962 - twister - INFO - Using Ninja..
-2026-10-04 14:43:22,228 - twister - INFO - Zephyr version: v4.2.0
-2026-10-04 14:43:22,262 - twister - DEBUG - Running cmake script C:\Users\luchi\Github-Repository\zephyr_workspace\deps\zephyr\cmake\verify-toolchain.cmake
-2026-10-04 14:43:22,265 - twister - DEBUG - Calling cmake: ['C:\\Program Files\\CMake\\bin\\cmake.EXE', '-DFORMAT=json', '-P', 'C:\\Users\\luchi\\Github-Repository\\zephyr_workspace\\deps\\zephyr\\cmake\\verify-toolchain.cmake']
-2026-10-04 14:43:23,794 - twister - DEBUG - Finished running C:\Users\luchi\Github-Repository\zephyr_workspace\deps\zephyr\cmake\verify-toolchain.cmake
-2026-10-04 14:43:23,794 - twister - INFO - Using 'zephyr' toolchain.
-2026-10-04 14:43:51,328 - twister - DEBUG - Reading testsuite configuration files under C:\Users\luchi\Github-Repository\zephyr_workspace\zephyr-course\tests\calculator...
-2026-10-04 14:43:51,328 - twister - DEBUG - Found possible testsuite in C:\Users\luchi\Github-Repository\zephyr_workspace\zephyr-course\tests\calculator
-2026-10-04 14:43:51,365 - twister - DEBUG - No duplicates found.
-2026-10-04 14:43:51,366 - twister - DEBUG - platform filter: ['qemu_x86']
-2026-10-04 14:43:51,366 - twister - DEBUG -   vendor filter: []
-2026-10-04 14:43:51,366 - twister - DEBUG -     arch_filter: None
-2026-10-04 14:43:51,366 - twister - DEBUG -      tag_filter: None
-2026-10-04 14:43:51,366 - twister - DEBUG -     exclude_tag: None
-2026-10-04 14:43:51,366 - twister - DEBUG - Checking platform filter: ['qemu_x86']
-2026-10-04 14:43:51,366 - twister - INFO - Building initial testsuite list...
-2026-10-04 14:43:51,369 - twister - INFO - Writing JSON report C:\Users\luchi\Github-Repository\zephyr_workspace\zephyr-course\twister-out\testplan.json
-2026-10-04 14:43:51,482 - twister - INFO - Adding tasks to the queue...
-2026-10-04 14:43:51,482 - twister - DEBUG - adding qemu_x86/atom\zephyr\example.unit.calculator
-2026-10-04 14:43:51,782 - twister - DEBUG - adding qemu_x86/atom\zephyr\example.unit.calculator.ordered
-2026-10-04 14:43:51,783 - twister - INFO - Added initial list of jobs to queue
-2026-10-04 14:43:52,559 - twister - DEBUG - Running cmake on C:\Users\luchi\Github-Repository\zephyr_workspace\zephyr-course\tests\calculator for qemu_x86/atom
-2026-10-04 14:43:52,564 - twister - DEBUG - Calling cmake: ['C:\\Program Files\\CMake\\bin\\cmake.EXE', '-BC:\\Users\\luchi\\Github-Repository\\zephyr_workspace\\zephyr-course\\twister-out\\qemu_x86_atom\\zephyr\\example.unit.calculator.ordered', '-DTC_RUNID=d0ab45e098e43fa61556852253638ce5', '-DTC_NAME=example.unit.calculator.ordered', '-DCONFIG_COMPILER_WARNINGS_AS_ERRORS=y', '-DEXTRA_GEN_EDT_ARGS=--edtlib-Werror', '-GNinja', '-DPython3_EXECUTABLE=C:/Users/luchi/AppData/Local/Programs/Python/Python312/python.exe', '-DZEPHYR_TOOLCHAIN_VARIANT=zephyr', '-SC:\\Users\\luchi\\Github-Repository\\zephyr_workspace\\zephyr-course\\tests\\calculator', '-DCONFIG_ZTEST_SHUFFLE=n', '-DQEMU_PIPE=C:\\Users\\luchi\\Github-Repository\\zephyr_workspace\\zephyr-course\\twister-out\\qemu_x86_atom\\zephyr\\example.unit.calculator.ordered\\qemu-fifo', '-DBOARD=qemu_x86/atom']
-2026-10-04 14:43:52,668 - twister - DEBUG - Running cmake on C:\Users\luchi\Github-Repository\zephyr_workspace\zephyr-course\tests\calculator for qemu_x86/atom
-2026-10-04 14:43:52,672 - twister - DEBUG - Calling cmake: ['C:\\Program Files\\CMake\\bin\\cmake.EXE', '-BC:\\Users\\luchi\\Github-Repository\\zephyr_workspace\\zephyr-course\\twister-out\\qemu_x86_atom\\zephyr\\example.unit.calculator', '-DTC_RUNID=52c09de20bb38170f1ee0c6e0d7d4a3a', '-DTC_NAME=example.unit.calculator', '-DCONFIG_COMPILER_WARNINGS_AS_ERRORS=y', '-DEXTRA_GEN_EDT_ARGS=--edtlib-Werror', '-GNinja', '-DPython3_EXECUTABLE=C:/Users/luchi/AppData/Local/Programs/Python/Python312/python.exe', '-DZEPHYR_TOOLCHAIN_VARIANT=zephyr', '-SC:\\Users\\luchi\\Github-Repository\\zephyr_workspace\\zephyr-course\\tests\\calculator', '-DQEMU_PIPE=C:\\Users\\luchi\\Github-Repository\\zephyr_workspace\\zephyr-course\\twister-out\\qemu_x86_atom\\zephyr\\example.unit.calculator\\qemu-fifo', '-DBOARD=qemu_x86/atom']
-2026-10-04 14:43:53,782 - twister - DEBUG - Launched 20 jobs
-2026-10-04 14:45:30,995 - twister - DEBUG - Finished running cmake C:\Users\luchi\Github-Repository\zephyr_workspace\zephyr-course\tests\calculator for qemu_x86/atom in 98.32 seconds
-2026-10-04 14:45:30,999 - twister - DEBUG - build test: qemu_x86/atom\zephyr\example.unit.calculator
-2026-10-04 14:45:30,999 - twister - DEBUG - Building C:\Users\luchi\Github-Repository\zephyr_workspace\zephyr-course\tests\calculator for qemu_x86/atom
-2026-10-04 14:45:31,004 - twister - DEBUG - Finished running cmake C:\Users\luchi\Github-Repository\zephyr_workspace\zephyr-course\tests\calculator for qemu_x86/atom in 98.44 seconds
-2026-10-04 14:45:31,007 - twister - DEBUG - Running C:\Program Files\CMake\bin\cmake.EXE --build C:\Users\luchi\Github-Repository\zephyr_workspace\zephyr-course\twister-out\qemu_x86_atom\zephyr\example.unit.calculator
-2026-10-04 14:45:31,008 - twister - DEBUG - build test: qemu_x86/atom\zephyr\example.unit.calculator.ordered
-2026-10-04 14:45:31,008 - twister - DEBUG - Building C:\Users\luchi\Github-Repository\zephyr_workspace\zephyr-course\tests\calculator for qemu_x86/atom
-2026-10-04 14:45:31,016 - twister - DEBUG - Running C:\Program Files\CMake\bin\cmake.EXE --build C:\Users\luchi\Github-Repository\zephyr_workspace\zephyr-course\twister-out\qemu_x86_atom\zephyr\example.unit.calculator.ordered
-2026-10-04 14:46:13,458 - twister - DEBUG - Finished building C:\Users\luchi\Github-Repository\zephyr_workspace\zephyr-course\tests\calculator for qemu_x86/atom in 42.45 seconds
-2026-10-04 14:46:13,458 - twister - DEBUG - Finished building C:\Users\luchi\Github-Repository\zephyr_workspace\zephyr-course\tests\calculator for qemu_x86/atom in 42.46 seconds
-2026-10-04 14:46:13,459 - twister - DEBUG - Determine test cases for test instance: qemu_x86/atom\zephyr\example.unit.calculator.ordered
-2026-10-04 14:46:13,459 - twister - DEBUG - Determine test cases for test suite: example.unit.calculator.ordered
-2026-10-04 14:46:13,459 - twister - DEBUG - Determine test cases for test instance: qemu_x86/atom\zephyr\example.unit.calculator
-2026-10-04 14:46:13,459 - twister - DEBUG - Determine test cases for test suite: example.unit.calculator
-2026-10-04 14:46:13,486 - twister - DEBUG - Test instance qemu_x86/atom\zephyr\example.unit.calculator.ordered already has 24 testcase(s) known: [<TestCase example.unit.calculator.ordered.calculator_sub.null_pointer with None>, <TestCase example.unit.calculator.ordered.calculator_mul.negative_numbers with None>, <TestCase example.unit.calculator.ordered.calculator_last_result.overwrite_on_second_op with None>, <TestCase example.unit.calculator.ordered.calculator_add.positive_numbers with None>, <TestCase example.unit.calculator.ordered.calculator_last_result.add_updates_cache with None>, <TestCase example.unit.calculator.ordered.calculator_sub.negative_result with None>, <TestCase example.unit.calculator.ordered.calculator_add.negative_numbers with None>, <TestCase example.unit.calculator.ordered.calculator_last_result.null_pointer with None>, <TestCase example.unit.calculator.ordered.calculator_sub.positive_result with None>, <TestCase example.unit.calculator.ordered.calculator_div.exact_division with None>, <TestCase example.unit.calculator.ordered.calculator_div.divide_by_zero with None>, <TestCase example.unit.calculator.ordered.calculator_last_result.no_result_before_first_op with None>, <TestCase example.unit.calculator.ordered.calculator_add.zero with None>, <TestCase example.unit.calculator.ordered.calculator_div.null_pointer with None>, <TestCase example.unit.calculator.ordered.calculator_mul.null_pointer with None>, <TestCase example.unit.calculator.ordered.calculator_last_result.reset_clears_cache with None>, <TestCase example.unit.calculator.ordered.calculator_add.null_pointer with None>, <TestCase example.unit.calculator.ordered.calculator_mul.positive_numbers with None>, <TestCase example.unit.calculator.ordered.calculator_mul.by_zero with None>, <TestCase example.unit.calculator.ordered.calculator_div.negative_dividend_truncation with None>, <TestCase example.unit.calculator.ordered.calculator_edge_cases.chained_operations with None>, <TestCase example.unit.calculator.ordered.calculator_div.integer_truncation with None>, <TestCase example.unit.calculator.ordered.calculator_add.mixed_signs with None>, <TestCase example.unit.calculator.ordered.calculator_last_result.failed_op_does_not_update with None>]
-2026-10-04 14:46:13,486 - twister - DEBUG - Detected 24 Ztest case(s): [example.unit.calculator.ordered.calculator_edge_cases.chained_operations, example.unit.calculator.ordered.calculator_div.negative_dividend_truncation, example.unit.calculator.ordered.calculator_div.null_pointer, example.unit.calculator.ordered.calculator_div.divide_by_zero, example.unit.calculator.ordered.calculator_div.integer_truncation, example.unit.calculator.ordered.calculator_div.exact_division, example.unit.calculator.ordered.calculator_mul.null_pointer, example.unit.calculator.ordered.calculator_mul.by_zero, example.unit.calculator.ordered.calculator_mul.negative_numbers, example.unit.calculator.ordered.calculator_mul.positive_numbers, example.unit.calculator.ordered.calculator_sub.null_pointer, example.unit.calculator.ordered.calculator_sub.negative_result, example.unit.calculator.ordered.calculator_sub.positive_result, example.unit.calculator.ordered.calculator_add.null_pointer, example.unit.calculator.ordered.calculator_add.zero, example.unit.calculator.ordered.calculator_add.mixed_signs, example.unit.calculator.ordered.calculator_add.negative_numbers, example.unit.calculator.ordered.calculator_add.positive_numbers, example.unit.calculator.ordered.calculator_last_result.reset_clears_cache, example.unit.calculator.ordered.calculator_last_result.failed_op_does_not_update, example.unit.calculator.ordered.calculator_last_result.overwrite_on_second_op, example.unit.calculator.ordered.calculator_last_result.add_updates_cache, example.unit.calculator.ordered.calculator_last_result.null_pointer, example.unit.calculator.ordered.calculator_last_result.no_result_before_first_op] in C:\Users\luchi\Github-Repository\zephyr_workspace\zephyr-course\twister-out\qemu_x86_atom\zephyr\example.unit.calculator.ordered\zephyr\zephyr.elf
-2026-10-04 14:46:13,486 - twister - DEBUG - Test instance qemu_x86/atom\zephyr\example.unit.calculator already has 24 testcase(s) known: [<TestCase example.unit.calculator.calculator_sub.null_pointer with None>, <TestCase example.unit.calculator.calculator_mul.negative_numbers with None>, <TestCase example.unit.calculator.calculator_last_result.overwrite_on_second_op with None>, <TestCase example.unit.calculator.calculator_add.positive_numbers with None>, <TestCase example.unit.calculator.calculator_last_result.add_updates_cache with None>, <TestCase example.unit.calculator.calculator_sub.negative_result with None>, <TestCase example.unit.calculator.calculator_add.negative_numbers with None>, <TestCase example.unit.calculator.calculator_last_result.null_pointer with None>, <TestCase example.unit.calculator.calculator_sub.positive_result with None>, <TestCase example.unit.calculator.calculator_div.exact_division with None>, <TestCase example.unit.calculator.calculator_div.divide_by_zero with None>, <TestCase example.unit.calculator.calculator_last_result.no_result_before_first_op with None>, <TestCase example.unit.calculator.calculator_add.zero with None>, <TestCase example.unit.calculator.calculator_div.null_pointer with None>, <TestCase example.unit.calculator.calculator_mul.null_pointer with None>, <TestCase example.unit.calculator.calculator_last_result.reset_clears_cache with None>, <TestCase example.unit.calculator.calculator_add.null_pointer with None>, <TestCase example.unit.calculator.calculator_mul.positive_numbers with None>, <TestCase example.unit.calculator.calculator_mul.by_zero with None>, <TestCase example.unit.calculator.calculator_div.negative_dividend_truncation with None>, <TestCase example.unit.calculator.calculator_edge_cases.chained_operations with None>, <TestCase example.unit.calculator.calculator_div.integer_truncation with None>, <TestCase example.unit.calculator.calculator_add.mixed_signs with None>, <TestCase example.unit.calculator.calculator_last_result.failed_op_does_not_update with None>]
-2026-10-04 14:46:13,486 - twister - DEBUG - Detected 24 Ztest case(s): [example.unit.calculator.calculator_edge_cases.chained_operations, example.unit.calculator.calculator_div.negative_dividend_truncation, example.unit.calculator.calculator_div.null_pointer, example.unit.calculator.calculator_div.divide_by_zero, example.unit.calculator.calculator_div.integer_truncation, example.unit.calculator.calculator_div.exact_division, example.unit.calculator.calculator_mul.null_pointer, example.unit.calculator.calculator_mul.by_zero, example.unit.calculator.calculator_mul.negative_numbers, example.unit.calculator.calculator_mul.positive_numbers, example.unit.calculator.calculator_sub.null_pointer, example.unit.calculator.calculator_sub.negative_result, example.unit.calculator.calculator_sub.positive_result, example.unit.calculator.calculator_add.null_pointer, example.unit.calculator.calculator_add.zero, example.unit.calculator.calculator_add.mixed_signs, example.unit.calculator.calculator_add.negative_numbers, example.unit.calculator.calculator_add.positive_numbers, example.unit.calculator.calculator_last_result.reset_clears_cache, example.unit.calculator.calculator_last_result.failed_op_does_not_update, example.unit.calculator.calculator_last_result.overwrite_on_second_op, example.unit.calculator.calculator_last_result.add_updates_cache, example.unit.calculator.calculator_last_result.null_pointer, example.unit.calculator.calculator_last_result.no_result_before_first_op] in C:\Users\luchi\Github-Repository\zephyr_workspace\zephyr-course\twister-out\qemu_x86_atom\zephyr\example.unit.calculator\zephyr\zephyr.elf
-2026-10-04 14:46:13,490 - twister - DEBUG - run test: qemu_x86/atom\zephyr\example.unit.calculator.ordered
-2026-10-04 14:46:13,490 - twister - DEBUG - Reset instance status from 'passed' to None before run.
-2026-10-04 14:46:13,490 - twister - DEBUG - Running qemu_x86/atom\zephyr\example.unit.calculator.ordered (qemu)
-2026-10-04 14:46:13,491 - twister - DEBUG - run test: qemu_x86/atom\zephyr\example.unit.calculator
-2026-10-04 14:46:13,491 - twister - DEBUG - Reset instance status from 'passed' to None before run.
-2026-10-04 14:46:13,491 - twister - DEBUG - Running qemu_x86/atom\zephyr\example.unit.calculator (qemu)
-2026-10-04 14:46:13,495 - twister - DEBUG - Spawning QEMUHandler Thread for qemu_x86/atom\zephyr\example.unit.calculator.ordered
-2026-10-04 14:46:13,495 - twister - DEBUG - Spawning QEMUHandler Thread for qemu_x86/atom\zephyr\example.unit.calculator
-2026-10-04 14:46:18,616 - twister - DEBUG - QEMU (12796): c[?7l[2J[0mSeaBIOS (version rel-1.17.0-0-gb52ca86e094d-prebuilt.qemu.org)
-2026-10-04 14:46:18,805 - twister - DEBUG - QEMU (64200): c[?7l[2J[0mSeaBIOS (version rel-1.17.0-0-gb52ca86e094d-prebuilt.qemu.org)
-2026-10-04 14:46:18,885 - twister - DEBUG - QEMU (12796): Booting from ROM..
-2026-10-04 14:46:19,091 - twister - DEBUG - QEMU (64200): Booting from ROM..
-2026-10-04 14:46:19,487 - twister - DEBUG - QEMU (12796): *** Booting Zephyr OS build v4.2.0 ***
-2026-10-04 14:46:19,693 - twister - DEBUG - QEMU (64200): *** Booting Zephyr OS build v4.2.0 ***
-2026-10-04 14:46:19,915 - twister - DEBUG - QEMU (12796): Running TESTSUITE calculator_add
-2026-10-04 14:46:20,148 - twister - DEBUG - QEMU (64200): Running TESTSUITE calculator_add
-2026-10-04 14:46:20,491 - twister - DEBUG - QEMU (12796): ===================================================================
-2026-10-04 14:46:20,663 - twister - DEBUG - QEMU (12796): START - test_mixed_signs
-2026-10-04 14:46:20,694 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:20,879 - twister - DEBUG - QEMU (64200): START - test_mixed_signs
-2026-10-04 14:46:21,005 - twister - DEBUG - QEMU (12796):  PASS - test_mixed_signs in 0.001 seconds
-2026-10-04 14:46:21,192 - twister - DEBUG - QEMU (64200):  PASS - test_mixed_signs in 0.001 seconds
-2026-10-04 14:46:21,708 - twister - DEBUG - QEMU (12796): ===================================================================
-2026-10-04 14:46:21,928 - twister - DEBUG - QEMU (12796): START - test_negative_numbers
-2026-10-04 14:46:22,127 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:22,284 - twister - DEBUG - QEMU (64200): START - test_null_pointer
-2026-10-04 14:46:22,347 - twister - DEBUG - QEMU (12796):  PASS - test_negative_numbers in 0.001 seconds
-2026-10-04 14:46:22,565 - twister - DEBUG - QEMU (64200): E: result pointer is NULL
-2026-10-04 14:46:22,845 - twister - DEBUG - QEMU (12796): ===================================================================
-2026-10-04 14:46:22,908 - twister - DEBUG - QEMU (12796): START - test_null_pointer
-2026-10-04 14:46:22,971 - twister - DEBUG - QEMU (64200):  PASS - test_null_pointer in 0.001 seconds
-2026-10-04 14:46:23,145 - twister - DEBUG - QEMU (12796): E: result pointer is NULL
-2026-10-04 14:46:23,487 - twister - DEBUG - QEMU (12796):  PASS - test_null_pointer in 0.001 seconds
-2026-10-04 14:46:23,705 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:23,922 - twister - DEBUG - QEMU (12796): ===================================================================
-2026-10-04 14:46:24,032 - twister - DEBUG - QEMU (64200): START - test_positive_numbers
-2026-10-04 14:46:24,141 - twister - DEBUG - QEMU (12796): START - test_positive_numbers
-2026-10-04 14:46:24,391 - twister - DEBUG - QEMU (12796):  PASS - test_positive_numbers in 0.001 seconds
-2026-10-04 14:46:24,406 - twister - DEBUG - QEMU (12796): ===================================================================
-2026-10-04 14:46:24,422 - twister - DEBUG - QEMU (64200):  PASS - test_positive_numbers in 0.001 seconds
-2026-10-04 14:46:24,625 - twister - DEBUG - QEMU (12796): START - test_zero
-2026-10-04 14:46:24,924 - twister - DEBUG - QEMU (12796):  PASS - test_zero in 0.001 seconds
-2026-10-04 14:46:25,049 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,329 - twister - DEBUG - QEMU (12796): ===================================================================
-2026-10-04 14:46:25,716 - twister - DEBUG - QEMU (12796): TESTSUITE calculator_add succeeded
-2026-10-04 14:46:25,927 - twister - DEBUG - QEMU (64200): START - test_zero
-2026-10-04 14:46:25,933 - twister - DEBUG - QEMU (64200):  PASS - test_zero in 0.001 seconds
-2026-10-04 14:46:25,933 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,933 - twister - DEBUG - QEMU (64200): START - test_negative_numbers
-2026-10-04 14:46:25,933 - twister - DEBUG - QEMU (64200):  PASS - test_negative_numbers in 0.001 seconds
-2026-10-04 14:46:25,933 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,933 - twister - DEBUG - QEMU (64200): START - test_zero
-2026-10-04 14:46:25,933 - twister - DEBUG - QEMU (64200):  PASS - test_zero in 0.001 seconds
-2026-10-04 14:46:25,933 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,933 - twister - DEBUG - QEMU (64200): START - test_positive_numbers
-2026-10-04 14:46:25,933 - twister - DEBUG - QEMU (64200):  PASS - test_positive_numbers in 0.001 seconds
-2026-10-04 14:46:25,933 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,934 - twister - DEBUG - QEMU (64200): START - test_null_pointer
-2026-10-04 14:46:25,934 - twister - DEBUG - QEMU (64200): E: result pointer is NULL
-2026-10-04 14:46:25,934 - twister - DEBUG - QEMU (64200):  PASS - test_null_pointer in 0.001 seconds
-2026-10-04 14:46:25,934 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,934 - twister - DEBUG - QEMU (64200): START - test_mixed_signs
-2026-10-04 14:46:25,934 - twister - DEBUG - QEMU (64200):  PASS - test_mixed_signs in 0.001 seconds
-2026-10-04 14:46:25,934 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,934 - twister - DEBUG - QEMU (64200): START - test_negative_numbers
-2026-10-04 14:46:25,934 - twister - DEBUG - QEMU (64200):  PASS - test_negative_numbers in 0.001 seconds
-2026-10-04 14:46:25,934 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,934 - twister - DEBUG - QEMU (64200): START - test_mixed_signs
-2026-10-04 14:46:25,934 - twister - DEBUG - QEMU (64200):  PASS - test_mixed_signs in 0.001 seconds
-2026-10-04 14:46:25,934 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,934 - twister - DEBUG - QEMU (64200): START - test_zero
-2026-10-04 14:46:25,934 - twister - DEBUG - QEMU (64200):  PASS - test_zero in 0.001 seconds
-2026-10-04 14:46:25,935 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,935 - twister - DEBUG - QEMU (64200): START - test_null_pointer
-2026-10-04 14:46:25,935 - twister - DEBUG - QEMU (64200): E: result pointer is NULL
-2026-10-04 14:46:25,935 - twister - DEBUG - QEMU (64200):  PASS - test_null_pointer in 0.001 seconds
-2026-10-04 14:46:25,935 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,935 - twister - DEBUG - QEMU (64200): START - test_negative_numbers
-2026-10-04 14:46:25,935 - twister - DEBUG - QEMU (64200):  PASS - test_negative_numbers in 0.001 seconds
-2026-10-04 14:46:25,935 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,935 - twister - DEBUG - QEMU (64200): START - test_positive_numbers
-2026-10-04 14:46:25,935 - twister - DEBUG - QEMU (64200):  PASS - test_positive_numbers in 0.001 seconds
-2026-10-04 14:46:25,935 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,935 - twister - DEBUG - QEMU (64200): TESTSUITE calculator_add succeeded
-2026-10-04 14:46:25,935 - twister - DEBUG - QEMU (64200): Running TESTSUITE calculator_add
-2026-10-04 14:46:25,935 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,935 - twister - DEBUG - QEMU (64200): START - test_zero
-2026-10-04 14:46:25,935 - twister - DEBUG - QEMU (64200):  PASS - test_zero in 0.001 seconds
-2026-10-04 14:46:25,935 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,935 - twister - DEBUG - QEMU (64200): START - test_mixed_signs
-2026-10-04 14:46:25,935 - twister - DEBUG - QEMU (64200):  PASS - test_mixed_signs in 0.001 seconds
-2026-10-04 14:46:25,937 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,937 - twister - DEBUG - QEMU (64200): START - test_null_pointer
-2026-10-04 14:46:25,937 - twister - DEBUG - QEMU (64200): E: result pointer is NULL
-2026-10-04 14:46:25,937 - twister - DEBUG - QEMU (64200):  PASS - test_null_pointer in 0.001 seconds
-2026-10-04 14:46:25,937 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,937 - twister - DEBUG - QEMU (64200): START - test_negative_numbers
-2026-10-04 14:46:25,937 - twister - DEBUG - QEMU (64200):  PASS - test_negative_numbers in 0.001 seconds
-2026-10-04 14:46:25,937 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,937 - twister - DEBUG - QEMU (64200): START - test_positive_numbers
-2026-10-04 14:46:25,937 - twister - DEBUG - QEMU (64200):  PASS - test_positive_numbers in 0.001 seconds
-2026-10-04 14:46:25,937 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,937 - twister - DEBUG - QEMU (64200): START - test_positive_numbers
-2026-10-04 14:46:25,937 - twister - DEBUG - QEMU (64200):  PASS - test_positive_numbers in 0.001 seconds
-2026-10-04 14:46:25,938 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,938 - twister - DEBUG - QEMU (64200): START - test_mixed_signs
-2026-10-04 14:46:25,938 - twister - DEBUG - QEMU (64200):  PASS - test_mixed_signs in 0.001 seconds
-2026-10-04 14:46:25,938 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,938 - twister - DEBUG - QEMU (64200): START - test_zero
-2026-10-04 14:46:25,938 - twister - DEBUG - QEMU (64200):  PASS - test_zero in 0.001 seconds
-2026-10-04 14:46:25,938 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,938 - twister - DEBUG - QEMU (64200): START - test_null_pointer
-2026-10-04 14:46:25,938 - twister - DEBUG - QEMU (64200): E: result pointer is NULL
-2026-10-04 14:46:25,938 - twister - DEBUG - QEMU (64200):  PASS - test_null_pointer in 0.001 seconds
-2026-10-04 14:46:25,938 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,938 - twister - DEBUG - QEMU (64200): START - test_negative_numbers
-2026-10-04 14:46:25,938 - twister - DEBUG - QEMU (64200):  PASS - test_negative_numbers in 0.001 seconds
-2026-10-04 14:46:25,938 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,938 - twister - DEBUG - QEMU (64200): START - test_mixed_signs
-2026-10-04 14:46:25,939 - twister - DEBUG - QEMU (64200):  PASS - test_mixed_signs in 0.001 seconds
-2026-10-04 14:46:25,939 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,939 - twister - DEBUG - QEMU (64200): START - test_zero
-2026-10-04 14:46:25,939 - twister - DEBUG - QEMU (64200):  PASS - test_zero in 0.001 seconds
-2026-10-04 14:46:25,939 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,939 - twister - DEBUG - QEMU (64200): START - test_null_pointer
-2026-10-04 14:46:25,939 - twister - DEBUG - QEMU (64200): E: result pointer is NULL
-2026-10-04 14:46:25,939 - twister - DEBUG - QEMU (64200):  PASS - test_null_pointer in 0.001 seconds
-2026-10-04 14:46:25,939 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,939 - twister - DEBUG - QEMU (64200): START - test_positive_numbers
-2026-10-04 14:46:25,939 - twister - DEBUG - QEMU (64200):  PASS - test_positive_numbers in 0.001 seconds
-2026-10-04 14:46:25,939 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,939 - twister - DEBUG - QEMU (64200): START - test_negative_numbers
-2026-10-04 14:46:25,940 - twister - DEBUG - QEMU (64200):  PASS - test_negative_numbers in 0.001 seconds
-2026-10-04 14:46:25,940 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,940 - twister - DEBUG - QEMU (64200): TESTSUITE calculator_add succeeded
-2026-10-04 14:46:25,940 - twister - DEBUG - QEMU (64200): Running TESTSUITE calculator_add
-2026-10-04 14:46:25,940 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,940 - twister - DEBUG - QEMU (64200): START - test_mixed_signs
-2026-10-04 14:46:25,940 - twister - DEBUG - QEMU (64200):  PASS - test_mixed_signs in 0.001 seconds
-2026-10-04 14:46:25,940 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,940 - twister - DEBUG - QEMU (64200): START - test_positive_numbers
-2026-10-04 14:46:25,940 - twister - DEBUG - QEMU (64200):  PASS - test_positive_numbers in 0.001 seconds
-2026-10-04 14:46:25,940 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,940 - twister - DEBUG - QEMU (64200): START - test_negative_numbers
-2026-10-04 14:46:25,940 - twister - DEBUG - QEMU (64200):  PASS - test_negative_numbers in 0.001 seconds
-2026-10-04 14:46:25,940 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,940 - twister - DEBUG - QEMU (64200): START - test_null_pointer
-2026-10-04 14:46:25,941 - twister - DEBUG - QEMU (64200): E: result pointer is NULL
-2026-10-04 14:46:25,941 - twister - DEBUG - QEMU (64200):  PASS - test_null_pointer in 0.001 seconds
-2026-10-04 14:46:25,941 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,941 - twister - DEBUG - QEMU (64200): START - test_zero
-2026-10-04 14:46:25,941 - twister - DEBUG - QEMU (64200):  PASS - test_zero in 0.001 seconds
-2026-10-04 14:46:25,941 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,941 - twister - DEBUG - QEMU (64200): START - test_negative_numbers
-2026-10-04 14:46:25,941 - twister - DEBUG - QEMU (64200):  PASS - test_negative_numbers in 0.001 seconds
-2026-10-04 14:46:25,941 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,941 - twister - DEBUG - QEMU (64200): START - test_null_pointer
-2026-10-04 14:46:25,941 - twister - DEBUG - QEMU (64200): E: result pointer is NULL
-2026-10-04 14:46:25,941 - twister - DEBUG - QEMU (64200):  PASS - test_null_pointer in 0.001 seconds
-2026-10-04 14:46:25,941 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,941 - twister - DEBUG - QEMU (64200): START - test_mixed_signs
-2026-10-04 14:46:25,941 - twister - DEBUG - QEMU (64200):  PASS - test_mixed_signs in 0.001 seconds
-2026-10-04 14:46:25,942 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,942 - twister - DEBUG - QEMU (64200): START - test_zero
-2026-10-04 14:46:25,942 - twister - DEBUG - QEMU (64200):  PASS - test_zero in 0.001 seconds
-2026-10-04 14:46:25,942 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,942 - twister - DEBUG - QEMU (64200): START - test_positive_numbers
-2026-10-04 14:46:25,942 - twister - DEBUG - QEMU (64200):  PASS - test_positive_numbers in 0.001 seconds
-2026-10-04 14:46:25,942 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,942 - twister - DEBUG - QEMU (64200): START - test_negative_numbers
-2026-10-04 14:46:25,942 - twister - DEBUG - QEMU (64200):  PASS - test_negative_numbers in 0.001 seconds
-2026-10-04 14:46:25,942 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,942 - twister - DEBUG - QEMU (64200): START - test_mixed_signs
-2026-10-04 14:46:25,942 - twister - DEBUG - QEMU (64200):  PASS - test_mixed_signs in 0.001 seconds
-2026-10-04 14:46:25,942 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,942 - twister - DEBUG - QEMU (64200): START - test_null_pointer
-2026-10-04 14:46:25,942 - twister - DEBUG - QEMU (64200): E: result pointer is NULL
-2026-10-04 14:46:25,942 - twister - DEBUG - QEMU (64200):  PASS - test_null_pointer in 0.001 seconds
-2026-10-04 14:46:25,943 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,943 - twister - DEBUG - QEMU (64200): START - test_positive_numbers
-2026-10-04 14:46:25,943 - twister - DEBUG - QEMU (64200):  PASS - test_positive_numbers in 0.001 seconds
-2026-10-04 14:46:25,943 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,943 - twister - DEBUG - QEMU (64200): START - test_zero
-2026-10-04 14:46:25,943 - twister - DEBUG - QEMU (64200):  PASS - test_zero in 0.001 seconds
-2026-10-04 14:46:25,943 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,943 - twister - DEBUG - QEMU (64200): TESTSUITE calculator_add succeeded
-2026-10-04 14:46:25,943 - twister - DEBUG - QEMU (64200): Running TESTSUITE calculator_div
-2026-10-04 14:46:25,943 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,943 - twister - DEBUG - QEMU (64200): START - test_integer_truncation
-2026-10-04 14:46:25,943 - twister - DEBUG - QEMU (64200):  PASS - test_integer_truncation in 0.001 seconds
-2026-10-04 14:46:25,943 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,943 - twister - DEBUG - QEMU (64200): START - test_divide_by_zero
-2026-10-04 14:46:25,944 - twister - DEBUG - QEMU (64200): W: division by zero
-2026-10-04 14:46:25,944 - twister - DEBUG - QEMU (64200):  PASS - test_divide_by_zero in 0.001 seconds
-2026-10-04 14:46:25,944 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,944 - twister - DEBUG - QEMU (64200): START - test_exact_division
-2026-10-04 14:46:25,944 - twister - DEBUG - QEMU (64200):  PASS - test_exact_division in 0.001 seconds
-2026-10-04 14:46:25,944 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,944 - twister - DEBUG - QEMU (64200): START - test_negative_dividend_truncation
-2026-10-04 14:46:25,944 - twister - DEBUG - QEMU (64200):  PASS - test_negative_dividend_truncation in 0.001 seconds
-2026-10-04 14:46:25,944 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,944 - twister - DEBUG - QEMU (64200): START - test_null_pointer
-2026-10-04 14:46:25,944 - twister - DEBUG - QEMU (64200): E: result pointer is NULL
-2026-10-04 14:46:25,944 - twister - DEBUG - QEMU (64200):  PASS - test_null_pointer in 0.001 seconds
-2026-10-04 14:46:25,944 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,944 - twister - DEBUG - QEMU (64200): START - test_exact_division
-2026-10-04 14:46:25,944 - twister - DEBUG - QEMU (64200):  PASS - test_exact_division in 0.001 seconds
-2026-10-04 14:46:25,945 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,945 - twister - DEBUG - QEMU (64200): START - test_null_pointer
-2026-10-04 14:46:25,945 - twister - DEBUG - QEMU (64200): E: result pointer is NULL
-2026-10-04 14:46:25,945 - twister - DEBUG - QEMU (64200):  PASS - test_null_pointer in 0.001 seconds
-2026-10-04 14:46:25,945 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,945 - twister - DEBUG - QEMU (64200): START - test_negative_dividend_truncation
-2026-10-04 14:46:25,945 - twister - DEBUG - QEMU (64200):  PASS - test_negative_dividend_truncation in 0.001 seconds
-2026-10-04 14:46:25,945 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,945 - twister - DEBUG - QEMU (64200): START - test_divide_by_zero
-2026-10-04 14:46:25,945 - twister - DEBUG - QEMU (64200): W: division by zero
-2026-10-04 14:46:25,945 - twister - DEBUG - QEMU (64200):  PASS - test_divide_by_zero in 0.001 seconds
-2026-10-04 14:46:25,945 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,945 - twister - DEBUG - QEMU (64200): START - test_integer_truncation
-2026-10-04 14:46:25,945 - twister - DEBUG - QEMU (64200):  PASS - test_integer_truncation in 0.001 seconds
-2026-10-04 14:46:25,946 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,946 - twister - DEBUG - QEMU (64200): START - test_integer_truncation
-2026-10-04 14:46:25,946 - twister - DEBUG - QEMU (64200):  PASS - test_integer_truncation in 0.001 seconds
-2026-10-04 14:46:25,946 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,946 - twister - DEBUG - QEMU (64200): START - test_exact_division
-2026-10-04 14:46:25,946 - twister - DEBUG - QEMU (64200):  PASS - test_exact_division in 0.001 seconds
-2026-10-04 14:46:25,946 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,946 - twister - DEBUG - QEMU (64200): START - test_null_pointer
-2026-10-04 14:46:25,946 - twister - DEBUG - QEMU (64200): E: result pointer is NULL
-2026-10-04 14:46:25,946 - twister - DEBUG - QEMU (64200):  PASS - test_null_pointer in 0.001 seconds
-2026-10-04 14:46:25,946 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,946 - twister - DEBUG - QEMU (64200): START - test_negative_dividend_truncation
-2026-10-04 14:46:25,946 - twister - DEBUG - QEMU (64200):  PASS - test_negative_dividend_truncation in 0.001 seconds
-2026-10-04 14:46:25,946 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,946 - twister - DEBUG - QEMU (64200): START - test_divide_by_zero
-2026-10-04 14:46:25,947 - twister - DEBUG - QEMU (64200): W: division by zero
-2026-10-04 14:46:25,947 - twister - DEBUG - QEMU (64200):  PASS - test_divide_by_zero in 0.001 seconds
-2026-10-04 14:46:25,947 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,947 - twister - DEBUG - QEMU (64200): TESTSUITE calculator_div succeeded
-2026-10-04 14:46:25,947 - twister - DEBUG - QEMU (64200): Running TESTSUITE calculator_div
-2026-10-04 14:46:25,947 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,947 - twister - DEBUG - QEMU (64200): START - test_divide_by_zero
-2026-10-04 14:46:25,947 - twister - DEBUG - QEMU (64200): W: division by zero
-2026-10-04 14:46:25,947 - twister - DEBUG - QEMU (64200):  PASS - test_divide_by_zero in 0.001 seconds
-2026-10-04 14:46:25,947 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,947 - twister - DEBUG - QEMU (64200): START - test_exact_division
-2026-10-04 14:46:25,947 - twister - DEBUG - QEMU (64200):  PASS - test_exact_division in 0.001 seconds
-2026-10-04 14:46:25,947 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,947 - twister - DEBUG - QEMU (64200): START - test_integer_truncation
-2026-10-04 14:46:25,947 - twister - DEBUG - QEMU (64200):  PASS - test_integer_truncation in 0.001 seconds
-2026-10-04 14:46:25,947 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,948 - twister - DEBUG - QEMU (64200): START - test_negative_dividend_truncation
-2026-10-04 14:46:25,948 - twister - DEBUG - QEMU (64200):  PASS - test_negative_dividend_truncation in 0.001 seconds
-2026-10-04 14:46:25,948 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,948 - twister - DEBUG - QEMU (64200): START - test_null_pointer
-2026-10-04 14:46:25,948 - twister - DEBUG - QEMU (64200): E: result pointer is NULL
-2026-10-04 14:46:25,948 - twister - DEBUG - QEMU (64200):  PASS - test_null_pointer in 0.001 seconds
-2026-10-04 14:46:25,948 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,948 - twister - DEBUG - QEMU (64200): START - test_negative_dividend_truncation
-2026-10-04 14:46:25,948 - twister - DEBUG - QEMU (64200):  PASS - test_negative_dividend_truncation in 0.001 seconds
-2026-10-04 14:46:25,948 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,948 - twister - DEBUG - QEMU (64200): START - test_null_pointer
-2026-10-04 14:46:25,948 - twister - DEBUG - QEMU (64200): E: result pointer is NULL
-2026-10-04 14:46:25,949 - twister - DEBUG - QEMU (64200):  PASS - test_null_pointer in 0.001 seconds
-2026-10-04 14:46:25,949 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,949 - twister - DEBUG - QEMU (64200): START - test_divide_by_zero
-2026-10-04 14:46:25,949 - twister - DEBUG - QEMU (64200): W: division by zero
-2026-10-04 14:46:25,949 - twister - DEBUG - QEMU (64200):  PASS - test_divide_by_zero in 0.001 seconds
-2026-10-04 14:46:25,949 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,949 - twister - DEBUG - QEMU (64200): START - test_exact_division
-2026-10-04 14:46:25,949 - twister - DEBUG - QEMU (64200):  PASS - test_exact_division in 0.001 seconds
-2026-10-04 14:46:25,949 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,949 - twister - DEBUG - QEMU (64200): START - test_integer_truncation
-2026-10-04 14:46:25,949 - twister - DEBUG - QEMU (64200):  PASS - test_integer_truncation in 0.001 seconds
-2026-10-04 14:46:25,949 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,949 - twister - DEBUG - QEMU (64200): START - test_negative_dividend_truncation
-2026-10-04 14:46:25,950 - twister - DEBUG - QEMU (64200):  PASS - test_negative_dividend_truncation in 0.001 seconds
-2026-10-04 14:46:25,950 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,950 - twister - DEBUG - QEMU (64200): START - test_exact_division
-2026-10-04 14:46:25,950 - twister - DEBUG - QEMU (64200):  PASS - test_exact_division in 0.001 seconds
-2026-10-04 14:46:25,950 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,950 - twister - DEBUG - QEMU (64200): START - test_integer_truncation
-2026-10-04 14:46:25,950 - twister - DEBUG - QEMU (64200):  PASS - test_integer_truncation in 0.001 seconds
-2026-10-04 14:46:25,950 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,951 - twister - DEBUG - QEMU (64200): START - test_null_pointer
-2026-10-04 14:46:25,951 - twister - DEBUG - QEMU (64200): E: result pointer is NULL
-2026-10-04 14:46:25,951 - twister - DEBUG - QEMU (64200):  PASS - test_null_pointer in 0.001 seconds
-2026-10-04 14:46:25,951 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,951 - twister - DEBUG - QEMU (64200): START - test_divide_by_zero
-2026-10-04 14:46:25,951 - twister - DEBUG - QEMU (64200): W: division by zero
-2026-10-04 14:46:25,951 - twister - DEBUG - QEMU (64200):  PASS - test_divide_by_zero in 0.001 seconds
-2026-10-04 14:46:25,951 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,951 - twister - DEBUG - QEMU (64200): TESTSUITE calculator_div succeeded
-2026-10-04 14:46:25,951 - twister - DEBUG - QEMU (64200): Running TESTSUITE calculator_div
-2026-10-04 14:46:25,951 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,951 - twister - DEBUG - QEMU (64200): START - test_exact_division
-2026-10-04 14:46:25,951 - twister - DEBUG - QEMU (64200):  PASS - test_exact_division in 0.001 seconds
-2026-10-04 14:46:25,952 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,952 - twister - DEBUG - QEMU (64200): START - test_integer_truncation
-2026-10-04 14:46:25,952 - twister - DEBUG - QEMU (64200):  PASS - test_integer_truncation in 0.001 seconds
-2026-10-04 14:46:25,952 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,952 - twister - DEBUG - QEMU (64200): START - test_negative_dividend_truncation
-2026-10-04 14:46:25,952 - twister - DEBUG - QEMU (64200):  PASS - test_negative_dividend_truncation in 0.001 seconds
-2026-10-04 14:46:25,952 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,952 - twister - DEBUG - QEMU (64200): START - test_divide_by_zero
-2026-10-04 14:46:25,953 - twister - DEBUG - QEMU (64200): W: division by zero
-2026-10-04 14:46:25,953 - twister - DEBUG - QEMU (64200):  PASS - test_divide_by_zero in 0.001 seconds
-2026-10-04 14:46:25,953 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,953 - twister - DEBUG - QEMU (64200): START - test_null_pointer
-2026-10-04 14:46:25,953 - twister - DEBUG - QEMU (64200): E: result pointer is NULL
-2026-10-04 14:46:25,953 - twister - DEBUG - QEMU (64200):  PASS - test_null_pointer in 0.001 seconds
-2026-10-04 14:46:25,953 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,953 - twister - DEBUG - QEMU (64200): START - test_integer_truncation
-2026-10-04 14:46:25,953 - twister - DEBUG - QEMU (64200):  PASS - test_integer_truncation in 0.001 seconds
-2026-10-04 14:46:25,953 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,953 - twister - DEBUG - QEMU (64200): START - test_negative_dividend_truncation
-2026-10-04 14:46:25,954 - twister - DEBUG - QEMU (64200):  PASS - test_negative_dividend_truncation in 0.001 seconds
-2026-10-04 14:46:25,954 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,954 - twister - DEBUG - QEMU (64200): START - test_exact_division
-2026-10-04 14:46:25,954 - twister - DEBUG - QEMU (64200):  PASS - test_exact_division in 0.001 seconds
-2026-10-04 14:46:25,954 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,954 - twister - DEBUG - QEMU (64200): START - test_null_pointer
-2026-10-04 14:46:25,954 - twister - DEBUG - QEMU (64200): E: result pointer is NULL
-2026-10-04 14:46:25,954 - twister - DEBUG - QEMU (64200):  PASS - test_null_pointer in 0.001 seconds
-2026-10-04 14:46:25,954 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,954 - twister - DEBUG - QEMU (64200): START - test_divide_by_zero
-2026-10-04 14:46:25,954 - twister - DEBUG - QEMU (64200): W: division by zero
-2026-10-04 14:46:25,954 - twister - DEBUG - QEMU (64200):  PASS - test_divide_by_zero in 0.001 seconds
-2026-10-04 14:46:25,955 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,955 - twister - DEBUG - QEMU (64200): START - test_divide_by_zero
-2026-10-04 14:46:25,955 - twister - DEBUG - QEMU (64200): W: division by zero
-2026-10-04 14:46:25,955 - twister - DEBUG - QEMU (64200):  PASS - test_divide_by_zero in 0.001 seconds
-2026-10-04 14:46:25,955 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,955 - twister - DEBUG - QEMU (64200): START - test_integer_truncation
-2026-10-04 14:46:25,955 - twister - DEBUG - QEMU (64200):  PASS - test_integer_truncation in 0.001 seconds
-2026-10-04 14:46:25,955 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,955 - twister - DEBUG - QEMU (64200): START - test_negative_dividend_truncation
-2026-10-04 14:46:25,955 - twister - DEBUG - QEMU (64200):  PASS - test_negative_dividend_truncation in 0.001 seconds
-2026-10-04 14:46:25,955 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,955 - twister - DEBUG - QEMU (64200): START - test_exact_division
-2026-10-04 14:46:25,956 - twister - DEBUG - QEMU (64200):  PASS - test_exact_division in 0.001 seconds
-2026-10-04 14:46:25,956 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,956 - twister - DEBUG - QEMU (64200): START - test_null_pointer
-2026-10-04 14:46:25,956 - twister - DEBUG - QEMU (64200): E: result pointer is NULL
-2026-10-04 14:46:25,956 - twister - DEBUG - QEMU (64200):  PASS - test_null_pointer in 0.001 seconds
-2026-10-04 14:46:25,956 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,956 - twister - DEBUG - QEMU (64200): TESTSUITE calculator_div succeeded
-2026-10-04 14:46:25,956 - twister - DEBUG - QEMU (64200): Running TESTSUITE calculator_edge_cases
-2026-10-04 14:46:25,956 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,956 - twister - DEBUG - QEMU (64200): START - test_chained_operations
-2026-10-04 14:46:25,956 - twister - DEBUG - QEMU (64200):  PASS - test_chained_operations in 0.001 seconds
-2026-10-04 14:46:25,957 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,957 - twister - DEBUG - QEMU (64200): START - test_chained_operations
-2026-10-04 14:46:25,957 - twister - DEBUG - QEMU (64200):  PASS - test_chained_operations in 0.001 seconds
-2026-10-04 14:46:25,957 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,957 - twister - DEBUG - QEMU (64200): START - test_chained_operations
-2026-10-04 14:46:25,957 - twister - DEBUG - QEMU (64200):  PASS - test_chained_operations in 0.001 seconds
-2026-10-04 14:46:25,957 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,957 - twister - DEBUG - QEMU (64200): TESTSUITE calculator_edge_cases succeeded
-2026-10-04 14:46:25,957 - twister - DEBUG - QEMU (64200): Running TESTSUITE calculator_edge_cases
-2026-10-04 14:46:25,957 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,957 - twister - DEBUG - QEMU (64200): START - test_chained_operations
-2026-10-04 14:46:25,957 - twister - DEBUG - QEMU (64200):  PASS - test_chained_operations in 0.001 seconds
-2026-10-04 14:46:25,958 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,958 - twister - DEBUG - QEMU (64200): START - test_chained_operations
-2026-10-04 14:46:25,958 - twister - DEBUG - QEMU (64200):  PASS - test_chained_operations in 0.001 seconds
-2026-10-04 14:46:25,958 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,958 - twister - DEBUG - QEMU (64200): START - test_chained_operations
-2026-10-04 14:46:25,958 - twister - DEBUG - QEMU (64200):  PASS - test_chained_operations in 0.001 seconds
-2026-10-04 14:46:25,958 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,958 - twister - DEBUG - QEMU (64200): TESTSUITE calculator_edge_cases succeeded
-2026-10-04 14:46:25,958 - twister - DEBUG - QEMU (64200): Running TESTSUITE calculator_edge_cases
-2026-10-04 14:46:25,958 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,958 - twister - DEBUG - QEMU (64200): START - test_chained_operations
-2026-10-04 14:46:25,958 - twister - DEBUG - QEMU (64200):  PASS - test_chained_operations in 0.001 seconds
-2026-10-04 14:46:25,959 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,959 - twister - DEBUG - QEMU (64200): START - test_chained_operations
-2026-10-04 14:46:25,959 - twister - DEBUG - QEMU (64200):  PASS - test_chained_operations in 0.001 seconds
-2026-10-04 14:46:25,959 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,959 - twister - DEBUG - QEMU (64200): START - test_chained_operations
-2026-10-04 14:46:25,959 - twister - DEBUG - QEMU (64200):  PASS - test_chained_operations in 0.001 seconds
-2026-10-04 14:46:25,959 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,959 - twister - DEBUG - QEMU (64200): TESTSUITE calculator_edge_cases succeeded
-2026-10-04 14:46:25,959 - twister - DEBUG - QEMU (64200): Running TESTSUITE calculator_last_result
-2026-10-04 14:46:25,959 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,959 - twister - DEBUG - QEMU (64200): START - test_failed_op_does_not_update
-2026-10-04 14:46:25,959 - twister - DEBUG - QEMU (64200): W: division by zero
-2026-10-04 14:46:25,960 - twister - DEBUG - QEMU (64200):  PASS - test_failed_op_does_not_update in 0.001 seconds
-2026-10-04 14:46:25,960 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,960 - twister - DEBUG - QEMU (64200): START - test_overwrite_on_second_op
-2026-10-04 14:46:25,960 - twister - DEBUG - QEMU (64200):  PASS - test_overwrite_on_second_op in 0.001 seconds
-2026-10-04 14:46:25,960 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,960 - twister - DEBUG - QEMU (64200): START - test_add_updates_cache
-2026-10-04 14:46:25,960 - twister - DEBUG - QEMU (64200):  PASS - test_add_updates_cache in 0.001 seconds
-2026-10-04 14:46:25,960 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,960 - twister - DEBUG - QEMU (64200): START - test_reset_clears_cache
-2026-10-04 14:46:25,960 - twister - DEBUG - QEMU (64200): W: no result cached yet
-2026-10-04 14:46:25,960 - twister - DEBUG - QEMU (64200):  PASS - test_reset_clears_cache in 0.001 seconds
-2026-10-04 14:46:25,960 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,960 - twister - DEBUG - QEMU (64200): START - test_no_result_before_first_op
-2026-10-04 14:46:25,961 - twister - DEBUG - QEMU (64200): W: no result cached yet
-2026-10-04 14:46:25,961 - twister - DEBUG - QEMU (64200):  PASS - test_no_result_before_first_op in 0.001 seconds
-2026-10-04 14:46:25,961 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,961 - twister - DEBUG - QEMU (64200): START - test_null_pointer
-2026-10-04 14:46:25,961 - twister - DEBUG - QEMU (64200): E: result pointer is NULL
-2026-10-04 14:46:25,961 - twister - DEBUG - QEMU (64200):  PASS - test_null_pointer in 0.001 seconds
-2026-10-04 14:46:25,961 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,961 - twister - DEBUG - QEMU (64200): START - test_overwrite_on_second_op
-2026-10-04 14:46:25,961 - twister - DEBUG - QEMU (64200):  PASS - test_overwrite_on_second_op in 0.001 seconds
-2026-10-04 14:46:25,961 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,961 - twister - DEBUG - QEMU (64200): START - test_null_pointer
-2026-10-04 14:46:25,961 - twister - DEBUG - QEMU (64200): E: result pointer is NULL
-2026-10-04 14:46:25,961 - twister - DEBUG - QEMU (64200):  PASS - test_null_pointer in 0.001 seconds
-2026-10-04 14:46:25,962 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,962 - twister - DEBUG - QEMU (64200): START - test_failed_op_does_not_update
-2026-10-04 14:46:25,962 - twister - DEBUG - QEMU (64200): W: division by zero
-2026-10-04 14:46:25,962 - twister - DEBUG - QEMU (64200):  PASS - test_failed_op_does_not_update in 0.001 seconds
-2026-10-04 14:46:25,962 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,962 - twister - DEBUG - QEMU (64200): START - test_no_result_before_first_op
-2026-10-04 14:46:25,962 - twister - DEBUG - QEMU (64200): W: no result cached yet
-2026-10-04 14:46:25,962 - twister - DEBUG - QEMU (64200):  PASS - test_no_result_before_first_op in 0.001 seconds
-2026-10-04 14:46:25,962 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,962 - twister - DEBUG - QEMU (64200): START - test_reset_clears_cache
-2026-10-04 14:46:25,962 - twister - DEBUG - QEMU (64200): W: no result cached yet
-2026-10-04 14:46:25,962 - twister - DEBUG - QEMU (64200):  PASS - test_reset_clears_cache in 0.001 seconds
-2026-10-04 14:46:25,962 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,962 - twister - DEBUG - QEMU (64200): START - test_add_updates_cache
-2026-10-04 14:46:25,963 - twister - DEBUG - QEMU (64200):  PASS - test_add_updates_cache in 0.001 seconds
-2026-10-04 14:46:25,963 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,963 - twister - DEBUG - QEMU (64200): START - test_reset_clears_cache
-2026-10-04 14:46:25,963 - twister - DEBUG - QEMU (64200): W: no result cached yet
-2026-10-04 14:46:25,963 - twister - DEBUG - QEMU (64200):  PASS - test_reset_clears_cache in 0.001 seconds
-2026-10-04 14:46:25,963 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,963 - twister - DEBUG - QEMU (64200): START - test_overwrite_on_second_op
-2026-10-04 14:46:25,963 - twister - DEBUG - QEMU (64200):  PASS - test_overwrite_on_second_op in 0.001 seconds
-2026-10-04 14:46:25,963 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,963 - twister - DEBUG - QEMU (64200): START - test_failed_op_does_not_update
-2026-10-04 14:46:25,963 - twister - DEBUG - QEMU (64200): W: division by zero
-2026-10-04 14:46:25,963 - twister - DEBUG - QEMU (64200):  PASS - test_failed_op_does_not_update in 0.001 seconds
-2026-10-04 14:46:25,963 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,964 - twister - DEBUG - QEMU (64200): START - test_no_result_before_first_op
-2026-10-04 14:46:25,964 - twister - DEBUG - QEMU (64200): W: no result cached yet
-2026-10-04 14:46:25,964 - twister - DEBUG - QEMU (64200):  PASS - test_no_result_before_first_op in 0.001 seconds
-2026-10-04 14:46:25,964 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,964 - twister - DEBUG - QEMU (64200): START - test_add_updates_cache
-2026-10-04 14:46:25,964 - twister - DEBUG - QEMU (64200):  PASS - test_add_updates_cache in 0.001 seconds
-2026-10-04 14:46:25,964 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,964 - twister - DEBUG - QEMU (64200): START - test_null_pointer
-2026-10-04 14:46:25,964 - twister - DEBUG - QEMU (64200): E: result pointer is NULL
-2026-10-04 14:46:25,964 - twister - DEBUG - QEMU (64200):  PASS - test_null_pointer in 0.001 seconds
-2026-10-04 14:46:25,964 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,964 - twister - DEBUG - QEMU (64200): TESTSUITE calculator_last_result succeeded
-2026-10-04 14:46:25,964 - twister - DEBUG - QEMU (64200): Running TESTSUITE calculator_last_result
-2026-10-04 14:46:25,965 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,965 - twister - DEBUG - QEMU (64200): START - test_reset_clears_cache
-2026-10-04 14:46:25,965 - twister - DEBUG - QEMU (64200): W: no result cached yet
-2026-10-04 14:46:25,965 - twister - DEBUG - QEMU (64200):  PASS - test_reset_clears_cache in 0.001 seconds
-2026-10-04 14:46:25,965 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,965 - twister - DEBUG - QEMU (64200): START - test_null_pointer
-2026-10-04 14:46:25,965 - twister - DEBUG - QEMU (64200): E: result pointer is NULL
-2026-10-04 14:46:25,965 - twister - DEBUG - QEMU (64200):  PASS - test_null_pointer in 0.001 seconds
-2026-10-04 14:46:25,965 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,965 - twister - DEBUG - QEMU (64200): START - test_add_updates_cache
-2026-10-04 14:46:25,965 - twister - DEBUG - QEMU (64200):  PASS - test_add_updates_cache in 0.001 seconds
-2026-10-04 14:46:25,965 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,965 - twister - DEBUG - QEMU (64200): START - test_no_result_before_first_op
-2026-10-04 14:46:25,965 - twister - DEBUG - QEMU (64200): W: no result cached yet
-2026-10-04 14:46:25,965 - twister - DEBUG - QEMU (64200):  PASS - test_no_result_before_first_op in 0.001 seconds
-2026-10-04 14:46:25,966 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,966 - twister - DEBUG - QEMU (64200): START - test_failed_op_does_not_update
-2026-10-04 14:46:25,966 - twister - DEBUG - QEMU (64200): W: division by zero
-2026-10-04 14:46:25,966 - twister - DEBUG - QEMU (64200):  PASS - test_failed_op_does_not_update in 0.001 seconds
-2026-10-04 14:46:25,966 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,966 - twister - DEBUG - QEMU (64200): START - test_overwrite_on_second_op
-2026-10-04 14:46:25,966 - twister - DEBUG - QEMU (64200):  PASS - test_overwrite_on_second_op in 0.001 seconds
-2026-10-04 14:46:25,966 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,966 - twister - DEBUG - QEMU (64200): START - test_null_pointer
-2026-10-04 14:46:25,966 - twister - DEBUG - QEMU (64200): E: result pointer is NULL
-2026-10-04 14:46:25,966 - twister - DEBUG - QEMU (64200):  PASS - test_null_pointer in 0.001 seconds
-2026-10-04 14:46:25,967 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,967 - twister - DEBUG - QEMU (64200): START - test_no_result_before_first_op
-2026-10-04 14:46:25,967 - twister - DEBUG - QEMU (64200): W: no result cached yet
-2026-10-04 14:46:25,967 - twister - DEBUG - QEMU (64200):  PASS - test_no_result_before_first_op in 0.001 seconds
-2026-10-04 14:46:25,967 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,967 - twister - DEBUG - QEMU (64200): START - test_failed_op_does_not_update
-2026-10-04 14:46:25,967 - twister - DEBUG - QEMU (64200): W: division by zero
-2026-10-04 14:46:25,967 - twister - DEBUG - QEMU (64200):  PASS - test_failed_op_does_not_update in 0.001 seconds
-2026-10-04 14:46:25,967 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,967 - twister - DEBUG - QEMU (64200): START - test_add_updates_cache
-2026-10-04 14:46:25,967 - twister - DEBUG - QEMU (64200):  PASS - test_add_updates_cache in 0.001 seconds
-2026-10-04 14:46:25,967 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,967 - twister - DEBUG - QEMU (64200): START - test_overwrite_on_second_op
-2026-10-04 14:46:25,968 - twister - DEBUG - QEMU (64200):  PASS - test_overwrite_on_second_op in 0.001 seconds
-2026-10-04 14:46:25,968 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,968 - twister - DEBUG - QEMU (64200): START - test_reset_clears_cache
-2026-10-04 14:46:25,968 - twister - DEBUG - QEMU (64200): W: no result cached yet
-2026-10-04 14:46:25,968 - twister - DEBUG - QEMU (64200):  PASS - test_reset_clears_cache in 0.001 seconds
-2026-10-04 14:46:25,968 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,968 - twister - DEBUG - QEMU (64200): START - test_null_pointer
-2026-10-04 14:46:25,968 - twister - DEBUG - QEMU (64200): E: result pointer is NULL
-2026-10-04 14:46:25,968 - twister - DEBUG - QEMU (64200):  PASS - test_null_pointer in 0.001 seconds
-2026-10-04 14:46:25,968 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,968 - twister - DEBUG - QEMU (64200): START - test_overwrite_on_second_op
-2026-10-04 14:46:25,968 - twister - DEBUG - QEMU (64200):  PASS - test_overwrite_on_second_op in 0.001 seconds
-2026-10-04 14:46:25,968 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,968 - twister - DEBUG - QEMU (64200): START - test_reset_clears_cache
-2026-10-04 14:46:25,969 - twister - DEBUG - QEMU (64200): W: no result cached yet
-2026-10-04 14:46:25,969 - twister - DEBUG - QEMU (64200):  PASS - test_reset_clears_cache in 0.001 seconds
-2026-10-04 14:46:25,969 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,969 - twister - DEBUG - QEMU (64200): START - test_failed_op_does_not_update
-2026-10-04 14:46:25,969 - twister - DEBUG - QEMU (64200): W: division by zero
-2026-10-04 14:46:25,969 - twister - DEBUG - QEMU (64200):  PASS - test_failed_op_does_not_update in 0.001 seconds
-2026-10-04 14:46:25,969 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,969 - twister - DEBUG - QEMU (64200): START - test_no_result_before_first_op
-2026-10-04 14:46:25,969 - twister - DEBUG - QEMU (64200): W: no result cached yet
-2026-10-04 14:46:25,969 - twister - DEBUG - QEMU (64200):  PASS - test_no_result_before_first_op in 0.001 seconds
-2026-10-04 14:46:25,969 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,969 - twister - DEBUG - QEMU (64200): START - test_add_updates_cache
-2026-10-04 14:46:25,969 - twister - DEBUG - QEMU (64200):  PASS - test_add_updates_cache in 0.001 seconds
-2026-10-04 14:46:25,969 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,970 - twister - DEBUG - QEMU (64200): TESTSUITE calculator_last_result succeeded
-2026-10-04 14:46:25,970 - twister - DEBUG - QEMU (64200): Running TESTSUITE calculator_last_result
-2026-10-04 14:46:25,970 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,970 - twister - DEBUG - QEMU (64200): START - test_overwrite_on_second_op
-2026-10-04 14:46:25,970 - twister - DEBUG - QEMU (64200):  PASS - test_overwrite_on_second_op in 0.001 seconds
-2026-10-04 14:46:25,970 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,970 - twister - DEBUG - QEMU (64200): START - test_add_updates_cache
-2026-10-04 14:46:25,970 - twister - DEBUG - QEMU (64200):  PASS - test_add_updates_cache in 0.001 seconds
-2026-10-04 14:46:25,970 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,970 - twister - DEBUG - QEMU (64200): START - test_reset_clears_cache
-2026-10-04 14:46:25,970 - twister - DEBUG - QEMU (64200): W: no result cached yet
-2026-10-04 14:46:25,970 - twister - DEBUG - QEMU (64200):  PASS - test_reset_clears_cache in 0.001 seconds
-2026-10-04 14:46:25,970 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,970 - twister - DEBUG - QEMU (64200): START - test_failed_op_does_not_update
-2026-10-04 14:46:25,970 - twister - DEBUG - QEMU (64200): W: division by zero
-2026-10-04 14:46:25,970 - twister - DEBUG - QEMU (64200):  PASS - test_failed_op_does_not_update in 0.001 seconds
-2026-10-04 14:46:25,970 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,970 - twister - DEBUG - QEMU (64200): START - test_no_result_before_first_op
-2026-10-04 14:46:25,971 - twister - DEBUG - QEMU (64200): W: no result cached yet
-2026-10-04 14:46:25,971 - twister - DEBUG - QEMU (64200):  PASS - test_no_result_before_first_op in 0.001 seconds
-2026-10-04 14:46:25,971 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,971 - twister - DEBUG - QEMU (64200): START - test_null_pointer
-2026-10-04 14:46:25,971 - twister - DEBUG - QEMU (64200): E: result pointer is NULL
-2026-10-04 14:46:25,971 - twister - DEBUG - QEMU (64200):  PASS - test_null_pointer in 0.001 seconds
-2026-10-04 14:46:25,971 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,972 - twister - DEBUG - QEMU (64200): START - test_overwrite_on_second_op
-2026-10-04 14:46:25,972 - twister - DEBUG - QEMU (64200):  PASS - test_overwrite_on_second_op in 0.001 seconds
-2026-10-04 14:46:25,972 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,972 - twister - DEBUG - QEMU (64200): START - test_add_updates_cache
-2026-10-04 14:46:25,972 - twister - DEBUG - QEMU (64200):  PASS - test_add_updates_cache in 0.001 seconds
-2026-10-04 14:46:25,972 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,972 - twister - DEBUG - QEMU (64200): START - test_null_pointer
-2026-10-04 14:46:25,972 - twister - DEBUG - QEMU (64200): E: result pointer is NULL
-2026-10-04 14:46:25,972 - twister - DEBUG - QEMU (64200):  PASS - test_null_pointer in 0.001 seconds
-2026-10-04 14:46:25,972 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,972 - twister - DEBUG - QEMU (64200): START - test_no_result_before_first_op
-2026-10-04 14:46:25,972 - twister - DEBUG - QEMU (64200): W: no result cached yet
-2026-10-04 14:46:25,972 - twister - DEBUG - QEMU (64200):  PASS - test_no_result_before_first_op in 0.001 seconds
-2026-10-04 14:46:25,972 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,973 - twister - DEBUG - QEMU (64200): START - test_reset_clears_cache
-2026-10-04 14:46:25,973 - twister - DEBUG - QEMU (64200): W: no result cached yet
-2026-10-04 14:46:25,973 - twister - DEBUG - QEMU (64200):  PASS - test_reset_clears_cache in 0.001 seconds
-2026-10-04 14:46:25,973 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,973 - twister - DEBUG - QEMU (64200): START - test_failed_op_does_not_update
-2026-10-04 14:46:25,973 - twister - DEBUG - QEMU (64200): W: division by zero
-2026-10-04 14:46:25,973 - twister - DEBUG - QEMU (64200):  PASS - test_failed_op_does_not_update in 0.001 seconds
-2026-10-04 14:46:25,973 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,973 - twister - DEBUG - QEMU (64200): START - test_overwrite_on_second_op
-2026-10-04 14:46:25,973 - twister - DEBUG - QEMU (64200):  PASS - test_overwrite_on_second_op in 0.001 seconds
-2026-10-04 14:46:25,973 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,973 - twister - DEBUG - QEMU (64200): START - test_no_result_before_first_op
-2026-10-04 14:46:25,973 - twister - DEBUG - QEMU (64200): W: no result cached yet
-2026-10-04 14:46:25,973 - twister - DEBUG - QEMU (64200):  PASS - test_no_result_before_first_op in 0.001 seconds
-2026-10-04 14:46:25,974 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,974 - twister - DEBUG - QEMU (64200): START - test_add_updates_cache
-2026-10-04 14:46:25,974 - twister - DEBUG - QEMU (64200):  PASS - test_add_updates_cache in 0.001 seconds
-2026-10-04 14:46:25,974 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,974 - twister - DEBUG - QEMU (64200): START - test_failed_op_does_not_update
-2026-10-04 14:46:25,974 - twister - DEBUG - QEMU (64200): W: division by zero
-2026-10-04 14:46:25,974 - twister - DEBUG - QEMU (64200):  PASS - test_failed_op_does_not_update in 0.001 seconds
-2026-10-04 14:46:25,974 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,974 - twister - DEBUG - QEMU (64200): START - test_reset_clears_cache
-2026-10-04 14:46:25,974 - twister - DEBUG - QEMU (64200): W: no result cached yet
-2026-10-04 14:46:25,974 - twister - DEBUG - QEMU (64200):  PASS - test_reset_clears_cache in 0.001 seconds
-2026-10-04 14:46:25,974 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,974 - twister - DEBUG - QEMU (64200): START - test_null_pointer
-2026-10-04 14:46:25,974 - twister - DEBUG - QEMU (64200): E: result pointer is NULL
-2026-10-04 14:46:25,974 - twister - DEBUG - QEMU (64200):  PASS - test_null_pointer in 0.001 seconds
-2026-10-04 14:46:25,975 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,975 - twister - DEBUG - QEMU (64200): TESTSUITE calculator_last_result succeeded
-2026-10-04 14:46:25,975 - twister - DEBUG - QEMU (64200): Running TESTSUITE calculator_mul
-2026-10-04 14:46:25,975 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,975 - twister - DEBUG - QEMU (64200): START - test_null_pointer
-2026-10-04 14:46:25,975 - twister - DEBUG - QEMU (64200): E: result pointer is NULL
-2026-10-04 14:46:25,975 - twister - DEBUG - QEMU (64200):  PASS - test_null_pointer in 0.001 seconds
-2026-10-04 14:46:25,975 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,975 - twister - DEBUG - QEMU (64200): START - test_by_zero
-2026-10-04 14:46:25,975 - twister - DEBUG - QEMU (64200):  PASS - test_by_zero in 0.001 seconds
-2026-10-04 14:46:25,975 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,975 - twister - DEBUG - QEMU (64200): START - test_positive_numbers
-2026-10-04 14:46:25,975 - twister - DEBUG - QEMU (64200):  PASS - test_positive_numbers in 0.001 seconds
-2026-10-04 14:46:25,975 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,975 - twister - DEBUG - QEMU (64200): START - test_negative_numbers
-2026-10-04 14:46:25,976 - twister - DEBUG - QEMU (64200):  PASS - test_negative_numbers in 0.001 seconds
-2026-10-04 14:46:25,976 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,976 - twister - DEBUG - QEMU (64200): START - test_positive_numbers
-2026-10-04 14:46:25,976 - twister - DEBUG - QEMU (64200):  PASS - test_positive_numbers in 0.001 seconds
-2026-10-04 14:46:25,976 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,976 - twister - DEBUG - QEMU (64200): START - test_null_pointer
-2026-10-04 14:46:25,976 - twister - DEBUG - QEMU (64200): E: result pointer is NULL
-2026-10-04 14:46:25,976 - twister - DEBUG - QEMU (64200):  PASS - test_null_pointer in 0.001 seconds
-2026-10-04 14:46:25,976 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,976 - twister - DEBUG - QEMU (64200): START - test_negative_numbers
-2026-10-04 14:46:25,976 - twister - DEBUG - QEMU (64200):  PASS - test_negative_numbers in 0.001 seconds
-2026-10-04 14:46:25,976 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,976 - twister - DEBUG - QEMU (64200): START - test_by_zero
-2026-10-04 14:46:25,976 - twister - DEBUG - QEMU (64200):  PASS - test_by_zero in 0.001 seconds
-2026-10-04 14:46:25,976 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,976 - twister - DEBUG - QEMU (64200): START - test_by_zero
-2026-10-04 14:46:25,976 - twister - DEBUG - QEMU (64200):  PASS - test_by_zero in 0.001 seconds
-2026-10-04 14:46:25,976 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,976 - twister - DEBUG - QEMU (64200): START - test_null_pointer
-2026-10-04 14:46:25,976 - twister - DEBUG - QEMU (64200): E: result pointer is NULL
-2026-10-04 14:46:25,976 - twister - DEBUG - QEMU (64200):  PASS - test_null_pointer in 0.001 seconds
-2026-10-04 14:46:25,976 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,976 - twister - DEBUG - QEMU (64200): START - test_negative_numbers
-2026-10-04 14:46:25,977 - twister - DEBUG - QEMU (64200):  PASS - test_negative_numbers in 0.001 seconds
-2026-10-04 14:46:25,977 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,977 - twister - DEBUG - QEMU (64200): START - test_positive_numbers
-2026-10-04 14:46:25,977 - twister - DEBUG - QEMU (64200):  PASS - test_positive_numbers in 0.001 seconds
-2026-10-04 14:46:25,977 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,977 - twister - DEBUG - QEMU (64200): TESTSUITE calculator_mul succeeded
-2026-10-04 14:46:25,977 - twister - DEBUG - QEMU (64200): Running TESTSUITE calculator_mul
-2026-10-04 14:46:25,977 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,977 - twister - DEBUG - QEMU (64200): START - test_positive_numbers
-2026-10-04 14:46:25,977 - twister - DEBUG - QEMU (64200):  PASS - test_positive_numbers in 0.001 seconds
-2026-10-04 14:46:25,977 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,977 - twister - DEBUG - QEMU (64200): START - test_null_pointer
-2026-10-04 14:46:25,977 - twister - DEBUG - QEMU (64200): E: result pointer is NULL
-2026-10-04 14:46:25,977 - twister - DEBUG - QEMU (64200):  PASS - test_null_pointer in 0.001 seconds
-2026-10-04 14:46:25,978 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,978 - twister - DEBUG - QEMU (64200): START - test_by_zero
-2026-10-04 14:46:25,978 - twister - DEBUG - QEMU (64200):  PASS - test_by_zero in 0.001 seconds
-2026-10-04 14:46:25,978 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,978 - twister - DEBUG - QEMU (64200): START - test_negative_numbers
-2026-10-04 14:46:25,978 - twister - DEBUG - QEMU (64200):  PASS - test_negative_numbers in 0.001 seconds
-2026-10-04 14:46:25,978 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,978 - twister - DEBUG - QEMU (64200): START - test_by_zero
-2026-10-04 14:46:25,978 - twister - DEBUG - QEMU (64200):  PASS - test_by_zero in 0.001 seconds
-2026-10-04 14:46:25,978 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,978 - twister - DEBUG - QEMU (64200): START - test_negative_numbers
-2026-10-04 14:46:25,978 - twister - DEBUG - QEMU (64200):  PASS - test_negative_numbers in 0.001 seconds
-2026-10-04 14:46:25,978 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,978 - twister - DEBUG - QEMU (64200): START - test_positive_numbers
-2026-10-04 14:46:25,978 - twister - DEBUG - QEMU (64200):  PASS - test_positive_numbers in 0.001 seconds
-2026-10-04 14:46:25,979 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,979 - twister - DEBUG - QEMU (64200): START - test_null_pointer
-2026-10-04 14:46:25,979 - twister - DEBUG - QEMU (64200): E: result pointer is NULL
-2026-10-04 14:46:25,979 - twister - DEBUG - QEMU (64200):  PASS - test_null_pointer in 0.001 seconds
-2026-10-04 14:46:25,979 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,979 - twister - DEBUG - QEMU (64200): START - test_negative_numbers
-2026-10-04 14:46:25,979 - twister - DEBUG - QEMU (64200):  PASS - test_negative_numbers in 0.001 seconds
-2026-10-04 14:46:25,979 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,979 - twister - DEBUG - QEMU (64200): START - test_by_zero
-2026-10-04 14:46:25,979 - twister - DEBUG - QEMU (64200):  PASS - test_by_zero in 0.001 seconds
-2026-10-04 14:46:25,979 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,979 - twister - DEBUG - QEMU (64200): START - test_positive_numbers
-2026-10-04 14:46:25,979 - twister - DEBUG - QEMU (64200):  PASS - test_positive_numbers in 0.001 seconds
-2026-10-04 14:46:25,979 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,980 - twister - DEBUG - QEMU (64200): START - test_null_pointer
-2026-10-04 14:46:25,980 - twister - DEBUG - QEMU (64200): E: result pointer is NULL
-2026-10-04 14:46:25,980 - twister - DEBUG - QEMU (64200):  PASS - test_null_pointer in 0.001 seconds
-2026-10-04 14:46:25,980 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,980 - twister - DEBUG - QEMU (64200): TESTSUITE calculator_mul succeeded
-2026-10-04 14:46:25,980 - twister - DEBUG - QEMU (64200): Running TESTSUITE calculator_mul
-2026-10-04 14:46:25,980 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,980 - twister - DEBUG - QEMU (64200): START - test_by_zero
-2026-10-04 14:46:25,980 - twister - DEBUG - QEMU (64200):  PASS - test_by_zero in 0.001 seconds
-2026-10-04 14:46:25,980 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,980 - twister - DEBUG - QEMU (64200): START - test_null_pointer
-2026-10-04 14:46:25,980 - twister - DEBUG - QEMU (64200): E: result pointer is NULL
-2026-10-04 14:46:25,980 - twister - DEBUG - QEMU (64200):  PASS - test_null_pointer in 0.001 seconds
-2026-10-04 14:46:25,980 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,980 - twister - DEBUG - QEMU (64200): START - test_positive_numbers
-2026-10-04 14:46:25,980 - twister - DEBUG - QEMU (64200):  PASS - test_positive_numbers in 0.001 seconds
-2026-10-04 14:46:25,981 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,981 - twister - DEBUG - QEMU (64200): START - test_negative_numbers
-2026-10-04 14:46:25,981 - twister - DEBUG - QEMU (64200):  PASS - test_negative_numbers in 0.001 seconds
-2026-10-04 14:46:25,981 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,981 - twister - DEBUG - QEMU (64200): START - test_positive_numbers
-2026-10-04 14:46:25,981 - twister - DEBUG - QEMU (64200):  PASS - test_positive_numbers in 0.001 seconds
-2026-10-04 14:46:25,981 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,981 - twister - DEBUG - QEMU (64200): START - test_negative_numbers
-2026-10-04 14:46:25,981 - twister - DEBUG - QEMU (64200):  PASS - test_negative_numbers in 0.001 seconds
-2026-10-04 14:46:25,981 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,981 - twister - DEBUG - QEMU (64200): START - test_by_zero
-2026-10-04 14:46:25,981 - twister - DEBUG - QEMU (64200):  PASS - test_by_zero in 0.001 seconds
-2026-10-04 14:46:25,981 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,981 - twister - DEBUG - QEMU (64200): START - test_null_pointer
-2026-10-04 14:46:25,981 - twister - DEBUG - QEMU (64200): E: result pointer is NULL
-2026-10-04 14:46:25,981 - twister - DEBUG - QEMU (64200):  PASS - test_null_pointer in 0.001 seconds
-2026-10-04 14:46:25,981 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,983 - twister - DEBUG - QEMU (64200): START - test_negative_numbers
-2026-10-04 14:46:25,983 - twister - DEBUG - QEMU (64200):  PASS - test_negative_numbers in 0.001 seconds
-2026-10-04 14:46:25,983 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,983 - twister - DEBUG - QEMU (64200): START - test_positive_numbers
-2026-10-04 14:46:25,983 - twister - DEBUG - QEMU (64200):  PASS - test_positive_numbers in 0.001 seconds
-2026-10-04 14:46:25,983 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,983 - twister - DEBUG - QEMU (64200): START - test_null_pointer
-2026-10-04 14:46:25,983 - twister - DEBUG - QEMU (64200): E: result pointer is NULL
-2026-10-04 14:46:25,983 - twister - DEBUG - QEMU (64200):  PASS - test_null_pointer in 0.001 seconds
-2026-10-04 14:46:25,983 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,983 - twister - DEBUG - QEMU (64200): START - test_by_zero
-2026-10-04 14:46:25,983 - twister - DEBUG - QEMU (64200):  PASS - test_by_zero in 0.001 seconds
-2026-10-04 14:46:25,983 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,983 - twister - DEBUG - QEMU (64200): TESTSUITE calculator_mul succeeded
-2026-10-04 14:46:25,983 - twister - DEBUG - QEMU (64200): Running TESTSUITE calculator_sub
-2026-10-04 14:46:25,984 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,984 - twister - DEBUG - QEMU (64200): START - test_positive_result
-2026-10-04 14:46:25,984 - twister - DEBUG - QEMU (64200):  PASS - test_positive_result in 0.001 seconds
-2026-10-04 14:46:25,984 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,984 - twister - DEBUG - QEMU (64200): START - test_null_pointer
-2026-10-04 14:46:25,984 - twister - DEBUG - QEMU (64200): E: result pointer is NULL
-2026-10-04 14:46:25,984 - twister - DEBUG - QEMU (64200):  PASS - test_null_pointer in 0.001 seconds
-2026-10-04 14:46:25,984 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,984 - twister - DEBUG - QEMU (64200): START - test_negative_result
-2026-10-04 14:46:25,984 - twister - DEBUG - QEMU (64200):  PASS - test_negative_result in 0.001 seconds
-2026-10-04 14:46:25,984 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,984 - twister - DEBUG - QEMU (64200): START - test_positive_result
-2026-10-04 14:46:25,984 - twister - DEBUG - QEMU (64200):  PASS - test_positive_result in 0.001 seconds
-2026-10-04 14:46:25,984 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,985 - twister - DEBUG - QEMU (64200): START - test_negative_result
-2026-10-04 14:46:25,985 - twister - DEBUG - QEMU (64200):  PASS - test_negative_result in 0.001 seconds
-2026-10-04 14:46:25,985 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,985 - twister - DEBUG - QEMU (64200): START - test_null_pointer
-2026-10-04 14:46:25,985 - twister - DEBUG - QEMU (64200): E: result pointer is NULL
-2026-10-04 14:46:25,985 - twister - DEBUG - QEMU (64200):  PASS - test_null_pointer in 0.001 seconds
-2026-10-04 14:46:25,985 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,985 - twister - DEBUG - QEMU (64200): START - test_null_pointer
-2026-10-04 14:46:25,985 - twister - DEBUG - QEMU (64200): E: result pointer is NULL
-2026-10-04 14:46:25,985 - twister - DEBUG - QEMU (64200):  PASS - test_null_pointer in 0.001 seconds
-2026-10-04 14:46:25,985 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,985 - twister - DEBUG - QEMU (64200): START - test_positive_result
-2026-10-04 14:46:25,985 - twister - DEBUG - QEMU (64200):  PASS - test_positive_result in 0.001 seconds
-2026-10-04 14:46:25,985 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,986 - twister - DEBUG - QEMU (64200): START - test_negative_result
-2026-10-04 14:46:25,986 - twister - DEBUG - QEMU (64200):  PASS - test_negative_result in 0.001 seconds
-2026-10-04 14:46:25,986 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,986 - twister - DEBUG - QEMU (64200): TESTSUITE calculator_sub succeeded
-2026-10-04 14:46:25,986 - twister - DEBUG - QEMU (64200): Running TESTSUITE calculator_sub
-2026-10-04 14:46:25,986 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,986 - twister - DEBUG - QEMU (64200): START - test_positive_result
-2026-10-04 14:46:25,986 - twister - DEBUG - QEMU (64200):  PASS - test_positive_result in 0.001 seconds
-2026-10-04 14:46:25,986 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,986 - twister - DEBUG - QEMU (64200): START - test_negative_result
-2026-10-04 14:46:25,986 - twister - DEBUG - QEMU (64200):  PASS - test_negative_result in 0.001 seconds
-2026-10-04 14:46:25,986 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,986 - twister - DEBUG - QEMU (64200): START - test_null_pointer
-2026-10-04 14:46:25,986 - twister - DEBUG - QEMU (64200): E: result pointer is NULL
-2026-10-04 14:46:25,986 - twister - DEBUG - QEMU (64200):  PASS - test_null_pointer in 0.001 seconds
-2026-10-04 14:46:25,987 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,987 - twister - DEBUG - QEMU (64200): START - test_negative_result
-2026-10-04 14:46:25,987 - twister - DEBUG - QEMU (64200):  PASS - test_negative_result in 0.001 seconds
-2026-10-04 14:46:25,987 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,987 - twister - DEBUG - QEMU (64200): START - test_positive_result
-2026-10-04 14:46:25,987 - twister - DEBUG - QEMU (64200):  PASS - test_positive_result in 0.001 seconds
-2026-10-04 14:46:25,987 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,987 - twister - DEBUG - QEMU (64200): START - test_null_pointer
-2026-10-04 14:46:25,987 - twister - DEBUG - QEMU (64200): E: result pointer is NULL
-2026-10-04 14:46:25,987 - twister - DEBUG - QEMU (64200):  PASS - test_null_pointer in 0.001 seconds
-2026-10-04 14:46:25,987 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,987 - twister - DEBUG - QEMU (64200): START - test_positive_result
-2026-10-04 14:46:25,987 - twister - DEBUG - QEMU (64200):  PASS - test_positive_result in 0.001 seconds
-2026-10-04 14:46:25,987 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,988 - twister - DEBUG - QEMU (64200): START - test_negative_result
-2026-10-04 14:46:25,988 - twister - DEBUG - QEMU (64200):  PASS - test_negative_result in 0.001 seconds
-2026-10-04 14:46:25,988 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,988 - twister - DEBUG - QEMU (64200): START - test_null_pointer
-2026-10-04 14:46:25,988 - twister - DEBUG - QEMU (64200): E: result pointer is NULL
-2026-10-04 14:46:25,988 - twister - DEBUG - QEMU (64200):  PASS - test_null_pointer in 0.001 seconds
-2026-10-04 14:46:25,988 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,988 - twister - DEBUG - QEMU (64200): TESTSUITE calculator_sub succeeded
-2026-10-04 14:46:25,988 - twister - DEBUG - QEMU (64200): Running TESTSUITE calculator_sub
-2026-10-04 14:46:25,988 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,988 - twister - DEBUG - QEMU (64200): START - test_negative_result
-2026-10-04 14:46:25,988 - twister - DEBUG - QEMU (64200):  PASS - test_negative_result in 0.001 seconds
-2026-10-04 14:46:25,988 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,988 - twister - DEBUG - QEMU (64200): START - test_null_pointer
-2026-10-04 14:46:25,988 - twister - DEBUG - QEMU (64200): E: result pointer is NULL
-2026-10-04 14:46:25,989 - twister - DEBUG - QEMU (64200):  PASS - test_null_pointer in 0.001 seconds
-2026-10-04 14:46:25,989 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,989 - twister - DEBUG - QEMU (64200): START - test_positive_result
-2026-10-04 14:46:25,989 - twister - DEBUG - QEMU (64200):  PASS - test_positive_result in 0.001 seconds
-2026-10-04 14:46:25,989 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,989 - twister - DEBUG - QEMU (64200): START - test_negative_result
-2026-10-04 14:46:25,989 - twister - DEBUG - QEMU (64200):  PASS - test_negative_result in 0.001 seconds
-2026-10-04 14:46:25,989 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,989 - twister - DEBUG - QEMU (64200): START - test_positive_result
-2026-10-04 14:46:25,989 - twister - DEBUG - QEMU (64200):  PASS - test_positive_result in 0.001 seconds
-2026-10-04 14:46:25,989 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,989 - twister - DEBUG - QEMU (64200): START - test_null_pointer
-2026-10-04 14:46:25,989 - twister - DEBUG - QEMU (64200): E: result pointer is NULL
-2026-10-04 14:46:25,989 - twister - DEBUG - QEMU (64200):  PASS - test_null_pointer in 0.001 seconds
-2026-10-04 14:46:25,990 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,990 - twister - DEBUG - QEMU (64200): START - test_negative_result
-2026-10-04 14:46:25,990 - twister - DEBUG - QEMU (64200):  PASS - test_negative_result in 0.001 seconds
-2026-10-04 14:46:25,990 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,990 - twister - DEBUG - QEMU (64200): START - test_null_pointer
-2026-10-04 14:46:25,990 - twister - DEBUG - QEMU (64200): E: result pointer is NULL
-2026-10-04 14:46:25,990 - twister - DEBUG - QEMU (64200):  PASS - test_null_pointer in 0.001 seconds
-2026-10-04 14:46:25,990 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,990 - twister - DEBUG - QEMU (64200): START - test_positive_result
-2026-10-04 14:46:25,990 - twister - DEBUG - QEMU (64200):  PASS - test_positive_result in 0.001 seconds
-2026-10-04 14:46:25,990 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,990 - twister - DEBUG - QEMU (64200): TESTSUITE calculator_sub succeeded
-2026-10-04 14:46:25,990 - twister - DEBUG - QEMU (64200): 
-2026-10-04 14:46:25,990 - twister - DEBUG - QEMU (64200): ------ TESTSUITE SUMMARY START ------
-2026-10-04 14:46:25,990 - twister - DEBUG - QEMU (64200): 
-2026-10-04 14:46:25,991 - twister - DEBUG - QEMU (64200): SUITE PASS - 100.00% [calculator_add]: pass = 5, fail = 0, skip = 0, total = 5 duration = 0.005 seconds
-2026-10-04 14:46:25,991 - twister - DEBUG - QEMU (64200):  - PASS - [calculator_add.test_mixed_signs] duration = 0.001 seconds
-2026-10-04 14:46:25,991 - twister - DEBUG - QEMU (64200):  - PASS - [calculator_add.test_negative_numbers] duration = 0.001 seconds
-2026-10-04 14:46:25,991 - twister - DEBUG - QEMU (64200):  - PASS - [calculator_add.test_null_pointer] duration = 0.001 seconds
-2026-10-04 14:46:25,991 - twister - DEBUG - QEMU (64200):  - PASS - [calculator_add.test_positive_numbers] duration = 0.001 seconds
-2026-10-04 14:46:25,991 - twister - DEBUG - QEMU (64200):  - PASS - [calculator_add.test_zero] duration = 0.001 seconds
-2026-10-04 14:46:25,991 - twister - DEBUG - QEMU (64200): 
-2026-10-04 14:46:25,991 - twister - DEBUG - QEMU (64200): SUITE PASS - 100.00% [calculator_div]: pass = 5, fail = 0, skip = 0, total = 5 duration = 0.005 seconds
-2026-10-04 14:46:25,991 - twister - DEBUG - QEMU (64200):  - PASS - [calculator_div.test_divide_by_zero] duration = 0.001 seconds
-2026-10-04 14:46:25,991 - twister - DEBUG - QEMU (64200):  - PASS - [calculator_div.test_exact_division] duration = 0.001 seconds
-2026-10-04 14:46:25,991 - twister - DEBUG - QEMU (64200):  - PASS - [calculator_div.test_integer_truncation] duration = 0.001 seconds
-2026-10-04 14:46:25,992 - twister - DEBUG - QEMU (64200):  - PASS - [calculator_div.test_negative_dividend_truncation] duration = 0.001 seconds
-2026-10-04 14:46:25,992 - twister - DEBUG - QEMU (64200):  - PASS - [calculator_div.test_null_pointer] duration = 0.001 seconds
-2026-10-04 14:46:25,992 - twister - DEBUG - QEMU (64200): 
-2026-10-04 14:46:25,992 - twister - DEBUG - QEMU (64200): SUITE PASS - 100.00% [calculator_edge_cases]: pass = 1, fail = 0, skip = 0, total = 1 duration = 0.001 seconds
-2026-10-04 14:46:25,992 - twister - DEBUG - QEMU (64200):  - PASS - [calculator_edge_cases.test_chained_operations] duration = 0.001 seconds
-2026-10-04 14:46:25,992 - twister - DEBUG - QEMU (64200): 
-2026-10-04 14:46:25,992 - twister - DEBUG - QEMU (64200): SUITE PASS - 100.00% [calculator_last_result]: pass = 6, fail = 0, skip = 0, total = 6 duration = 0.006 seconds
-2026-10-04 14:46:25,992 - twister - DEBUG - QEMU (64200):  - PASS - [calculator_last_result.test_add_updates_cache] duration = 0.001 seconds
-2026-10-04 14:46:25,992 - twister - DEBUG - QEMU (64200):  - PASS - [calculator_last_result.test_failed_op_does_not_update] duration = 0.001 seconds
-2026-10-04 14:46:25,992 - twister - DEBUG - QEMU (64200):  - PASS - [calculator_last_result.test_no_result_before_first_op] duration = 0.001 seconds
-2026-10-04 14:46:25,993 - twister - DEBUG - QEMU (64200):  - PASS - [calculator_last_result.test_null_pointer] duration = 0.001 seconds
-2026-10-04 14:46:25,993 - twister - DEBUG - QEMU (64200):  - PASS - [calculator_last_result.test_overwrite_on_second_op] duration = 0.001 seconds
-2026-10-04 14:46:25,993 - twister - DEBUG - QEMU (64200):  - PASS - [calculator_last_result.test_reset_clears_cache] duration = 0.001 seconds
-2026-10-04 14:46:25,993 - twister - DEBUG - QEMU (64200): 
-2026-10-04 14:46:25,993 - twister - DEBUG - QEMU (64200): SUITE PASS - 100.00% [calculator_mul]: pass = 4, fail = 0, skip = 0, total = 4 duration = 0.004 seconds
-2026-10-04 14:46:25,993 - twister - DEBUG - QEMU (64200):  - PASS - [calculator_mul.test_by_zero] duration = 0.001 seconds
-2026-10-04 14:46:25,993 - twister - DEBUG - QEMU (64200):  - PASS - [calculator_mul.test_negative_numbers] duration = 0.001 seconds
-2026-10-04 14:46:25,993 - twister - DEBUG - QEMU (64200):  - PASS - [calculator_mul.test_null_pointer] duration = 0.001 seconds
-2026-10-04 14:46:25,993 - twister - DEBUG - QEMU (64200):  - PASS - [calculator_mul.test_positive_numbers] duration = 0.001 seconds
-2026-10-04 14:46:25,993 - twister - DEBUG - QEMU (64200): 
-2026-10-04 14:46:25,993 - twister - DEBUG - QEMU (64200): SUITE PASS - 100.00% [calculator_sub]: pass = 3, fail = 0, skip = 0, total = 3 duration = 0.003 seconds
-2026-10-04 14:46:25,994 - twister - DEBUG - QEMU (64200):  - PASS - [calculator_sub.test_negative_result] duration = 0.001 seconds
-2026-10-04 14:46:25,994 - twister - DEBUG - QEMU (64200):  - PASS - [calculator_sub.test_null_pointer] duration = 0.001 seconds
-2026-10-04 14:46:25,994 - twister - DEBUG - QEMU (64200):  - PASS - [calculator_sub.test_positive_result] duration = 0.001 seconds
-2026-10-04 14:46:25,994 - twister - DEBUG - QEMU (64200): 
-2026-10-04 14:46:25,994 - twister - DEBUG - QEMU (64200): ------ TESTSUITE SUMMARY END ------
-2026-10-04 14:46:25,994 - twister - DEBUG - QEMU (64200): 
-2026-10-04 14:46:25,994 - twister - DEBUG - QEMU (64200): ===================================================================
-2026-10-04 14:46:25,994 - twister - DEBUG - QEMU (64200): RunID: 52c09de20bb38170f1ee0c6e0d7d4a3a
-2026-10-04 14:46:25,994 - twister - DEBUG - QEMU (64200): PROJECT EXECUTION SUCCESSFUL
-2026-10-04 14:46:26,214 - twister - DEBUG - QEMU (12796): Running TESTSUITE calculator_div
-2026-10-04 14:46:27,265 - twister - DEBUG - QEMU (12796): ===================================================================
-2026-10-04 14:46:27,703 - twister - DEBUG - QEMU (12796): START - test_divide_by_zero
-2026-10-04 14:46:27,995 - twister - DEBUG - QEMU (64200) complete with passed (None) after 14.499350786209106 seconds
-2026-10-04 14:46:27,999 - twister - DEBUG - QEMU (12796): W: division by zero
-2026-10-04 14:46:28,010 - twister - DEBUG - return code from QEMU (64200): 0
-2026-10-04 14:46:28,010 - twister - DEBUG - Expected suite names:['calculator_last_result', 'calculator_add', 'calculator_sub', 'calculator_mul', 'calculator_div', 'calculator_edge_cases']
-2026-10-04 14:46:28,010 - twister - DEBUG - Detected suite names:['calculator_add', 'calculator_div', 'calculator_edge_cases', 'calculator_last_result', 'calculator_mul', 'calculator_sub']
-2026-10-04 14:46:28,010 - twister - DEBUG - run status: qemu_x86/atom\zephyr\example.unit.calculator passed
-2026-10-04 14:46:28,013 - twister - INFO - 1/2 qemu_x86/atom             example.unit.calculator                            [32mPASSED[39m (qemu 14.499s <zephyr>)
-2026-10-04 14:46:28,218 - twister - DEBUG - QEMU (12796):  PASS - test_divide_by_zero in 0.001 seconds
-2026-10-04 14:46:28,702 - twister - DEBUG - QEMU (12796): ===================================================================
-2026-10-04 14:46:28,827 - twister - DEBUG - QEMU (12796): START - test_exact_division
-2026-10-04 14:46:29,077 - twister - DEBUG - QEMU (12796):  PASS - test_exact_division in 0.001 seconds
-2026-10-04 14:46:29,512 - twister - DEBUG - QEMU (12796): ===================================================================
-2026-10-04 14:46:29,669 - twister - DEBUG - QEMU (12796): START - test_integer_truncation
-2026-10-04 14:46:30,107 - twister - DEBUG - QEMU (12796):  PASS - test_integer_truncation in 0.001 seconds
-2026-10-04 14:46:30,605 - twister - DEBUG - QEMU (12796): ===================================================================
-2026-10-04 14:46:30,964 - twister - DEBUG - QEMU (12796): START - test_negative_dividend_truncation
-2026-10-04 14:46:31,417 - twister - DEBUG - QEMU (12796):  PASS - test_negative_dividend_truncation in 0.001 seconds
-2026-10-04 14:46:32,121 - twister - DEBUG - QEMU (12796): ===================================================================
-2026-10-04 14:46:32,339 - twister - DEBUG - QEMU (12796): START - test_null_pointer
-2026-10-04 14:46:32,370 - twister - DEBUG - QEMU (12796): E: result pointer is NULL
-2026-10-04 14:46:32,651 - twister - DEBUG - QEMU (12796):  PASS - test_null_pointer in 0.001 seconds
-2026-10-04 14:46:32,839 - twister - DEBUG - QEMU (12796): ===================================================================
-2026-10-04 14:46:33,072 - twister - DEBUG - QEMU (12796): TESTSUITE calculator_div succeeded
-2026-10-04 14:46:33,462 - twister - DEBUG - QEMU (12796): Running TESTSUITE calculator_edge_cases
-2026-10-04 14:46:33,884 - twister - DEBUG - QEMU (12796): ===================================================================
-2026-10-04 14:46:34,149 - twister - DEBUG - QEMU (12796): START - test_chained_operations
-2026-10-04 14:46:34,538 - twister - DEBUG - QEMU (12796):  PASS - test_chained_operations in 0.001 seconds
-2026-10-04 14:46:35,118 - twister - DEBUG - QEMU (12796): ===================================================================
-2026-10-04 14:46:35,458 - twister - DEBUG - QEMU (12796): TESTSUITE calculator_edge_cases succeeded
-2026-10-04 14:46:35,757 - twister - DEBUG - QEMU (12796): Running TESTSUITE calculator_last_result
-2026-10-04 14:46:36,476 - twister - DEBUG - QEMU (12796): ===================================================================
-2026-10-04 14:46:36,804 - twister - DEBUG - QEMU (12796): START - test_add_updates_cache
-2026-10-04 14:46:37,115 - twister - DEBUG - QEMU (12796):  PASS - test_add_updates_cache in 0.001 seconds
-2026-10-04 14:46:37,755 - twister - DEBUG - QEMU (12796): ===================================================================
-2026-10-04 14:46:37,864 - twister - DEBUG - QEMU (12796): START - test_failed_op_does_not_update
-2026-10-04 14:46:37,942 - twister - DEBUG - QEMU (12796): W: division by zero
-2026-10-04 14:46:37,972 - twister - DEBUG - QEMU (12796):  PASS - test_failed_op_does_not_update in 0.001 seconds
-2026-10-04 14:46:38,552 - twister - DEBUG - QEMU (12796): ===================================================================
-2026-10-04 14:46:38,692 - twister - DEBUG - QEMU (12796): START - test_no_result_before_first_op
-2026-10-04 14:46:38,738 - twister - DEBUG - QEMU (12796): W: no result cached yet
-2026-10-04 14:46:39,178 - twister - DEBUG - QEMU (12796):  PASS - test_no_result_before_first_op in 0.001 seconds
-2026-10-04 14:46:39,617 - twister - DEBUG - QEMU (12796): ===================================================================
-2026-10-04 14:46:39,821 - twister - DEBUG - QEMU (12796): START - test_null_pointer
-2026-10-04 14:46:40,023 - twister - DEBUG - QEMU (12796): E: result pointer is NULL
-2026-10-04 14:46:40,229 - twister - DEBUG - QEMU (12796):  PASS - test_null_pointer in 0.001 seconds
-2026-10-04 14:46:40,902 - twister - DEBUG - QEMU (12796): ===================================================================
-2026-10-04 14:46:41,170 - twister - DEBUG - QEMU (12796): START - test_overwrite_on_second_op
-2026-10-04 14:46:41,641 - twister - DEBUG - QEMU (12796):  PASS - test_overwrite_on_second_op in 0.001 seconds
-2026-10-04 14:46:42,224 - twister - DEBUG - QEMU (12796): ===================================================================
-2026-10-04 14:46:42,620 - twister - DEBUG - QEMU (12796): START - test_reset_clears_cache
-2026-10-04 14:46:42,795 - twister - DEBUG - QEMU (12796): W: no result cached yet
-2026-10-04 14:46:43,284 - twister - DEBUG - QEMU (12796):  PASS - test_reset_clears_cache in 0.001 seconds
-2026-10-04 14:46:43,600 - twister - DEBUG - QEMU (12796): ===================================================================
-2026-10-04 14:46:43,631 - twister - DEBUG - QEMU (12796): TESTSUITE calculator_last_result succeeded
-2026-10-04 14:46:43,773 - twister - DEBUG - QEMU (12796): Running TESTSUITE calculator_mul
-2026-10-04 14:46:44,022 - twister - DEBUG - QEMU (12796): ===================================================================
-2026-10-04 14:46:44,133 - twister - DEBUG - QEMU (12796): START - test_by_zero
-2026-10-04 14:46:44,510 - twister - DEBUG - QEMU (12796):  PASS - test_by_zero in 0.001 seconds
-2026-10-04 14:46:45,029 - twister - DEBUG - QEMU (12796): ===================================================================
-2026-10-04 14:46:45,168 - twister - DEBUG - QEMU (12796): START - test_negative_numbers
-2026-10-04 14:46:45,499 - twister - DEBUG - QEMU (12796):  PASS - test_negative_numbers in 0.001 seconds
-2026-10-04 14:46:46,004 - twister - DEBUG - QEMU (12796): ===================================================================
-2026-10-04 14:46:46,207 - twister - DEBUG - QEMU (12796): START - test_null_pointer
-2026-10-04 14:46:46,398 - twister - DEBUG - QEMU (12796): E: result pointer is NULL
-2026-10-04 14:46:46,677 - twister - DEBUG - QEMU (12796):  PASS - test_null_pointer in 0.001 seconds
-2026-10-04 14:46:47,020 - twister - DEBUG - QEMU (12796): ===================================================================
-2026-10-04 14:46:47,320 - twister - DEBUG - QEMU (12796): START - test_positive_numbers
-2026-10-04 14:46:47,572 - twister - DEBUG - QEMU (12796):  PASS - test_positive_numbers in 0.001 seconds
-2026-10-04 14:46:47,905 - twister - DEBUG - QEMU (12796): ===================================================================
-2026-10-04 14:46:48,017 - twister - DEBUG - QEMU (12796): TESTSUITE calculator_mul succeeded
-2026-10-04 14:46:48,096 - twister - DEBUG - QEMU (12796): Running TESTSUITE calculator_sub
-2026-10-04 14:46:48,632 - twister - DEBUG - QEMU (12796): ===================================================================
-2026-10-04 14:46:48,776 - twister - DEBUG - QEMU (12796): START - test_negative_result
-2026-10-04 14:46:49,124 - twister - DEBUG - QEMU (12796):  PASS - test_negative_result in 0.001 seconds
-2026-10-04 14:46:49,520 - twister - DEBUG - QEMU (12796): ===================================================================
-2026-10-04 14:46:49,678 - twister - DEBUG - QEMU (12796): START - test_null_pointer
-2026-10-04 14:46:49,849 - twister - DEBUG - QEMU (12796): E: result pointer is NULL
-2026-10-04 14:46:50,069 - twister - DEBUG - QEMU (12796):  PASS - test_null_pointer in 0.001 seconds
-2026-10-04 14:46:50,413 - twister - DEBUG - QEMU (12796): ===================================================================
-2026-10-04 14:46:50,678 - twister - DEBUG - QEMU (12796): START - test_positive_result
-2026-10-04 14:46:50,883 - twister - DEBUG - QEMU (12796):  PASS - test_positive_result in 0.001 seconds
-2026-10-04 14:46:51,231 - twister - DEBUG - QEMU (12796): ===================================================================
-2026-10-04 14:46:51,608 - twister - DEBUG - QEMU (12796): TESTSUITE calculator_sub succeeded
-2026-10-04 14:46:51,608 - twister - DEBUG - QEMU (12796): 
-2026-10-04 14:46:51,782 - twister - DEBUG - QEMU (12796): ------ TESTSUITE SUMMARY START ------
-2026-10-04 14:46:51,782 - twister - DEBUG - QEMU (12796): 
-2026-10-04 14:46:52,476 - twister - DEBUG - QEMU (12796): SUITE PASS - 100.00% [calculator_add]: pass = 5, fail = 0, skip = 0, total = 5 duration = 0.005 seconds
-2026-10-04 14:46:52,895 - twister - DEBUG - QEMU (12796):  - PASS - [calculator_add.test_mixed_signs] duration = 0.001 seconds
-2026-10-04 14:46:53,687 - twister - DEBUG - QEMU (12796):  - PASS - [calculator_add.test_negative_numbers] duration = 0.001 seconds
-2026-10-04 14:46:54,128 - twister - DEBUG - QEMU (12796):  - PASS - [calculator_add.test_null_pointer] duration = 0.001 seconds
-2026-10-04 14:46:54,818 - twister - DEBUG - QEMU (12796):  - PASS - [calculator_add.test_positive_numbers] duration = 0.001 seconds
-2026-10-04 14:46:55,240 - twister - DEBUG - QEMU (12796):  - PASS - [calculator_add.test_zero] duration = 0.001 seconds
-2026-10-04 14:46:55,240 - twister - DEBUG - QEMU (12796): 
-2026-10-04 14:46:56,183 - twister - DEBUG - QEMU (12796): SUITE PASS - 100.00% [calculator_div]: pass = 5, fail = 0, skip = 0, total = 5 duration = 0.005 seconds
-2026-10-04 14:46:56,607 - twister - DEBUG - QEMU (12796):  - PASS - [calculator_div.test_divide_by_zero] duration = 0.001 seconds
-2026-10-04 14:46:57,726 - twister - DEBUG - QEMU (12796):  - PASS - [calculator_div.test_exact_division] duration = 0.001 seconds
-2026-10-04 14:46:58,813 - twister - DEBUG - QEMU (12796):  - PASS - [calculator_div.test_integer_truncation] duration = 0.001 seconds
-2026-10-04 14:46:59,409 - twister - DEBUG - QEMU (12796):  - PASS - [calculator_div.test_negative_dividend_truncation] duration = 0.001 seconds
-2026-10-04 14:46:59,913 - twister - DEBUG - QEMU (12796):  - PASS - [calculator_div.test_null_pointer] duration = 0.001 seconds
-2026-10-04 14:46:59,913 - twister - DEBUG - QEMU (12796): 
-2026-10-04 14:47:01,188 - twister - DEBUG - QEMU (12796): SUITE PASS - 100.00% [calculator_edge_cases]: pass = 1, fail = 0, skip = 0, total = 1 duration = 0.001 seconds
-2026-10-04 14:47:01,898 - twister - DEBUG - QEMU (12796):  - PASS - [calculator_edge_cases.test_chained_operations] duration = 0.001 seconds
-2026-10-04 14:47:01,898 - twister - DEBUG - QEMU (12796): 
-2026-10-04 14:47:02,608 - twister - DEBUG - QEMU (12796): SUITE PASS - 100.00% [calculator_last_result]: pass = 6, fail = 0, skip = 0, total = 6 duration = 0.006 seconds
-2026-10-04 14:47:03,269 - twister - DEBUG - QEMU (12796):  - PASS - [calculator_last_result.test_add_updates_cache] duration = 0.001 seconds
-2026-10-04 14:47:03,961 - twister - DEBUG - QEMU (12796):  - PASS - [calculator_last_result.test_failed_op_does_not_update] duration = 0.001 seconds
-2026-10-04 14:47:04,491 - twister - DEBUG - QEMU (12796):  - PASS - [calculator_last_result.test_no_result_before_first_op] duration = 0.001 seconds
-2026-10-04 14:47:04,913 - twister - DEBUG - QEMU (12796):  - PASS - [calculator_last_result.test_null_pointer] duration = 0.001 seconds
-2026-10-04 14:47:05,303 - twister - DEBUG - QEMU (12796):  - PASS - [calculator_last_result.test_overwrite_on_second_op] duration = 0.001 seconds
-2026-10-04 14:47:06,122 - twister - DEBUG - QEMU (12796):  - PASS - [calculator_last_result.test_reset_clears_cache] duration = 0.001 seconds
-2026-10-04 14:47:06,123 - twister - DEBUG - QEMU (12796): 
-2026-10-04 14:47:06,388 - twister - DEBUG - QEMU (12796): SUITE PASS - 100.00% [calculator_mul]: pass = 4, fail = 0, skip = 0, total = 4 duration = 0.004 seconds
-2026-10-04 14:47:07,054 - twister - DEBUG - QEMU (12796):  - PASS - [calculator_mul.test_by_zero] duration = 0.001 seconds
-2026-10-04 14:47:07,697 - twister - DEBUG - QEMU (12796):  - PASS - [calculator_mul.test_negative_numbers] duration = 0.001 seconds
-2026-10-04 14:47:07,933 - twister - DEBUG - QEMU (12796):  - PASS - [calculator_mul.test_null_pointer] duration = 0.001 seconds
-2026-10-04 14:47:08,200 - twister - DEBUG - QEMU (12796):  - PASS - [calculator_mul.test_positive_numbers] duration = 0.001 seconds
-2026-10-04 14:47:08,200 - twister - DEBUG - QEMU (12796): 
-2026-10-04 14:47:08,704 - twister - DEBUG - QEMU (12796): SUITE PASS - 100.00% [calculator_sub]: pass = 3, fail = 0, skip = 0, total = 3 duration = 0.003 seconds
-2026-10-04 14:47:08,893 - twister - DEBUG - QEMU (12796):  - PASS - [calculator_sub.test_negative_result] duration = 0.001 seconds
-2026-10-04 14:47:09,021 - twister - DEBUG - QEMU (12796):  - PASS - [calculator_sub.test_null_pointer] duration = 0.001 seconds
-2026-10-04 14:47:09,052 - twister - DEBUG - QEMU (12796):  - PASS - [calculator_sub.test_positive_result] duration = 0.001 seconds
-2026-10-04 14:47:09,052 - twister - DEBUG - QEMU (12796): 
-2026-10-04 14:47:09,099 - twister - DEBUG - QEMU (12796): ------ TESTSUITE SUMMARY END ------
-2026-10-04 14:47:09,099 - twister - DEBUG - QEMU (12796): 
-2026-10-04 14:47:09,099 - twister - DEBUG - QEMU (12796): ===================================================================
-2026-10-04 14:47:09,099 - twister - DEBUG - QEMU (12796): RunID: d0ab45e098e43fa61556852253638ce5
-2026-10-04 14:47:09,099 - twister - DEBUG - QEMU (12796): PROJECT EXECUTION SUCCESSFUL
-2026-10-04 14:47:11,100 - twister - DEBUG - QEMU (12796) complete with passed (None) after 57.604679346084595 seconds
-2026-10-04 14:47:11,116 - twister - DEBUG - return code from QEMU (12796): 0
-2026-10-04 14:47:11,116 - twister - DEBUG - Expected suite names:['calculator_last_result', 'calculator_add', 'calculator_sub', 'calculator_mul', 'calculator_div', 'calculator_edge_cases']
-2026-10-04 14:47:11,116 - twister - DEBUG - Detected suite names:['calculator_add', 'calculator_div', 'calculator_edge_cases', 'calculator_last_result', 'calculator_mul', 'calculator_sub']
-2026-10-04 14:47:11,116 - twister - DEBUG - run status: qemu_x86/atom\zephyr\example.unit.calculator.ordered passed
-2026-10-04 14:47:11,118 - twister - INFO - 2/2 qemu_x86/atom             example.unit.calculator.ordered                    [32mPASSED[39m (qemu 57.605s <zephyr>)
-2026-10-04 14:47:11,160 - twister - INFO - 3 test scenarios (3 configurations) selected, 1 configurations filtered (1 by static filter, 0 at runtime).
-2026-10-04 14:47:11,160 - twister - INFO - [32m2 of 2[39m executed test configurations passed (100.00%), 0 built (not run), 0 failed, 0 errored, with no warnings in 229.20 seconds.
-2026-10-04 14:47:11,160 - twister - INFO - 48 of 48 executed test cases passed (100.00%) on 1 out of total 1115 platforms (0.09%).
-2026-10-04 14:47:11,161 - twister - INFO - [32m2[39m test configurations executed on platforms, [36m0[39m test configurations were only built.
-2026-10-04 14:47:11,161 - twister - INFO - Saving reports...
-2026-10-04 14:47:11,161 - twister - INFO - Writing JSON report C:\Users\luchi\Github-Repository\zephyr_workspace\zephyr-course\twister-out\twister.json
-2026-10-04 14:47:11,163 - twister - INFO - Writing xunit report C:\Users\luchi\Github-Repository\zephyr_workspace\zephyr-course\twister-out\twister.xml...
-2026-10-04 14:47:11,195 - twister - INFO - Writing xunit report C:\Users\luchi\Github-Repository\zephyr_workspace\zephyr-course\twister-out\twister_report.xml...
-2026-10-04 14:47:11,197 - twister - INFO - Run completed
+2026-10-04 15:54:14,423 - twister - INFO - Using Ninja..
+2026-10-04 15:54:14,598 - twister - INFO - Zephyr version: v4.2.0
+2026-10-04 15:54:14,651 - twister - DEBUG - Running cmake script C:\Users\luchi\Github-Repository\zephyr_workspace\deps\zephyr\cmake\verify-toolchain.cmake
+2026-10-04 15:54:14,653 - twister - DEBUG - Calling cmake: ['C:\\Program Files\\CMake\\bin\\cmake.EXE', '-DFORMAT=json', '-P', 'C:\\Users\\luchi\\Github-Repository\\zephyr_workspace\\deps\\zephyr\\cmake\\verify-toolchain.cmake']
+2026-10-04 15:54:15,450 - twister - DEBUG - Finished running C:\Users\luchi\Github-Repository\zephyr_workspace\deps\zephyr\cmake\verify-toolchain.cmake
+2026-10-04 15:54:15,450 - twister - INFO - Using 'zephyr' toolchain.
+2026-10-04 15:54:17,040 - twister - DEBUG - Reading testsuite configuration files under C:\Users\luchi\Github-Repository\zephyr_workspace\zephyr-course\tests\ring_buf...
+2026-10-04 15:54:17,040 - twister - DEBUG - Found possible testsuite in C:\Users\luchi\Github-Repository\zephyr_workspace\zephyr-course\tests\ring_buf
+2026-10-04 15:54:17,060 - twister - DEBUG - No duplicates found.
+2026-10-04 15:54:17,060 - twister - DEBUG - platform filter: ['qemu_x86']
+2026-10-04 15:54:17,060 - twister - DEBUG -   vendor filter: []
+2026-10-04 15:54:17,060 - twister - DEBUG -     arch_filter: None
+2026-10-04 15:54:17,060 - twister - DEBUG -      tag_filter: None
+2026-10-04 15:54:17,060 - twister - DEBUG -     exclude_tag: None
+2026-10-04 15:54:17,060 - twister - DEBUG - Checking platform filter: ['qemu_x86']
+2026-10-04 15:54:17,060 - twister - INFO - Building initial testsuite list...
+2026-10-04 15:54:17,063 - twister - INFO - Writing JSON report C:\Users\luchi\Github-Repository\zephyr_workspace\zephyr-course\twister-out\testplan.json
+2026-10-04 15:54:17,182 - twister - INFO - Adding tasks to the queue...
+2026-10-04 15:54:17,182 - twister - DEBUG - adding qemu_x86/atom\zephyr\homework.unit.ring_buf
+2026-10-04 15:54:17,439 - twister - INFO - Added initial list of jobs to queue
+2026-10-04 15:54:18,362 - twister - DEBUG - Running cmake on C:\Users\luchi\Github-Repository\zephyr_workspace\zephyr-course\tests\ring_buf for qemu_x86/atom
+2026-10-04 15:54:18,367 - twister - DEBUG - Calling cmake: ['C:\\Program Files\\CMake\\bin\\cmake.EXE', '-BC:\\Users\\luchi\\Github-Repository\\zephyr_workspace\\zephyr-course\\twister-out\\qemu_x86_atom\\zephyr\\homework.unit.ring_buf', '-DTC_RUNID=a36d6974a04c63d3bf3c239fa07ae70f', '-DTC_NAME=homework.unit.ring_buf', '-DCONFIG_COMPILER_WARNINGS_AS_ERRORS=y', '-DEXTRA_GEN_EDT_ARGS=--edtlib-Werror', '-GNinja', '-DPython3_EXECUTABLE=C:/Users/luchi/AppData/Local/Programs/Python/Python312/python.exe', '-DZEPHYR_TOOLCHAIN_VARIANT=zephyr', '-SC:\\Users\\luchi\\Github-Repository\\zephyr_workspace\\zephyr-course\\tests\\ring_buf', '-DQEMU_PIPE=C:\\Users\\luchi\\Github-Repository\\zephyr_workspace\\zephyr-course\\twister-out\\qemu_x86_atom\\zephyr\\homework.unit.ring_buf\\qemu-fifo', '-DOVERLAY_CONFIG=C:\\Users\\luchi\\Github-Repository\\zephyr_workspace\\zephyr-course\\twister-out\\qemu_x86_atom\\zephyr\\homework.unit.ring_buf\\twister\\testsuite_extra.conf', '-DBOARD=qemu_x86/atom']
+2026-10-04 15:54:19,544 - twister - DEBUG - Launched 20 jobs
+2026-10-04 15:54:39,811 - twister - DEBUG - Finished running cmake C:\Users\luchi\Github-Repository\zephyr_workspace\zephyr-course\tests\ring_buf for qemu_x86/atom in 21.44 seconds
+2026-10-04 15:54:39,815 - twister - DEBUG - build test: qemu_x86/atom\zephyr\homework.unit.ring_buf
+2026-10-04 15:54:39,815 - twister - DEBUG - Building C:\Users\luchi\Github-Repository\zephyr_workspace\zephyr-course\tests\ring_buf for qemu_x86/atom
+2026-10-04 15:54:39,822 - twister - DEBUG - Running C:\Program Files\CMake\bin\cmake.EXE --build C:\Users\luchi\Github-Repository\zephyr_workspace\zephyr-course\twister-out\qemu_x86_atom\zephyr\homework.unit.ring_buf
+2026-10-04 15:54:47,192 - twister - DEBUG - Finished building C:\Users\luchi\Github-Repository\zephyr_workspace\zephyr-course\tests\ring_buf for qemu_x86/atom in 7.37 seconds
+2026-10-04 15:54:47,192 - twister - DEBUG - Determine test cases for test instance: qemu_x86/atom\zephyr\homework.unit.ring_buf
+2026-10-04 15:54:47,192 - twister - DEBUG - Determine test cases for test suite: homework.unit.ring_buf
+2026-10-04 15:54:47,266 - twister - DEBUG - Test instance qemu_x86/atom\zephyr\homework.unit.ring_buf already has 8 testcase(s) known: [<TestCase homework.unit.ring_buf.ring_buf_init.reinit_clears_state with None>, <TestCase homework.unit.ring_buf.ring_buf_push_pop.single_push_pop with None>, <TestCase homework.unit.ring_buf.ring_buf_push_pop.fifo_order with None>, <TestCase homework.unit.ring_buf.ring_buf_push_pop.push_full_returns_enospc with None>, <TestCase homework.unit.ring_buf.ring_buf_boundaries.peek_does_not_consume with None>, <TestCase homework.unit.ring_buf.ring_buf_boundaries.is_full_after_fill with None>, <TestCase homework.unit.ring_buf.ring_buf_boundaries.pop_null_returns_einval with None>, <TestCase homework.unit.ring_buf.ring_buf_init.fresh_state with None>]
+2026-10-04 15:54:47,266 - twister - DEBUG - Detected 8 Ztest case(s): [homework.unit.ring_buf.ring_buf_init.fresh_state, homework.unit.ring_buf.ring_buf_init.reinit_clears_state, homework.unit.ring_buf.ring_buf_push_pop.single_push_pop, homework.unit.ring_buf.ring_buf_push_pop.fifo_order, homework.unit.ring_buf.ring_buf_push_pop.push_full_returns_enospc, homework.unit.ring_buf.ring_buf_boundaries.peek_does_not_consume, homework.unit.ring_buf.ring_buf_boundaries.pop_null_returns_einval, homework.unit.ring_buf.ring_buf_boundaries.is_full_after_fill] in C:\Users\luchi\Github-Repository\zephyr_workspace\zephyr-course\twister-out\qemu_x86_atom\zephyr\homework.unit.ring_buf\zephyr\zephyr.elf
+2026-10-04 15:54:47,268 - twister - DEBUG - run test: qemu_x86/atom\zephyr\homework.unit.ring_buf
+2026-10-04 15:54:47,268 - twister - DEBUG - Reset instance status from 'passed' to None before run.
+2026-10-04 15:54:47,268 - twister - DEBUG - Running qemu_x86/atom\zephyr\homework.unit.ring_buf (qemu)
+2026-10-04 15:54:47,272 - twister - DEBUG - Spawning QEMUHandler Thread for qemu_x86/atom\zephyr\homework.unit.ring_buf
+2026-10-04 15:54:52,273 - twister - DEBUG - QEMU (53892): c[?7l[2J[0mSeaBIOS (version rel-1.17.0-0-gb52ca86e094d-prebuilt.qemu.org)
+2026-10-04 15:54:52,523 - twister - DEBUG - QEMU (53892): Booting from ROM..
+2026-10-04 15:54:52,759 - twister - DEBUG - QEMU (53892): *** Booting Zephyr OS build v4.2.0 ***
+2026-10-04 15:54:52,918 - twister - DEBUG - QEMU (53892): Running TESTSUITE ring_buf_init
+2026-10-04 15:54:53,312 - twister - DEBUG - QEMU (53892): ===================================================================
+2026-10-04 15:54:53,562 - twister - DEBUG - QEMU (53892): START - test_fresh_state
+2026-10-04 15:54:53,720 - twister - DEBUG - QEMU (53892):  PASS - test_fresh_state in 0.001 seconds
+2026-10-04 15:54:54,145 - twister - DEBUG - QEMU (53892): ===================================================================
+2026-10-04 15:54:54,331 - twister - DEBUG - QEMU (53892): START - test_reinit_clears_state
+2026-10-04 15:54:54,583 - twister - DEBUG - QEMU (53892):  PASS - test_reinit_clears_state in 0.001 seconds
+2026-10-04 15:54:54,911 - twister - DEBUG - QEMU (53892): ===================================================================
+2026-10-04 15:54:55,053 - twister - DEBUG - QEMU (53892): START - test_reinit_clears_state
+2026-10-04 15:54:55,369 - twister - DEBUG - QEMU (53892):  PASS - test_reinit_clears_state in 0.001 seconds
+2026-10-04 15:54:55,841 - twister - DEBUG - QEMU (53892): ===================================================================
+2026-10-04 15:54:55,950 - twister - DEBUG - QEMU (53892): START - test_fresh_state
+2026-10-04 15:54:56,330 - twister - DEBUG - QEMU (53892):  PASS - test_fresh_state in 0.001 seconds
+2026-10-04 15:54:56,535 - twister - DEBUG - QEMU (53892): ===================================================================
+2026-10-04 15:54:56,693 - twister - DEBUG - QEMU (53892): START - test_fresh_state
+2026-10-04 15:54:56,928 - twister - DEBUG - QEMU (53892):  PASS - test_fresh_state in 0.001 seconds
+2026-10-04 15:54:57,290 - twister - DEBUG - QEMU (53892): ===================================================================
+2026-10-04 15:54:57,495 - twister - DEBUG - QEMU (53892): START - test_reinit_clears_state
+2026-10-04 15:54:57,715 - twister - DEBUG - QEMU (53892):  PASS - test_reinit_clears_state in 0.001 seconds
+2026-10-04 15:54:58,123 - twister - DEBUG - QEMU (53892): ===================================================================
+2026-10-04 15:54:58,218 - twister - DEBUG - QEMU (53892): TESTSUITE ring_buf_init succeeded
+2026-10-04 15:54:58,453 - twister - DEBUG - QEMU (53892): Running TESTSUITE ring_buf_init
+2026-10-04 15:54:58,925 - twister - DEBUG - QEMU (53892): ===================================================================
+2026-10-04 15:54:59,100 - twister - DEBUG - QEMU (53892): START - test_reinit_clears_state
+2026-10-04 15:54:59,381 - twister - DEBUG - QEMU (53892):  PASS - test_reinit_clears_state in 0.001 seconds
+2026-10-04 15:54:59,808 - twister - DEBUG - QEMU (53892): ===================================================================
+2026-10-04 15:54:59,950 - twister - DEBUG - QEMU (53892): START - test_fresh_state
+2026-10-04 15:55:00,343 - twister - DEBUG - QEMU (53892):  PASS - test_fresh_state in 0.001 seconds
+2026-10-04 15:55:01,051 - twister - DEBUG - QEMU (53892): ===================================================================
+2026-10-04 15:55:01,288 - twister - DEBUG - QEMU (53892): START - test_reinit_clears_state
+2026-10-04 15:55:01,540 - twister - DEBUG - QEMU (53892):  PASS - test_reinit_clears_state in 0.001 seconds
+2026-10-04 15:55:01,961 - twister - DEBUG - QEMU (53892): ===================================================================
+2026-10-04 15:55:02,086 - twister - DEBUG - QEMU (53892): START - test_fresh_state
+2026-10-04 15:55:02,275 - twister - DEBUG - QEMU (53892):  PASS - test_fresh_state in 0.001 seconds
+2026-10-04 15:55:02,795 - twister - DEBUG - QEMU (53892): ===================================================================
+2026-10-04 15:55:03,033 - twister - DEBUG - QEMU (53892): START - test_fresh_state
+2026-10-04 15:55:03,316 - twister - DEBUG - QEMU (53892):  PASS - test_fresh_state in 0.001 seconds
+2026-10-04 15:55:03,617 - twister - DEBUG - QEMU (53892): ===================================================================
+2026-10-04 15:55:03,807 - twister - DEBUG - QEMU (53892): START - test_reinit_clears_state
+2026-10-04 15:55:04,105 - twister - DEBUG - QEMU (53892):  PASS - test_reinit_clears_state in 0.001 seconds
+2026-10-04 15:55:04,609 - twister - DEBUG - QEMU (53892): ===================================================================
+2026-10-04 15:55:04,734 - twister - DEBUG - QEMU (53892): TESTSUITE ring_buf_init succeeded
+2026-10-04 15:55:04,907 - twister - DEBUG - QEMU (53892): Running TESTSUITE ring_buf_init
+2026-10-04 15:55:05,506 - twister - DEBUG - QEMU (53892): ===================================================================
+2026-10-04 15:55:05,788 - twister - DEBUG - QEMU (53892): START - test_reinit_clears_state
+2026-10-04 15:55:06,163 - twister - DEBUG - QEMU (53892):  PASS - test_reinit_clears_state in 0.001 seconds
+2026-10-04 15:55:06,661 - twister - DEBUG - QEMU (53892): ===================================================================
+2026-10-04 15:55:06,882 - twister - DEBUG - QEMU (53892): START - test_fresh_state
+2026-10-04 15:55:07,294 - twister - DEBUG - QEMU (53892):  PASS - test_fresh_state in 0.001 seconds
+2026-10-04 15:55:07,659 - twister - DEBUG - QEMU (53892): ===================================================================
+2026-10-04 15:55:07,991 - twister - DEBUG - QEMU (53892): START - test_reinit_clears_state
+2026-10-04 15:55:08,381 - twister - DEBUG - QEMU (53892):  PASS - test_reinit_clears_state in 0.001 seconds
+2026-10-04 15:55:08,941 - twister - DEBUG - QEMU (53892): ===================================================================
+2026-10-04 15:55:09,068 - twister - DEBUG - QEMU (53892): START - test_fresh_state
+2026-10-04 15:55:09,288 - twister - DEBUG - QEMU (53892):  PASS - test_fresh_state in 0.001 seconds
+2026-10-04 15:55:09,524 - twister - DEBUG - QEMU (53892): ===================================================================
+2026-10-04 15:55:09,712 - twister - DEBUG - QEMU (53892): START - test_fresh_state
+2026-10-04 15:55:09,993 - twister - DEBUG - QEMU (53892):  PASS - test_fresh_state in 0.001 seconds
+2026-10-04 15:55:10,622 - twister - DEBUG - QEMU (53892): ===================================================================
+2026-10-04 15:55:10,999 - twister - DEBUG - QEMU (53892): START - test_reinit_clears_state
+2026-10-04 15:55:11,407 - twister - DEBUG - QEMU (53892):  PASS - test_reinit_clears_state in 0.001 seconds
+2026-10-04 15:55:11,911 - twister - DEBUG - QEMU (53892): ===================================================================
+2026-10-04 15:55:12,177 - twister - DEBUG - QEMU (53892): TESTSUITE ring_buf_init succeeded
+2026-10-04 15:55:12,287 - twister - DEBUG - QEMU (53892): Running TESTSUITE ring_buf_boundaries
+2026-10-04 15:55:12,741 - twister - DEBUG - QEMU (53892): ===================================================================
+2026-10-04 15:55:13,086 - twister - DEBUG - QEMU (53892): START - test_pop_null_returns_einval
+2026-10-04 15:55:13,196 - twister - DEBUG - QEMU (53892): E: value pointer is NULL
+2026-10-04 15:55:13,416 - twister - DEBUG - QEMU (53892):  PASS - test_pop_null_returns_einval in 0.002 seconds
+2026-10-04 15:55:13,872 - twister - DEBUG - QEMU (53892): ===================================================================
+2026-10-04 15:55:14,246 - twister - DEBUG - QEMU (53892): START - test_peek_does_not_consume
+2026-10-04 15:55:14,717 - twister - DEBUG - QEMU (53892):  PASS - test_peek_does_not_consume in 0.001 seconds
+2026-10-04 15:55:15,326 - twister - DEBUG - QEMU (53892): ===================================================================
+2026-10-04 15:55:15,513 - twister - DEBUG - QEMU (53892): START - test_is_full_after_fill
+2026-10-04 15:55:15,624 - twister - DEBUG - QEMU (53892):  PASS - test_is_full_after_fill in 0.001 seconds
+2026-10-04 15:55:16,033 - twister - DEBUG - QEMU (53892): ===================================================================
+2026-10-04 15:55:16,237 - twister - DEBUG - QEMU (53892): START - test_pop_null_returns_einval
+2026-10-04 15:55:16,380 - twister - DEBUG - QEMU (53892): E: value pointer is NULL
+2026-10-04 15:55:16,583 - twister - DEBUG - QEMU (53892):  PASS - test_pop_null_returns_einval in 0.002 seconds
+2026-10-04 15:55:16,865 - twister - DEBUG - QEMU (53892): ===================================================================
+2026-10-04 15:55:17,116 - twister - DEBUG - QEMU (53892): START - test_is_full_after_fill
+2026-10-04 15:55:17,474 - twister - DEBUG - QEMU (53892):  PASS - test_is_full_after_fill in 0.001 seconds
+2026-10-04 15:55:17,616 - twister - DEBUG - QEMU (53892): ===================================================================
+2026-10-04 15:55:17,632 - twister - DEBUG - QEMU (53892): START - test_peek_does_not_consume
+2026-10-04 15:55:17,963 - twister - DEBUG - QEMU (53892):  PASS - test_peek_does_not_consume in 0.001 seconds
+2026-10-04 15:55:18,277 - twister - DEBUG - QEMU (53892): ===================================================================
+2026-10-04 15:55:18,467 - twister - DEBUG - QEMU (53892): START - test_pop_null_returns_einval
+2026-10-04 15:55:18,530 - twister - DEBUG - QEMU (53892): E: value pointer is NULL
+2026-10-04 15:55:18,815 - twister - DEBUG - QEMU (53892):  PASS - test_pop_null_returns_einval in 0.002 seconds
+2026-10-04 15:55:19,159 - twister - DEBUG - QEMU (53892): ===================================================================
+2026-10-04 15:55:19,317 - twister - DEBUG - QEMU (53892): START - test_is_full_after_fill
+2026-10-04 15:55:19,395 - twister - DEBUG - QEMU (53892):  PASS - test_is_full_after_fill in 0.001 seconds
+2026-10-04 15:55:19,710 - twister - DEBUG - QEMU (53892): ===================================================================
+2026-10-04 15:55:19,852 - twister - DEBUG - QEMU (53892): START - test_peek_does_not_consume
+2026-10-04 15:55:19,943 - twister - DEBUG - QEMU (53892):  PASS - test_peek_does_not_consume in 0.001 seconds
+2026-10-04 15:55:20,198 - twister - DEBUG - QEMU (53892): ===================================================================
+2026-10-04 15:55:20,339 - twister - DEBUG - QEMU (53892): TESTSUITE ring_buf_boundaries succeeded
+2026-10-04 15:55:20,607 - twister - DEBUG - QEMU (53892): Running TESTSUITE ring_buf_boundaries
+2026-10-04 15:55:20,717 - twister - DEBUG - QEMU (53892): ===================================================================
+2026-10-04 15:55:20,888 - twister - DEBUG - QEMU (53892): START - test_pop_null_returns_einval
+2026-10-04 15:55:21,060 - twister - DEBUG - QEMU (53892): E: value pointer is NULL
+2026-10-04 15:55:21,330 - twister - DEBUG - QEMU (53892):  PASS - test_pop_null_returns_einval in 0.002 seconds
+2026-10-04 15:55:21,598 - twister - DEBUG - QEMU (53892): ===================================================================
+2026-10-04 15:55:21,789 - twister - DEBUG - QEMU (53892): START - test_peek_does_not_consume
+2026-10-04 15:55:22,134 - twister - DEBUG - QEMU (53892):  PASS - test_peek_does_not_consume in 0.001 seconds
+2026-10-04 15:55:22,277 - twister - DEBUG - QEMU (53892): ===================================================================
+2026-10-04 15:55:22,404 - twister - DEBUG - QEMU (53892): START - test_is_full_after_fill
+2026-10-04 15:55:22,481 - twister - DEBUG - QEMU (53892):  PASS - test_is_full_after_fill in 0.001 seconds
+2026-10-04 15:55:22,844 - twister - DEBUG - QEMU (53892): ===================================================================
+2026-10-04 15:55:22,954 - twister - DEBUG - QEMU (53892): START - test_peek_does_not_consume
+2026-10-04 15:55:23,079 - twister - DEBUG - QEMU (53892):  PASS - test_peek_does_not_consume in 0.001 seconds
+2026-10-04 15:55:23,348 - twister - DEBUG - QEMU (53892): ===================================================================
+2026-10-04 15:55:23,473 - twister - DEBUG - QEMU (53892): START - test_pop_null_returns_einval
+2026-10-04 15:55:23,552 - twister - DEBUG - QEMU (53892): E: value pointer is NULL
+2026-10-04 15:55:23,850 - twister - DEBUG - QEMU (53892):  PASS - test_pop_null_returns_einval in 0.002 seconds
+2026-10-04 15:55:24,241 - twister - DEBUG - QEMU (53892): ===================================================================
+2026-10-04 15:55:24,414 - twister - DEBUG - QEMU (53892): START - test_is_full_after_fill
+2026-10-04 15:55:24,570 - twister - DEBUG - QEMU (53892):  PASS - test_is_full_after_fill in 0.001 seconds
+2026-10-04 15:55:24,853 - twister - DEBUG - QEMU (53892): ===================================================================
+2026-10-04 15:55:24,995 - twister - DEBUG - QEMU (53892): START - test_peek_does_not_consume
+2026-10-04 15:55:25,249 - twister - DEBUG - QEMU (53892):  PASS - test_peek_does_not_consume in 0.001 seconds
+2026-10-04 15:55:25,390 - twister - DEBUG - QEMU (53892): ===================================================================
+2026-10-04 15:55:25,484 - twister - DEBUG - QEMU (53892): START - test_is_full_after_fill
+2026-10-04 15:55:25,691 - twister - DEBUG - QEMU (53892):  PASS - test_is_full_after_fill in 0.001 seconds
+2026-10-04 15:55:25,976 - twister - DEBUG - QEMU (53892): ===================================================================
+2026-10-04 15:55:26,086 - twister - DEBUG - QEMU (53892): START - test_pop_null_returns_einval
+2026-10-04 15:55:26,245 - twister - DEBUG - QEMU (53892): E: value pointer is NULL
+2026-10-04 15:55:26,530 - twister - DEBUG - QEMU (53892):  PASS - test_pop_null_returns_einval in 0.002 seconds
+2026-10-04 15:55:26,625 - twister - DEBUG - QEMU (53892): ===================================================================
+2026-10-04 15:55:26,832 - twister - DEBUG - QEMU (53892): TESTSUITE ring_buf_boundaries succeeded
+2026-10-04 15:55:27,021 - twister - DEBUG - QEMU (53892): Running TESTSUITE ring_buf_boundaries
+2026-10-04 15:55:27,461 - twister - DEBUG - QEMU (53892): ===================================================================
+2026-10-04 15:55:27,651 - twister - DEBUG - QEMU (53892): START - test_is_full_after_fill
+2026-10-04 15:55:27,809 - twister - DEBUG - QEMU (53892):  PASS - test_is_full_after_fill in 0.001 seconds
+2026-10-04 15:55:28,154 - twister - DEBUG - QEMU (53892): ===================================================================
+2026-10-04 15:55:28,200 - twister - DEBUG - QEMU (53892): START - test_pop_null_returns_einval
+2026-10-04 15:55:28,246 - twister - DEBUG - QEMU (53892): E: value pointer is NULL
+2026-10-04 15:55:28,559 - twister - DEBUG - QEMU (53892):  PASS - test_pop_null_returns_einval in 0.002 seconds
+2026-10-04 15:55:28,827 - twister - DEBUG - QEMU (53892): ===================================================================
+2026-10-04 15:55:29,065 - twister - DEBUG - QEMU (53892): START - test_peek_does_not_consume
+2026-10-04 15:55:29,319 - twister - DEBUG - QEMU (53892):  PASS - test_peek_does_not_consume in 0.001 seconds
+2026-10-04 15:55:29,586 - twister - DEBUG - QEMU (53892): ===================================================================
+2026-10-04 15:55:29,804 - twister - DEBUG - QEMU (53892): START - test_pop_null_returns_einval
+2026-10-04 15:55:29,867 - twister - DEBUG - QEMU (53892): E: value pointer is NULL
+2026-10-04 15:55:30,085 - twister - DEBUG - QEMU (53892):  PASS - test_pop_null_returns_einval in 0.002 seconds
+2026-10-04 15:55:30,481 - twister - DEBUG - QEMU (53892): ===================================================================
+2026-10-04 15:55:30,703 - twister - DEBUG - QEMU (53892): START - test_peek_does_not_consume
+2026-10-04 15:55:30,987 - twister - DEBUG - QEMU (53892):  PASS - test_peek_does_not_consume in 0.001 seconds
+2026-10-04 15:55:31,445 - twister - DEBUG - QEMU (53892): ===================================================================
+2026-10-04 15:55:31,647 - twister - DEBUG - QEMU (53892): START - test_is_full_after_fill
+2026-10-04 15:55:31,866 - twister - DEBUG - QEMU (53892):  PASS - test_is_full_after_fill in 0.001 seconds
+2026-10-04 15:55:32,209 - twister - DEBUG - QEMU (53892): ===================================================================
+2026-10-04 15:55:32,398 - twister - DEBUG - QEMU (53892): START - test_is_full_after_fill
+2026-10-04 15:55:32,710 - twister - DEBUG - QEMU (53892):  PASS - test_is_full_after_fill in 0.001 seconds
+2026-10-04 15:55:33,116 - twister - DEBUG - QEMU (53892): ===================================================================
+2026-10-04 15:55:33,192 - twister - DEBUG - QEMU (53892): START - test_peek_does_not_consume
+2026-10-04 15:55:33,239 - twister - DEBUG - QEMU (53892):  PASS - test_peek_does_not_consume in 0.001 seconds
+2026-10-04 15:55:33,663 - twister - DEBUG - QEMU (53892): ===================================================================
+2026-10-04 15:55:33,897 - twister - DEBUG - QEMU (53892): START - test_pop_null_returns_einval
+2026-10-04 15:55:33,959 - twister - DEBUG - QEMU (53892): E: value pointer is NULL
+2026-10-04 15:55:34,099 - twister - DEBUG - QEMU (53892):  PASS - test_pop_null_returns_einval in 0.002 seconds
+2026-10-04 15:55:34,459 - twister - DEBUG - QEMU (53892): ===================================================================
+2026-10-04 15:55:34,646 - twister - DEBUG - QEMU (53892): TESTSUITE ring_buf_boundaries succeeded
+2026-10-04 15:55:34,927 - twister - DEBUG - QEMU (53892): Running TESTSUITE ring_buf_push_pop
+2026-10-04 15:55:35,443 - twister - DEBUG - QEMU (53892): ===================================================================
+2026-10-04 15:55:35,504 - twister - DEBUG - QEMU (53892): START - test_fifo_order
+2026-10-04 15:55:35,786 - twister - DEBUG - QEMU (53892):  PASS - test_fifo_order in 0.001 seconds
+2026-10-04 15:55:36,396 - twister - DEBUG - QEMU (53892): ===================================================================
+2026-10-04 15:55:36,508 - twister - DEBUG - QEMU (53892): START - test_single_push_pop
+2026-10-04 15:55:36,741 - twister - DEBUG - QEMU (53892):  PASS - test_single_push_pop in 0.001 seconds
+2026-10-04 15:55:36,802 - twister - DEBUG - QEMU (53892): ===================================================================
+2026-10-04 15:55:36,833 - twister - DEBUG - QEMU (53892): START - test_push_full_returns_enospc
+2026-10-04 15:55:36,849 - twister - DEBUG - QEMU (53892): W: buffer full (capacity=4)
+2026-10-04 15:55:37,006 - twister - DEBUG - QEMU (53892):  PASS - test_push_full_returns_enospc in 0.002 seconds
+2026-10-04 15:55:37,147 - twister - DEBUG - QEMU (53892): ===================================================================
+2026-10-04 15:55:37,272 - twister - DEBUG - QEMU (53892): START - test_push_full_returns_enospc
+2026-10-04 15:55:37,488 - twister - DEBUG - QEMU (53892): W: buffer full (capacity=4)
+2026-10-04 15:55:37,773 - twister - DEBUG - QEMU (53892):  PASS - test_push_full_returns_enospc in 0.002 seconds
+2026-10-04 15:55:38,162 - twister - DEBUG - QEMU (53892): ===================================================================
+2026-10-04 15:55:38,209 - twister - DEBUG - QEMU (53892): START - test_single_push_pop
+2026-10-04 15:55:38,320 - twister - DEBUG - QEMU (53892):  PASS - test_single_push_pop in 0.001 seconds
+2026-10-04 15:55:38,616 - twister - DEBUG - QEMU (53892): ===================================================================
+2026-10-04 15:55:38,695 - twister - DEBUG - QEMU (53892): START - test_fifo_order
+2026-10-04 15:55:38,821 - twister - DEBUG - QEMU (53892):  PASS - test_fifo_order in 0.001 seconds
+2026-10-04 15:55:39,106 - twister - DEBUG - QEMU (53892): ===================================================================
+2026-10-04 15:55:39,245 - twister - DEBUG - QEMU (53892): START - test_push_full_returns_enospc
+2026-10-04 15:55:39,432 - twister - DEBUG - QEMU (53892): W: buffer full (capacity=4)
+2026-10-04 15:55:39,809 - twister - DEBUG - QEMU (53892):  PASS - test_push_full_returns_enospc in 0.002 seconds
+2026-10-04 15:55:40,201 - twister - DEBUG - QEMU (53892): ===================================================================
+2026-10-04 15:55:40,233 - twister - DEBUG - QEMU (53892): START - test_single_push_pop
+2026-10-04 15:55:40,391 - twister - DEBUG - QEMU (53892):  PASS - test_single_push_pop in 0.001 seconds
+2026-10-04 15:55:40,753 - twister - DEBUG - QEMU (53892): ===================================================================
+2026-10-04 15:55:40,894 - twister - DEBUG - QEMU (53892): START - test_fifo_order
+2026-10-04 15:55:41,082 - twister - DEBUG - QEMU (53892):  PASS - test_fifo_order in 0.001 seconds
+2026-10-04 15:55:41,335 - twister - DEBUG - QEMU (53892): ===================================================================
+2026-10-04 15:55:41,678 - twister - DEBUG - QEMU (53892): TESTSUITE ring_buf_push_pop succeeded
+2026-10-04 15:55:41,930 - twister - DEBUG - QEMU (53892): Running TESTSUITE ring_buf_push_pop
+2026-10-04 15:55:42,088 - twister - DEBUG - QEMU (53892): ===================================================================
+2026-10-04 15:55:42,152 - twister - DEBUG - QEMU (53892): START - test_fifo_order
+2026-10-04 15:55:42,439 - twister - DEBUG - QEMU (53892):  PASS - test_fifo_order in 0.001 seconds
+2026-10-04 15:55:42,944 - twister - DEBUG - QEMU (53892): ===================================================================
+2026-10-04 15:55:43,195 - twister - DEBUG - QEMU (53892): START - test_push_full_returns_enospc
+2026-10-04 15:55:43,334 - twister - DEBUG - QEMU (53892): W: buffer full (capacity=4)
+2026-10-04 15:55:43,663 - twister - DEBUG - QEMU (53892):  PASS - test_push_full_returns_enospc in 0.002 seconds
+2026-10-04 15:55:43,851 - twister - DEBUG - QEMU (53892): ===================================================================
+2026-10-04 15:55:44,024 - twister - DEBUG - QEMU (53892): START - test_single_push_pop
+2026-10-04 15:55:44,322 - twister - DEBUG - QEMU (53892):  PASS - test_single_push_pop in 0.001 seconds
+2026-10-04 15:55:44,795 - twister - DEBUG - QEMU (53892): ===================================================================
+2026-10-04 15:55:44,874 - twister - DEBUG - QEMU (53892): START - test_single_push_pop
+2026-10-04 15:55:45,063 - twister - DEBUG - QEMU (53892):  PASS - test_single_push_pop in 0.001 seconds
+2026-10-04 15:55:45,758 - twister - DEBUG - QEMU (53892): ===================================================================
+2026-10-04 15:55:45,994 - twister - DEBUG - QEMU (53892): START - test_push_full_returns_enospc
+2026-10-04 15:55:46,134 - twister - DEBUG - QEMU (53892): W: buffer full (capacity=4)
+2026-10-04 15:55:46,321 - twister - DEBUG - QEMU (53892):  PASS - test_push_full_returns_enospc in 0.002 seconds
+2026-10-04 15:55:46,778 - twister - DEBUG - QEMU (53892): ===================================================================
+2026-10-04 15:55:46,936 - twister - DEBUG - QEMU (53892): START - test_fifo_order
+2026-10-04 15:55:47,078 - twister - DEBUG - QEMU (53892):  PASS - test_fifo_order in 0.001 seconds
+2026-10-04 15:55:47,568 - twister - DEBUG - QEMU (53892): ===================================================================
+2026-10-04 15:55:47,944 - twister - DEBUG - QEMU (53892): START - test_push_full_returns_enospc
+2026-10-04 15:55:48,193 - twister - DEBUG - QEMU (53892): W: buffer full (capacity=4)
+2026-10-04 15:55:48,444 - twister - DEBUG - QEMU (53892):  PASS - test_push_full_returns_enospc in 0.002 seconds
+2026-10-04 15:55:48,959 - twister - DEBUG - QEMU (53892): ===================================================================
+2026-10-04 15:55:49,006 - twister - DEBUG - QEMU (53892): START - test_fifo_order
+2026-10-04 15:55:49,227 - twister - DEBUG - QEMU (53892):  PASS - test_fifo_order in 0.001 seconds
+2026-10-04 15:55:49,827 - twister - DEBUG - QEMU (53892): ===================================================================
+2026-10-04 15:55:49,936 - twister - DEBUG - QEMU (53892): START - test_single_push_pop
+2026-10-04 15:55:50,268 - twister - DEBUG - QEMU (53892):  PASS - test_single_push_pop in 0.001 seconds
+2026-10-04 15:55:50,392 - twister - DEBUG - QEMU (53892): ===================================================================
+2026-10-04 15:55:50,550 - twister - DEBUG - QEMU (53892): TESTSUITE ring_buf_push_pop succeeded
+2026-10-04 15:55:50,754 - twister - DEBUG - QEMU (53892): Running TESTSUITE ring_buf_push_pop
+2026-10-04 15:55:51,308 - twister - DEBUG - QEMU (53892): ===================================================================
+2026-10-04 15:55:51,496 - twister - DEBUG - QEMU (53892): START - test_push_full_returns_enospc
+2026-10-04 15:55:51,700 - twister - DEBUG - QEMU (53892): W: buffer full (capacity=4)
+2026-10-04 15:55:51,970 - twister - DEBUG - QEMU (53892):  PASS - test_push_full_returns_enospc in 0.002 seconds
+2026-10-04 15:55:52,493 - twister - DEBUG - QEMU (53892): ===================================================================
+2026-10-04 15:55:52,617 - twister - DEBUG - QEMU (53892): START - test_single_push_pop
+2026-10-04 15:55:52,898 - twister - DEBUG - QEMU (53892):  PASS - test_single_push_pop in 0.001 seconds
+2026-10-04 15:55:53,373 - twister - DEBUG - QEMU (53892): ===================================================================
+2026-10-04 15:55:53,548 - twister - DEBUG - QEMU (53892): START - test_fifo_order
+2026-10-04 15:55:53,816 - twister - DEBUG - QEMU (53892):  PASS - test_fifo_order in 0.001 seconds
+2026-10-04 15:55:54,070 - twister - DEBUG - QEMU (53892): ===================================================================
+2026-10-04 15:55:54,226 - twister - DEBUG - QEMU (53892): START - test_push_full_returns_enospc
+2026-10-04 15:55:54,304 - twister - DEBUG - QEMU (53892): W: buffer full (capacity=4)
+2026-10-04 15:55:54,695 - twister - DEBUG - QEMU (53892):  PASS - test_push_full_returns_enospc in 0.002 seconds
+2026-10-04 15:55:55,075 - twister - DEBUG - QEMU (53892): ===================================================================
+2026-10-04 15:55:55,153 - twister - DEBUG - QEMU (53892): START - test_fifo_order
+2026-10-04 15:55:55,310 - twister - DEBUG - QEMU (53892):  PASS - test_fifo_order in 0.001 seconds
+2026-10-04 15:55:55,485 - twister - DEBUG - QEMU (53892): ===================================================================
+2026-10-04 15:55:55,675 - twister - DEBUG - QEMU (53892): START - test_single_push_pop
+2026-10-04 15:55:55,974 - twister - DEBUG - QEMU (53892):  PASS - test_single_push_pop in 0.001 seconds
+2026-10-04 15:55:56,240 - twister - DEBUG - QEMU (53892): ===================================================================
+2026-10-04 15:55:56,492 - twister - DEBUG - QEMU (53892): START - test_single_push_pop
+2026-10-04 15:55:56,775 - twister - DEBUG - QEMU (53892):  PASS - test_single_push_pop in 0.001 seconds
+2026-10-04 15:55:56,978 - twister - DEBUG - QEMU (53892): ===================================================================
+2026-10-04 15:55:57,088 - twister - DEBUG - QEMU (53892): START - test_push_full_returns_enospc
+2026-10-04 15:55:57,341 - twister - DEBUG - QEMU (53892): W: buffer full (capacity=4)
+2026-10-04 15:55:57,769 - twister - DEBUG - QEMU (53892):  PASS - test_push_full_returns_enospc in 0.002 seconds
+2026-10-04 15:55:58,679 - twister - DEBUG - QEMU (53892): ===================================================================
+2026-10-04 15:55:58,867 - twister - DEBUG - QEMU (53892): START - test_fifo_order
+2026-10-04 15:55:59,337 - twister - DEBUG - QEMU (53892):  PASS - test_fifo_order in 0.001 seconds
+2026-10-04 15:55:59,857 - twister - DEBUG - QEMU (53892): ===================================================================
+2026-10-04 15:56:00,373 - twister - DEBUG - QEMU (53892): TESTSUITE ring_buf_push_pop succeeded
+2026-10-04 15:56:00,373 - twister - DEBUG - QEMU (53892): 
+2026-10-04 15:56:00,828 - twister - DEBUG - QEMU (53892): ------ TESTSUITE SUMMARY START ------
+2026-10-04 15:56:00,828 - twister - DEBUG - QEMU (53892): 
+2026-10-04 15:56:01,971 - twister - DEBUG - QEMU (53892): SUITE PASS - 100.00% [ring_buf_boundaries]: pass = 3, fail = 0, skip = 0, total = 3 duration = 0.004 seconds
+2026-10-04 15:56:02,677 - twister - DEBUG - QEMU (53892):  - PASS - [ring_buf_boundaries.test_is_full_after_fill] duration = 0.001 seconds
+2026-10-04 15:56:03,167 - twister - DEBUG - QEMU (53892):  - PASS - [ring_buf_boundaries.test_peek_does_not_consume] duration = 0.001 seconds
+2026-10-04 15:56:03,823 - twister - DEBUG - QEMU (53892):  - PASS - [ring_buf_boundaries.test_pop_null_returns_einval] duration = 0.002 seconds
+2026-10-04 15:56:03,824 - twister - DEBUG - QEMU (53892): 
+2026-10-04 15:56:04,329 - twister - DEBUG - QEMU (53892): SUITE PASS - 100.00% [ring_buf_init]: pass = 2, fail = 0, skip = 0, total = 2 duration = 0.002 seconds
+2026-10-04 15:56:04,928 - twister - DEBUG - QEMU (53892):  - PASS - [ring_buf_init.test_fresh_state] duration = 0.001 seconds
+2026-10-04 15:56:05,492 - twister - DEBUG - QEMU (53892):  - PASS - [ring_buf_init.test_reinit_clears_state] duration = 0.001 seconds
+2026-10-04 15:56:05,508 - twister - DEBUG - QEMU (53892): 
+2026-10-04 15:56:06,484 - twister - DEBUG - QEMU (53892): SUITE PASS - 100.00% [ring_buf_push_pop]: pass = 3, fail = 0, skip = 0, total = 3 duration = 0.004 seconds
+2026-10-04 15:56:06,828 - twister - DEBUG - QEMU (53892):  - PASS - [ring_buf_push_pop.test_fifo_order] duration = 0.001 seconds
+2026-10-04 15:56:07,279 - twister - DEBUG - QEMU (53892):  - PASS - [ring_buf_push_pop.test_push_full_returns_enospc] duration = 0.002 seconds
+2026-10-04 15:56:07,748 - twister - DEBUG - QEMU (53892):  - PASS - [ring_buf_push_pop.test_single_push_pop] duration = 0.001 seconds
+2026-10-04 15:56:07,764 - twister - DEBUG - QEMU (53892): 
+2026-10-04 15:56:08,173 - twister - DEBUG - QEMU (53892): ------ TESTSUITE SUMMARY END ------
+2026-10-04 15:56:08,173 - twister - DEBUG - QEMU (53892): 
+2026-10-04 15:56:08,647 - twister - DEBUG - QEMU (53892): ===================================================================
+2026-10-04 15:56:08,772 - twister - DEBUG - QEMU (53892): RunID: a36d6974a04c63d3bf3c239fa07ae70f
+2026-10-04 15:56:09,116 - twister - DEBUG - QEMU (53892): PROJECT EXECUTION SUCCESSFUL
+2026-10-04 15:56:09,132 - twister - DEBUG - QEMU (53892): 
+2026-10-04 15:56:09,273 - twister - DEBUG - QEMU (53892): GCOV_COVERAGE_DUMP_START
+2026-10-04 15:56:11,617 - twister - DEBUG - QEMU (53892): *C:\Users\luchi\Github-Repository\zephyr_workspace\zephyr-course\twister-out\qemu_x86_atom\zephyr\homework.unit.ring_buf\zephyr/kernel/CMakeFiles/kernel.dir/banner.c.gcda<616463672a323242dba60f07e03337e3000000010c000000c7983045837fbe633eb2bbc00000a1011000000001000000000000000100000000000000
+2026-10-04 15:56:41,618 - twister - DEBUG - QEMU (53892) complete with passed (None) after 114.3447835445404 seconds
+2026-10-04 15:56:41,633 - twister - DEBUG - return code from QEMU (53892): 0
+2026-10-04 15:56:41,634 - twister - DEBUG - Expected suite names:['ring_buf_init', 'ring_buf_push_pop', 'ring_buf_boundaries']
+2026-10-04 15:56:41,634 - twister - DEBUG - Detected suite names:['ring_buf_init', 'ring_buf_boundaries', 'ring_buf_push_pop']
+2026-10-04 15:56:41,634 - twister - DEBUG - run status: qemu_x86/atom\zephyr\homework.unit.ring_buf passed
+2026-10-04 15:56:41,635 - twister - DEBUG - Run coverage for 'qemu_x86/atom\zephyr\homework.unit.ring_buf'
+2026-10-04 15:56:41,877 - twister - DEBUG - Select gcovr as the coverage tool...
+2026-10-04 15:56:41,877 - twister - DEBUG - Using gcov tool: x86_64-zephyr-elf-gcov.exe
+2026-10-04 15:56:41,888 - twister - DEBUG - Working on C:\Users\luchi\Github-Repository\zephyr_workspace\zephyr-course\twister-out\qemu_x86_atom\zephyr\homework.unit.ring_buf\handler.log
+2026-10-04 15:56:41,905 - twister - ERROR - Gcov data capture incomplete: C:\Users\luchi\Github-Repository\zephyr_workspace\zephyr-course\twister-out\qemu_x86_atom\zephyr\homework.unit.ring_buf\handler.log
+2026-10-04 15:56:41,951 - twister - INFO - 1 test scenarios (1 configurations) selected, 0 configurations filtered (0 by static filter, 0 at runtime).
+2026-10-04 15:56:41,951 - twister - INFO - [32m1 of 1[39m executed test configurations passed (100.00%), 0 built (not run), 0 failed, 0 errored, with no warnings in 147.53 seconds.
+2026-10-04 15:56:41,951 - twister - INFO - 8 of 8 executed test cases passed (100.00%) on 1 out of total 1115 platforms (0.09%).
+2026-10-04 15:56:41,951 - twister - INFO - [32m1[39m test configurations executed on platforms, [36m0[39m test configurations were only built.
+2026-10-04 15:56:42,117 - twister - DEBUG - Select gcovr as the coverage tool...
+2026-10-04 15:56:42,117 - twister - DEBUG - Using gcov tool: x86_64-zephyr-elf-gcov.exe
+2026-10-04 15:56:42,118 - twister - DEBUG - Running: gcovr -r C:\Users\luchi\Github-Repository\zephyr_workspace\zephyr-course\app\modules\ring_buf --gcov-ignore-parse-errors=negative_hits.warn_once_per_file --gcov-executable x86_64-zephyr-elf-gcov.exe -e tests/* -e .*generated.* -e .*/tests/.* -e .*/samples/.* --exclude-branches-by-pattern (^\s*LOG_(?:HEXDUMP_)?(?:DBG|INF|WRN|ERR)\(.*)|(^\s*__ASSERT(?:_EVAL|_NO_MSG|_POST_ACTION)?\(.*) -v --merge-mode-functions=separate --json -o C:\Users\luchi\Github-Repository\zephyr_workspace\zephyr-course\twister-out\coverage.json C:\Users\luchi\Github-Repository\zephyr_workspace\zephyr-course\twister-out
+2026-10-04 15:56:46,358 - twister - DEBUG - Running: gcovr -r C:\Users\luchi\Github-Repository\zephyr_workspace\zephyr-course\app\modules\ring_buf -v --merge-mode-functions=separate --gcov-executable x86_64-zephyr-elf-gcov.exe -f tests/ztest -e tests/ztest/test/* --json -o C:\Users\luchi\Github-Repository\zephyr_workspace\zephyr-course\twister-out\ztest.json C:\Users\luchi\Github-Repository\zephyr_workspace\zephyr-course\twister-out
+2026-10-04 15:56:50,077 - twister - DEBUG - Coverage collected 2 reports from: C:\Users\luchi\Github-Repository\zephyr_workspace\zephyr-course\twister-out
+2026-10-04 15:56:50,078 - twister - DEBUG - Running: gcovr -r C:\Users\luchi\Github-Repository\zephyr_workspace\zephyr-course\app\modules\ring_buf -v --merge-mode-functions=separate --html C:\Users\luchi\Github-Repository\zephyr_workspace\zephyr-course\twister-out\coverage\index.html --html-details --add-tracefile C:\Users\luchi\Github-Repository\zephyr_workspace\zephyr-course\twister-out\coverage.json --add-tracefile C:\Users\luchi\Github-Repository\zephyr_workspace\zephyr-course\twister-out\ztest.json --json-summary-pretty --json-summary C:\Users\luchi\Github-Repository\zephyr_workspace\zephyr-course\twister-out\coverage_summary.json
+2026-10-04 15:56:50,579 - twister - INFO - HTML report generated: C:\Users\luchi\Github-Repository\zephyr_workspace\zephyr-course\twister-out\coverage\index.html
+2026-10-04 15:56:50,580 - twister - DEBUG - All coverage data processed: True
+2026-10-04 15:56:50,580 - twister - INFO - Saving reports...
+2026-10-04 15:56:50,580 - twister - INFO - Writing JSON report C:\Users\luchi\Github-Repository\zephyr_workspace\zephyr-course\twister-out\twister.json
+2026-10-04 15:56:50,581 - twister - INFO - Writing xunit report C:\Users\luchi\Github-Repository\zephyr_workspace\zephyr-course\twister-out\twister.xml...
+2026-10-04 15:56:50,603 - twister - INFO - Writing xunit report C:\Users\luchi\Github-Repository\zephyr_workspace\zephyr-course\twister-out\twister_report.xml...
+2026-10-04 15:56:50,605 - twister - INFO - Run completed
